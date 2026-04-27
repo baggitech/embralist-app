@@ -451,17 +451,83 @@
           </ul>
         </div>
 
+
+@guest
         <!-- Account button -->
-        <a class="btn btn-icon btn-outline-secondary fs-lg border-0 animate-shake me-2" href="account-signin.php"
+        <a class="btn btn-icon btn-outline-secondary fs-lg border-0 animate-shake me-2" href="{{ route('login') }}"
           aria-label="Sign in to account">
           <i class="fi-user animate-target"></i>
         </a>
+@endguest
+
+@auth
+        <!-- Account dropdown (Logged in state) -->
+        <div class="dropdown pe-1 me-2">
+          <a class="btn btn-icon hover-effect-scale position-relative bg-body-secondary border rounded-circle overflow-hidden"
+            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="My account">
+            <img src="{{ asset('assets/img/account/avatar-sm.jpg') }}"
+              class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Avatar">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" style="--fn-dropdown-spacer: .5rem">
+            <li><span class="h6 dropdown-header">{{ auth()->user()->name }}</span></li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <i class="fi-user opacity-75 me-2"></i>
+                My profile
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="account-listings.php">
+                <i class="fi-layers opacity-75 me-2"></i>
+                My listings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="account-reviews.php">
+                <i class="fi-star opacity-75 me-2"></i>
+                Reviews
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="account-favorites.php">
+                <i class="fi-heart opacity-75 me-2"></i>
+                Favorites
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="account-payment.php">
+                <i class="fi-credit-card opacity-75 me-2"></i>
+                Payment details
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="account-settings.php">
+                <i class="fi-settings opacity-75 me-2"></i>
+                Account settings
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                  <button class="dropdown-item">
+                    <i class="fi-log-out opacity-75 me-2"></i>
+                      Sair
+                  </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+@endauth
 
         <!-- Join button  -->
-        <a class="btn btn-primary animate-scale" href="add-contractor-location.php">
+        <a class="btn btn-primary animate-scale" href="{{ route('register') }}">
           <i class="fi-plus fs-lg animate-target ms-n2 me-1 me-sm-2"></i>
           Join<span class="d-none d-xl-inline ms-1">Pro Network</span>
         </a>
+
       </div>
     </div>
   </header>
