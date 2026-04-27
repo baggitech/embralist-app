@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" data-pwa="true">
+
+<head>
+  <?php $title = "Blog Layout v.1"; include('partials/title-meta.php'); ?>
+
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="assets/vendor/choices.js/public/assets/styles/choices.min.css">
+
+  <?php include('partials/head-css.php'); ?>
+
+</head>
+
+
+<!-- Body -->
+
+<body>
+
+  <!-- Categories modal -->
+  <div class="modal fade" id="categoriesModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Categories</h5>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-pills gap-2">
+            <li class="nav-item d-md-none me-1">
+              <a class="nav-link active" aria-current="page" href="#!">All</a>
+            </li>
+            <li class="nav-item d-md-none me-1">
+              <a class="nav-link" href="#!">Real estate news</a>
+            </li>
+            <li class="nav-item d-md-none me-1">
+              <a class="nav-link" href="#!">Buying tips</a>
+            </li>
+            <li class="nav-item d-lg-none me-1">
+              <a class="nav-link" href="#!">Selling strategies</a>
+            </li>
+            <li class="nav-item d-xl-none me-1">
+              <a class="nav-link" href="#!">Market trends</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Home improvement</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Interior design</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Renting advice</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Neighborhood guides</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Property management</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Legal and tax issues</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Investment advice</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Mortgage and financing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation bar (Page header) -->
+  <header class="navbar navbar-expand-lg bg-body navbar-sticky sticky-top z-fixed px-0" data-sticky-element>
+    <div class="container">
+
+      <!-- Mobile offcanvas menu toggler (Hamburger) -->
+      <button type="button" class="navbar-toggler me-3 me-lg-0" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar brand (Logo) -->
+      <a class="navbar-brand py-1 py-md-2 py-xl-1 me-2 me-sm-n4 me-md-n5 me-lg-0" href="home-real-estate.php">
+        <span class="d-none d-sm-flex flex-shrink-0 text-primary rtl-flip me-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34">
+            <path
+              d="M34.5 16.894v10.731c0 3.506-2.869 6.375-6.375 6.375H17.5h-.85C7.725 33.575.5 26.138.5 17c0-9.35 7.65-17 17-17s17 7.544 17 16.894z"
+              fill="currentColor" />
+            <g fill-rule="evenodd">
+              <path
+                d="M17.5 13.258c-3.101 0-5.655 2.554-5.655 5.655s2.554 5.655 5.655 5.655 5.655-2.554 5.655-5.655-2.554-5.655-5.655-5.655zm-9.433 5.655c0-5.187 4.246-9.433 9.433-9.433s9.433 4.246 9.433 9.433a9.36 9.36 0 0 1-1.569 5.192l2.397 2.397a1.89 1.89 0 0 1 0 2.671 1.89 1.89 0 0 1-2.671 0l-2.397-2.397a9.36 9.36 0 0 1-5.192 1.569c-5.187 0-9.433-4.246-9.433-9.433z"
+                fill="#000" fill-opacity=".05" />
+              <g fill="#fff">
+                <path
+                  d="M17.394 10.153c-3.723 0-6.741 3.018-6.741 6.741s3.018 6.741 6.741 6.741 6.741-3.018 6.741-6.741-3.018-6.741-6.741-6.741zM7.347 16.894A10.05 10.05 0 0 1 17.394 6.847 10.05 10.05 0 0 1 27.44 16.894 10.05 10.05 0 0 1 17.394 26.94 10.05 10.05 0 0 1 7.347 16.894z" />
+                <path
+                  d="M23.025 22.525c.645-.645 1.692-.645 2.337 0l3.188 3.188c.645.645.645 1.692 0 2.337s-1.692.645-2.337 0l-3.187-3.187c-.645-.646-.645-1.692 0-2.337z" />
+              </g>
+            </g>
+            <path
+              d="M23.662 14.663c2.112 0 3.825-1.713 3.825-3.825s-1.713-3.825-3.825-3.825-3.825 1.713-3.825 3.825 1.713 3.825 3.825 3.825z"
+              fill="#fff" />
+            <path fill-rule="evenodd"
+              d="M23.663 8.429a2.41 2.41 0 0 0-2.408 2.408 2.41 2.41 0 0 0 2.408 2.408 2.41 2.41 0 0 0 2.408-2.408 2.41 2.41 0 0 0-2.408-2.408zm-5.242 2.408c0-2.895 2.347-5.242 5.242-5.242s5.242 2.347 5.242 5.242-2.347 5.242-5.242 5.242-5.242-2.347-5.242-5.242z"
+              fill="currentColor" />
+          </svg>
+        </span>
+        Finder
+      </a>
+
+      <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+      <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+        <div class="offcanvas-header py-3">
+          <h5 class="offcanvas-title" id="navbarNavLabel">Browse Finder</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pt-2 pb-4 py-lg-0 mx-lg-auto">
+          <ul class="navbar-nav position-relative">
+            <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-trigger="hover" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu">
+                <li class="hover-effect-opacity px-2 mx-n2">
+                  <a class="dropdown-item d-block mb-0" href="home-real-estate.php">
+                    <span class="fw-medium">Real Estate</span>
+                    <span class="d-block fs-xs text-body-secondary">Property listings directory</span>
+                    <div
+                      class="d-none d-lg-block hover-effect-target position-absolute top-0 start-100 bg-body border border-light-subtle rounded rounded-start-0 transition-none invisible opacity-0 pt-2 px-2 ms-n2"
+                      style="width: 212px; height: calc(100% + 2px); margin-top: -1px">
+                      <img class="position-relative z-2 d-none-dark" src="assets/img/mega-menu/real-estate-light.jpg"
+                        alt="Real Estate Demo">
+                      <img class="position-relative z-2 d-none d-block-dark"
+                        src="assets/img/mega-menu/real-estate-dark.jpg" alt="Real Estate Demo">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none-dark"
+                        style="box-shadow: .875rem .5rem 2rem -.5rem #676f7b; opacity: .1"></span>
+                      <span
+                        class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none d-block-dark"
+                        style="box-shadow: .875rem .5rem 1.875rem -.5rem #080b12; opacity: .25"></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="hover-effect-opacity px-2 mx-n2">
+                  <a class="dropdown-item d-block mb-0" href="home-cars.php">
+                    <span class="fw-medium">Cars</span>
+                    <span class="d-block fs-xs text-body-secondary">Vehicle sales listings</span>
+                    <div
+                      class="d-none d-lg-block hover-effect-target position-absolute top-0 start-100 bg-body border border-light-subtle rounded rounded-start-0 transition-none invisible opacity-0 pt-2 px-2 ms-n2"
+                      style="width: 212px; height: calc(100% + 2px); margin-top: -1px">
+                      <img class="position-relative z-2 d-none-dark" src="assets/img/mega-menu/cars-light.jpg"
+                        alt="Cars Demo">
+                      <img class="position-relative z-2 d-none d-block-dark" src="assets/img/mega-menu/cars-dark.jpg"
+                        alt="Cars Demo">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none-dark"
+                        style="box-shadow: .875rem .5rem 2rem -.5rem #676f7b; opacity: .1"></span>
+                      <span
+                        class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none d-block-dark"
+                        style="box-shadow: .875rem .5rem 1.875rem -.5rem #080b12; opacity: .25"></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="hover-effect-opacity px-2 mx-n2">
+                  <a class="dropdown-item d-block mb-0" href="home-contractors.php">
+                    <span class="fw-medium">Contractors</span>
+                    <span class="d-block fs-xs text-body-secondary">Professional services directory</span>
+                    <div
+                      class="d-none d-lg-block hover-effect-target position-absolute top-0 start-100 bg-body border border-light-subtle rounded rounded-start-0 transition-none invisible opacity-0 pt-2 px-2 ms-n2"
+                      style="width: 212px; height: calc(100% + 2px); margin-top: -1px">
+                      <img class="position-relative z-2 d-none-dark" src="assets/img/mega-menu/contractors-light.jpg"
+                        alt="Contractors Demo">
+                      <img class="position-relative z-2 d-none d-block-dark"
+                        src="assets/img/mega-menu/contractors-dark.jpg" alt="Contractors Demo">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none-dark"
+                        style="box-shadow: .875rem .5rem 2rem -.5rem #676f7b; opacity: .1"></span>
+                      <span
+                        class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none d-block-dark"
+                        style="box-shadow: .875rem .5rem 1.875rem -.5rem #080b12; opacity: .25"></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="hover-effect-opacity px-2 mx-n2">
+                  <a class="dropdown-item d-block mb-0" href="home-doctors.php">
+                    <span class="fw-medium">Doctors</span>
+                    <span class="d-block fs-xs text-body-secondary">Medical professionals listings</span>
+                    <div
+                      class="d-none d-lg-block hover-effect-target position-absolute top-0 start-100 bg-body border border-light-subtle rounded rounded-start-0 transition-none invisible opacity-0 pt-2 px-2 ms-n2"
+                      style="width: 212px; height: calc(100% + 2px); margin-top: -1px">
+                      <img class="position-relative z-2 d-none-dark" src="assets/img/mega-menu/doctors-light.jpg"
+                        alt="Doctors Demo">
+                      <img class="position-relative z-2 d-none d-block-dark" src="assets/img/mega-menu/doctors-dark.jpg"
+                        alt="Doctors Demo">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none-dark"
+                        style="box-shadow: .875rem .5rem 2rem -.5rem #676f7b; opacity: .1"></span>
+                      <span
+                        class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none d-block-dark"
+                        style="box-shadow: .875rem .5rem 1.875rem -.5rem #080b12; opacity: .25"></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="hover-effect-opacity px-2 mx-n2">
+                  <a class="dropdown-item d-block mb-0" href="home-events.php">
+                    <span class="fw-medium">Events</span>
+                    <span class="d-block fs-xs text-body-secondary">Upcoming events listings</span>
+                    <div
+                      class="d-none d-lg-block hover-effect-target position-absolute top-0 start-100 bg-body border border-light-subtle rounded rounded-start-0 transition-none invisible opacity-0 pt-2 px-2 ms-n2"
+                      style="width: 212px; height: calc(100% + 2px); margin-top: -1px">
+                      <img class="position-relative z-2 d-none-dark" src="assets/img/mega-menu/events-light.jpg"
+                        alt="Events Demo">
+                      <img class="position-relative z-2 d-none d-block-dark" src="assets/img/mega-menu/events-dark.jpg"
+                        alt="Events Demo">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none-dark"
+                        style="box-shadow: .875rem .5rem 2rem -.5rem #676f7b; opacity: .1"></span>
+                      <span
+                        class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none d-block-dark"
+                        style="box-shadow: .875rem .5rem 1.875rem -.5rem #080b12; opacity: .25"></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="hover-effect-opacity px-2 mx-n2">
+                  <a class="dropdown-item d-block mb-0" href="home-city-guide.php">
+                    <span class="fw-medium">City Guide</span>
+                    <span class="d-block fs-xs text-body-secondary">Local places directory</span>
+                    <div
+                      class="d-none d-lg-block hover-effect-target position-absolute top-0 start-100 bg-body border border-light-subtle rounded rounded-start-0 transition-none invisible opacity-0 pt-2 px-2 ms-n2"
+                      style="width: 212px; height: calc(100% + 2px); margin-top: -1px">
+                      <img class="position-relative z-2 d-none-dark" src="assets/img/mega-menu/city-guide-light.jpg"
+                        alt="City Guide Demo">
+                      <img class="position-relative z-2 d-none d-block-dark"
+                        src="assets/img/mega-menu/city-guide-dark.jpg" alt="City Guide Demo">
+                      <span class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none-dark"
+                        style="box-shadow: .875rem .5rem 2rem -.5rem #676f7b; opacity: .1"></span>
+                      <span
+                        class="position-absolute top-0 start-0 w-100 h-100 rounded rounded-start-0 d-none d-block-dark"
+                        style="box-shadow: .875rem .5rem 1.875rem -.5rem #080b12; opacity: .25"></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown position-static py-lg-2 me-lg-n1 me-xl-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-trigger="hover" aria-expanded="false">Listings</a>
+              <div class="dropdown-menu rounded-4 p-4">
+                <div class="d-flex flex-column flex-lg-row gap-4">
+                  <div style="min-width: 190px">
+                    <div class="h6 mb-2">Real Estate</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-real-estate.php">Map/Listings Split View</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="single-entry-real-estate.php">Property Details Page</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="vendor-real-estate.php">Vendor Page</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4 mb-2">Cars</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-grid-cars.php">Listings Grid View</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-list-cars.php">Listings List View</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="single-entry-cars.php">Car Details Page</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4 mb-2">Contractors</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-contractors.php">Listings with Side Filters</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="single-entry-contractors.php">Contractor Details Page</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4 mb-2">Doctors</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-list-doctors.php">Listings List View</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-grid-doctors.php">Listings Grid View</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="single-entry-doctors.php">Doctor Details Page</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div style="min-width: 190px">
+                    <div class="h6 mb-2">Events</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-events.php">Listings with Top Filters</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="single-entry-events.php">Event Details Page</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4 mb-2">City Guide</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-side-filters-city-guide.php">Listings with Side Filters</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="listings-top-filters-city-guide.php">Listings with Top Filters</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="single-entry-city-guide.php">Place Details Page</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4 mb-2">Add Property</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-property-type.php">Property type</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-property-location.php">Location</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-property-photos.php">Photos and Videos</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-property-details.php">Property Details</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-property-price.php">Price</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-property-contact-info.php">Contact Info</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-property-promotion.php">Ad Promotion</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div style="min-width: 190px">
+                    <div class="h6 mb-2">Add Contractor</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-contractor-location.php">Business Location</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-contractor-services.php">Choose Services</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-contractor-profile.php">Profile Details</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-contractor-price-hours.php">Price and Hours</a>
+                      </li>
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0"
+                          href="add-contractor-project.php">Create First Project</a>
+                      </li>
+                    </ul>
+                    <div class="h6 pt-4 mb-2">Add (Sell) Car</div>
+                    <ul class="nav flex-column gap-2 mt-0">
+                      <li class="pt-1">
+                        <a class="nav-link hover-effect-underline d-inline fw-normal p-0" href="add-car.php">Add (Sell)
+                          Car Page</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-trigger="hover" data-bs-auto-close="outside" aria-expanded="false">Account</a>
+              <ul class="dropdown-menu">
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    data-bs-trigger="hover" aria-expanded="false">Auth Pages</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="account-signin.php">Sign In</a></li>
+                    <li><a class="dropdown-item" href="account-signup.php">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="account-password-recovery.php">Password Recovery</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="account-profile.php">My Profile</a></li>
+                <li><a class="dropdown-item" href="account-listings.php">My Listings</a></li>
+                <li><a class="dropdown-item" href="account-reviews.php">Reviews</a></li>
+                <li><a class="dropdown-item" href="account-favorites.php">Favorites</a></li>
+                <li><a class="dropdown-item" href="account-payment.php">Payment Details</a></li>
+                <li><a class="dropdown-item" href="account-settings.php">Account Settings</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown py-lg-2 me-lg-n1 me-xl-0">
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button"
+                data-bs-toggle="dropdown" data-bs-trigger="hover" data-bs-auto-close="outside"
+                aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu">
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                    data-bs-trigger="hover" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about-v1.php">About v.1</a></li>
+                    <li><a class="dropdown-item" href="about-v2.php">About v.2</a></li>
+                  </ul>
+                </li>
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    data-bs-trigger="hover" aria-expanded="false">Blog</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="blog-layout-v1.php">Blog Layout v.1</a></li>
+                    <li><a class="dropdown-item" href="blog-layout-v2.php">Blog Layout v.2</a></li>
+                    <li><a class="dropdown-item" href="blog-layout-v3.php">Blog Layout v.3</a></li>
+                    <li><a class="dropdown-item" href="blog-layout-v4.php">Blog Layout v.4</a></li>
+                    <li><a class="dropdown-item" href="blog-single-v1.php">Single Post v.1</a></li>
+                    <li><a class="dropdown-item" href="blog-single-v2.php">Single Post v.2</a></li>
+                    <li><a class="dropdown-item" href="blog-single-v3.php">Single Post v.3</a></li>
+                  </ul>
+                </li>
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    data-bs-trigger="hover" aria-expanded="false">Contact</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contact-v1.php">Contact v.1</a></li>
+                    <li><a class="dropdown-item" href="contact-v2.php">Contact v.2</a></li>
+                    <li><a class="dropdown-item" href="contact-v3.php">Contact v.3</a></li>
+                  </ul>
+                </li>
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    data-bs-trigger="hover" aria-expanded="false">Help Center</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="help-topics-v1.php">Help Topics v.1</a></li>
+                    <li><a class="dropdown-item" href="help-topics-v2.php">Help Topics v.2</a></li>
+                    <li><a class="dropdown-item" href="help-topics-v3.php">Help Topics v.3</a></li>
+                    <li><a class="dropdown-item" href="help-single-article-v1.php">Help Single Article v.1</a></li>
+                    <li><a class="dropdown-item" href="help-single-article-v2.php">Help Single Article v.2</a></li>
+                    <li><a class="dropdown-item" href="help-single-article-v3.php">Help Single Article v.3</a></li>
+                  </ul>
+                </li>
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    data-bs-trigger="hover" aria-expanded="false">404 Error</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="404-bg-image.php">Background Image (Real Estate)</a></li>
+                    <li><a class="dropdown-item" href="404-icon.php">Icon Image (Cars)</a></li>
+                    <li><a class="dropdown-item" href="404-split-screen.php">Split Screen (Contractors)</a></li>
+                    <li><a class="dropdown-item" href="404-illustration.php">Illustration (City Guide)</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="terms-and-conditions.php">Terms &amp; Conditions</a></li>
+              </ul>
+            </li>
+            <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+              <a class="nav-link" href="ui-typography.php">Components</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Button group -->
+      <div class="d-flex gap-sm-1">
+
+        <!-- Theme switcher (light/dark/auto) -->
+        <div class="dropdown">
+          <button type="button" class="theme-switcher btn btn-icon btn-outline-secondary fs-lg border-0 animate-scale"
+            data-bs-toggle="dropdown" data-bs-display="dynamic" aria-expanded="false" aria-label="Toggle theme (light)">
+            <span class="theme-icon-active d-flex animate-target">
+              <i class="fi-sun"></i>
+            </span>
+          </button>
+          <ul class="dropdown-menu start-50 translate-middle-x"
+            style="--fn-dropdown-min-width: 9rem; --fn-dropdown-spacer: .5rem">
+            <li>
+              <button type="button" class="dropdown-item active" data-bs-theme-value="light" aria-pressed="true">
+                <span class="theme-icon d-flex fs-base me-2">
+                  <i class="fi-sun"></i>
+                </span>
+                <span class="theme-label">Light</span>
+                <i class="item-active-indicator fi-check ms-auto"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false">
+                <span class="theme-icon d-flex fs-base me-2">
+                  <i class="fi-moon"></i>
+                </span>
+                <span class="theme-label">Dark</span>
+                <i class="item-active-indicator fi-check ms-auto"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false">
+                <span class="theme-icon d-flex fs-base me-2">
+                  <i class="fi-auto"></i>
+                </span>
+                <span class="theme-label">Auto</span>
+                <i class="item-active-indicator fi-check ms-auto"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Account button -->
+        <a class="btn btn-icon btn-outline-secondary fs-lg border-0 animate-shake me-2" href="account-signin.php"
+          aria-label="Sign in to account">
+          <i class="fi-user animate-target"></i>
+        </a>
+
+        <!-- Add property button  -->
+        <a class="btn btn-primary animate-scale" href="add-property-type.php">
+          <i class="fi-plus fs-lg animate-target ms-n2 me-1 me-sm-2"></i>
+          Add<span class="d-none d-xl-inline ms-1">property</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Page content -->
+  <main class="content-wrapper">
+
+    <!-- Featured post -->
+    <section class="container pb-5 mb-1 mb-md-2 mb-md-3 mb-lg-4">
+      <div class="bg-body-tertiary rounded overflow-hidden">
+        <div class="row row-cols-1 row-cols-sm-2 g-0">
+          <div class="col position-relative" style="min-height: 220px">
+            <a class="hover-effect-scale position-absolute top-0 start-0 w-100 h-100 overflow-hidden"
+              href="blog-single-v1.php">
+              <img src="assets/img/blog/v1/featured.jpg"
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+            </a>
+          </div>
+          <div class="col p-4 p-md-5">
+            <div class="p-sm-2 p-md-0 p-lg-2 p-xl-4 p-xxl-5">
+              <div class="nav mb-3">
+                <a class="nav-link fs-xs text-uppercase p-0" href="#!">Real estate news</a>
+              </div>
+              <h1>Top trends shaping modern real estate design</h1>
+              <p class="pb-sm-1 pb-md-2 pb-lg-3 pb-xl-0 mb-4 mb-xl-5">Discover the latest trends in contemporary
+                architecture that are transforming modern real estate design today.</p>
+              <a class="btn btn-lg btn-dark" href="blog-single-v1.php">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Blog posts grid -->
+    <section class="container pb-5 mb-xxl-3">
+      <div class="pb-2 pb-sm-3 pb-md-4 pb-lg-5">
+
+        <!-- Categories + Sorting select -->
+        <div class="d-flex align-items-center justify-content-between pb-3 mb-2 mb-md-3">
+          <ul class="nav nav-pills gap-2 d-none d-md-flex">
+            <li class="nav-item me-1">
+              <a class="nav-link active" aria-current="page" href="#!">All</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Real estate news</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="#!">Buying tips</a>
+            </li>
+            <li class="nav-item d-none d-lg-block me-1">
+              <a class="nav-link" href="#!">Selling strategies</a>
+            </li>
+            <li class="nav-item d-none d-xl-block me-1">
+              <a class="nav-link" href="#!">Market trends</a>
+            </li>
+            <li class="nav-item me-1">
+              <button type="button" class="nav-link position-relative border-0" data-bs-toggle="modal"
+                data-bs-target="#categoriesModal">
+                <span class="hover-effect-underline stretched-link">More categories</span>
+                <i class="fi-plus fs-base ms-1"></i>
+              </button>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-outline-secondary d-md-none" data-bs-toggle="modal"
+            data-bs-target="#categoriesModal">
+            <i class="fi-list fs-base ms-n1 me-2"></i>
+            Categories
+          </button>
+          <div class="position-relative" style="width: 125px">
+            <i class="fi-sort position-absolute top-50 start-0 translate-middle-y z-2"></i>
+            <select class="form-select border-0 rounded-0 ps-4 pe-1" data-select='{
+                "removeItemButton": false,
+                "classNames": {
+                  "containerInner": ["form-select", "border-0", "rounded-0", "ps-4", "pe-1"]
+                }
+              }'>
+              <option value="Newest">Newest</option>
+              <option value="Popular">Popular</option>
+            </select>
+          </div>
+        </div>
+
+
+        <!-- Posts grid -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-5">
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/01.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Renting advice</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">What to know when renting an apartment</a>
+            </h3>
+            <p class="fs-sm">It is quite difficult to find a good apartment for long-term rent in large cities. In
+              addition, potential tenants can face prob...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Cody Fisher</a>
+              <span class="text-body-secondary">July 09, 2024</span>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/02.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Investment advice</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">Types of luxury housing</a>
+            </h3>
+            <p class="fs-sm">What luxury housing is clear to every person. Housing characterized by increased comfort,
+              interior, quality and ma...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Kristin Watson</a>
+              <span class="text-body-secondary">June 26, 2024</span>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/03.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Home improvement</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">How to modernize your home on a budget</a>
+            </h3>
+            <p class="fs-sm">Modernizing your home doesn't have to break the bank. Here are some budget-friendly tips to
+              give your living space a mo...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Darrell Steward</a>
+              <span class="text-body-secondary">May 13, 2024</span>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/04.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Selling strategies</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">How real estate drone photography can elevate
+                your listing?</a>
+            </h3>
+            <p class="fs-sm">In the competitive world of real estate, first impressions matter, and drone photography
+              has become a game-chang...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Jacob Jones</a>
+              <span class="text-body-secondary">May 05, 2024</span>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/05.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Interior design</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">10 delightful dining room decor trends for
+                spring season</a>
+            </h3>
+            <p class="fs-sm">As the seasons change, so do the trends in interior design, and the dining room is no
+              exception. Spring brings with it a...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Cody Fisher</a>
+              <span class="text-body-secondary">April 17, 2024</span>
+            </div>
+          </article>
+
+          <!-- Post -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/06.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Home improvement</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">5 easy-to-ambitious projects to improve your
+                home</a>
+            </h3>
+            <p class="fs-sm">Embarking on home improvement projects not only enhances your living space but also
+              provides a fulfilling sense of acc...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Kathryn Murphy</a>
+              <span class="text-body-secondary">April 12, 2024</span>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/07.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Home improvement</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">When is the right time to downsize home?</a>
+            </h3>
+            <p class="fs-sm">Deciding when to downsize your home is a personal choice that depends on various factors.
+              Here are some common...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Darrell Steward</a>
+              <span class="text-body-secondary">March 29, 2024</span>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/08.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Interior design</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">7 tips for achieving maximum coziness</a>
+            </h3>
+            <p class="fs-sm">Creating a cozy atmosphere in your home is a delightful way to enhance comfort and
+              relaxation. Here are seven tips to...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Bessie Cooper</a>
+              <span class="text-body-secondary">March 10, 2024</span>
+            </div>
+          </article>
+
+          <!-- Article -->
+          <article class="col mb-xl-2">
+            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
+              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
+              <img src="assets/img/blog/v1/09.jpg" class="hover-effect-target" alt="Image">
+            </a>
+            <div class="nav pb-1 mb-2">
+              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Investment advice</a>
+            </div>
+            <h3 class="h5 mb-2">
+              <a class="hover-effect-underline" href="blog-single-v1.php">Strategies for real estate investments</a>
+            </h3>
+            <p class="fs-sm">Discover key strategies for successful real estate investments in this guide. From
+              identifying profitable properties to und...</p>
+            <div class="nav fs-sm gap-3">
+              <a class="nav-link fw-semibold p-0" href="#!">by Andrew Richards</a>
+              <span class="text-body-secondary">February 19, 2024</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pt-5" aria-label="Pagination">
+          <ul class="pagination pagination-lg justify-content-center">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">
+                1
+                <span class="visually-hidden">(current)</span>
+              </span>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#!">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#!">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#!">4</a>
+            </li>
+            <li class="page-item">
+              <span class="page-link pe-none">...</span>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#!">8</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Page footer -->
+  <?php include('partials/footer.php') ?>
+
+
+  <!-- Back to top button -->
+  <div class="floating-buttons position-fixed top-50 end-0 z-sticky me-3 me-xl-4 pb-4">
+    <a class="btn-scroll-top btn btn-sm bg-body border-0 rounded-pill shadow animate-slide-end" href="#top">
+      Top
+      <i class="fi-arrow-right fs-base ms-1 me-n1 animate-target"></i>
+      <span class="position-absolute top-0 start-0 w-100 h-100 border rounded-pill z-0"></span>
+      <svg class="position-absolute top-0 start-0 w-100 h-100 z-1" viewBox="0 0 62 32" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect x=".75" y=".75" width="60.5" height="30.5" rx="15.25" stroke="currentColor" stroke-width="1.5"
+          stroke-miterlimit="10" />
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- Vendor scripts -->
+  <script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+
+  <?php include('partials/footer-scripts.php'); ?>
+</body>
+
+</html>
