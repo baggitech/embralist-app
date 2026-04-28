@@ -1,76 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="container pt-4 pt-sm-5 pb-5 mb-xxl-3">
       <div class="row pt-2 pt-sm-0 pt-lg-2 pb-2 pb-sm-3 pb-md-4 pb-lg-5">
 
 
-        <!-- Sidebar navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
-        <aside class="col-lg-3" style="margin-top: -105px">
-          <div class="offcanvas-lg offcanvas-start sticky-lg-top pe-lg-3 pe-xl-4" id="accountSidebar">
-            <div class="d-none d-lg-block" style="height: 105px"></div>
-
-            <!-- Header -->
-            <div class="offcanvas-header d-lg-block py-3 p-lg-0">
-              <div class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start">
-                <div class="flex-shrink-0 bg-body-secondary border rounded-circle overflow-hidden"
-                  style="width: 64px; height: 64px">
-                  <img src="assets/img/account/avatar.jpg" alt="Avatar">
-                </div>
-                <div class="pt-lg-3 ps-3 ps-lg-0">
-                  <h6 class="mb-1">Michael Williams</h6>
-                  <p class="fs-sm mb-0">m.williams@example.com</p>
-                </div>
-              </div>
-              <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"
-                data-bs-target="#accountSidebar" aria-label="Close"></button>
-            </div>
-
-            <!-- Body (Navigation) -->
-            <div class="offcanvas-body d-block pt-2 pt-lg-4 pb-lg-0">
-              <nav class="list-group list-group-borderless">
-                <a class="list-group-item list-group-item-action d-flex align-items-center active" aria-current="page"
-                  href="account-profile.php">
-                  <i class="fi-user fs-base opacity-75 me-2"></i>
-                  My profile
-                </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center"
-                  href="account-listings.php">
-                  <i class="fi-layers fs-base opacity-75 me-2"></i>
-                  My listings
-                </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center" href="account-reviews.php">
-                  <i class="fi-star fs-base opacity-75 me-2"></i>
-                  Reviews
-                </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center"
-                  href="account-favorites.php">
-                  <i class="fi-heart fs-base opacity-75 me-2"></i>
-                  Favorites
-                </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center" href="account-payment.php">
-                  <i class="fi-credit-card fs-base opacity-75 me-2"></i>
-                  Payment details
-                </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center"
-                  href="account-settings.php">
-                  <i class="fi-settings fs-base opacity-75 me-2"></i>
-                  Account settings
-                </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center" href="help-topics-v1.php">
-                  <i class="fi-help-circle fs-base opacity-75 me-2"></i>
-                  Help center
-                </a>
-              </nav>
-              <nav class="list-group list-group-borderless pt-3">
-                <a class="list-group-item list-group-item-action d-flex align-items-center" href="account-signin.php">
-                  <i class="fi-log-out fs-base opacity-75 me-2"></i>
-                  Sign out
-                </a>
-              </nav>
-            </div>
-          </div>
-        </aside>
+        @include('partials.aside')
 
 
         <!-- Account profile content -->
@@ -135,7 +71,7 @@
           <section class="pb-5 mb-md-3">
             <div class="ratio ratio-1x1 bg-body-tertiary border rounded-circle overflow-hidden mb-3 mb-md-4"
               style="width: 124px">
-              <img src="assets/img/account/avatar-lg.jpg" alt="Avatar">
+              <img src="{{ asset('assets/img/account/avatar-lg.jpg') }}" alt="Avatar">
             </div>
             <h2 class="h5 pb-1 pb-sm-0 mb-2 mb-sm-3">Michael Williams</h2>
             <ul class="list-unstyled flex-row flex-wrap gap-sm-3 fs-sm mb-3">
@@ -177,7 +113,7 @@
                 <div class="row g-0">
                   <div class="col-sm-4 col-md-3 rounded overflow-hidden pb-2 pb-sm-0 pe-sm-2">
                     <a class="position-relative d-flex h-100 bg-body-tertiary" href="#!" style="min-height: 174px">
-                      <img src="assets/img/listings/real-estate/01.jpg"
+                      <img src="{{ asset('assets/img/listings/real-estate/01.jpg') }}"
                         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
                       <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(180 / 240 * 100%)"></div>
                       <div class="ratio ratio-16x9 d-sm-none"></div>
@@ -255,7 +191,7 @@
                 <div class="row g-0">
                   <div class="col-sm-4 col-md-3 rounded overflow-hidden pb-2 pb-sm-0 pe-sm-2">
                     <a class="position-relative d-flex h-100 bg-body-tertiary" href="#!" style="min-height: 174px">
-                      <img src="assets/img/listings/real-estate/02.jpg"
+                      <img src="{{ asset('assets/img/listings/real-estate/02.jpg') }}"
                         class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
                       <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(180 / 240 * 100%)"></div>
                       <div class="ratio ratio-16x9 d-sm-none"></div>
@@ -368,7 +304,7 @@
                   <div class="d-flex align-items-center pe-3">
                     <div class="ratio ratio-1x1 flex-shrink-0 bg-body-secondary rounded-circle overflow-hidden"
                       style="width: 48px">
-                      <img src="assets/img/account/reviews/ava01.jpg" alt="Avatar">
+                      <img src="{{ asset('assets/img/account/reviews/ava01.jpg') }}" alt="Avatar">
                     </div>
                     <div class="ps-3">
                       <h6 class="mb-1">Randy Walker</h6>
@@ -428,21 +364,21 @@
                       <a class="swiper-wrapper" href="#!">
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/06.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/06.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/06.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/06.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/06.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/06.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
@@ -524,21 +460,21 @@
                       <a class="swiper-wrapper" href="#!">
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/03.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/03.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/03.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/03.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/03.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/03.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
@@ -621,21 +557,21 @@
                       <a class="swiper-wrapper" href="#!">
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/05.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/05.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/05.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/05.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                            <img src="assets/img/listings/real-estate/05.jpg" alt="Image">
+                            <img src="{{ asset('assets/img/listings/real-estate/05.jpg') }}" alt="Image">
                             <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
                               style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
                           </div>
@@ -731,4 +667,5 @@
         </div>
       </div>
     </div>
+
 @endsection

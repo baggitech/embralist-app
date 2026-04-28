@@ -6,9 +6,25 @@
 
     @include('partials/title-meta')
 
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}">
 
-    @include('partials/head-css')
+  <!-- Theme switcher (color modes) -->
+  <script src="{{ asset('assets/js/theme-switcher.js') }}"></script>
+
+  <!-- Preloaded local web font (Inter) -->
+  <link rel="preload" href="{{ asset('assets/fonts/inter-variable-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+
+  <!-- Font icons -->
+  <link rel="preload" href="{{ asset('assets/icons/finder-icons.woff2') }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ asset('assets/icons/finder-icons.min.css') }}">
+
+  <!-- Bootstrap + Theme styles -->
+  <link rel="preload" href="{{ asset('assets/css/theme.min.css') }}" as="style">
+  <link rel="preload" href="{{ asset('assets/css/theme.rtl.min.css') }}" as="style">
+  <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}" id="theme-styles">
+
+  @vite(['resources/scss/app.scss'])
 
 </head>
 
@@ -59,7 +75,16 @@
         </div>
     </main>
 
-    @include('partials/footer-scripts')
+  <!-- Vendor scripts -->
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>  
+
+  <!-- Bootstrap + Theme scripts -->
+  <script src="{{ asset('assets/js/theme.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
+
+  @vite(['resources/js/app.js'])
+
+
 </body>
 
 </html>

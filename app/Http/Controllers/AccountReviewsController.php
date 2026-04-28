@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AccountController extends Controller
+class AccountReviewsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,6 +12,7 @@ class AccountController extends Controller
     public function index()
     {
         //
+        return view('account.reviews.index');
     }
 
     /**

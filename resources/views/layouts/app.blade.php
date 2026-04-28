@@ -8,12 +8,24 @@
 
 
   <!-- Vendor styles -->
-  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}">
 
-  @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+  <!-- Theme switcher (color modes) -->
+  <script src="{{ asset('assets/js/theme-switcher.js') }}"></script>
 
-  @include('partials/head-css')
+  <!-- Preloaded local web font (Inter) -->
+  <link rel="preload" href="{{ asset('assets/fonts/inter-variable-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
 
+  <!-- Font icons -->
+  <link rel="preload" href="{{ asset('assets/icons/finder-icons.woff2') }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ asset('assets/icons/finder-icons.min.css') }}">
+
+  <!-- Bootstrap + Theme styles -->
+  <link rel="preload" href="{{ asset('assets/css/theme.min.css') }}" as="style">
+  <link rel="preload" href="{{ asset('assets/css/theme.rtl.min.css') }}" as="style">
+  <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}" id="theme-styles">
+
+  @vite(['resources/scss/app.scss'])
   
 
 </head>
@@ -34,7 +46,7 @@
 
 
   <!-- Page footer -->
-  @include('partials/footer2')
+  @include('partials/footer')
 
 
   <!-- Back to top button -->
@@ -51,11 +63,15 @@
     </a>
   </div>
 
-
   <!-- Vendor scripts -->
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>  
 
-  @include('partials/footer-scripts')
+  <!-- Bootstrap + Theme scripts -->
+  <script src="{{ asset('assets/js/theme.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
+
+  @vite(['resources/js/app.js'])
+
 </body>
 
 </html>

@@ -471,39 +471,39 @@
           <ul class="dropdown-menu dropdown-menu-end" style="--fn-dropdown-spacer: .5rem">
             <li><span class="h6 dropdown-header">{{ auth()->user()->name }}</span></li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="{{ route('account.profile.index') }}">
                 <i class="fi-user opacity-75 me-2"></i>
-                My profile
+                Meu perfil
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="account-listings.php">
+              <a class="dropdown-item" href="{{ route('account.listings.index') }}">
                 <i class="fi-layers opacity-75 me-2"></i>
-                My listings
+                Meus anúncios
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="account-reviews.php">
+              <a class="dropdown-item" href="{{ route('account.reviews.index') }}">
                 <i class="fi-star opacity-75 me-2"></i>
-                Reviews
+                Avaliações
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="account-favorites.php">
+              <a class="dropdown-item" href="{{ route('account.favorites.index') }}">
                 <i class="fi-heart opacity-75 me-2"></i>
-                Favorites
+                Favoritos
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="account-payment.php">
+              <a class="dropdown-item" href="{{ route('account.payments.index') }}">
                 <i class="fi-credit-card opacity-75 me-2"></i>
-                Payment details
+                Detalhes de pagamento
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="account-settings.php">
+              <a class="dropdown-item" href="{{ route('account.settings.index') }}">
                 <i class="fi-settings opacity-75 me-2"></i>
-                Account settings
+                Configurações da conta
               </a>
             </li>
             <li>
@@ -512,7 +512,7 @@
             <li>
               <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                  <button class="dropdown-item">
+                  <button class="dropdown-item" type="submit">
                     <i class="fi-log-out opacity-75 me-2"></i>
                       Sair
                   </button>
