@@ -33,13 +33,13 @@
               fill="currentColor" />
           </svg>
         </span>
-        Finder
+        Embralist
       </a>
 
       <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
       <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
         <div class="offcanvas-header py-3">
-          <h5 class="offcanvas-title" id="navbarNavLabel">Browse Finder</h5>
+          <h5 class="offcanvas-title" id="navbarNavLabel">Browse Embralist</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body pt-2 pb-4 py-lg-0 mx-lg-auto">

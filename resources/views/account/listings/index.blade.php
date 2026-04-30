@@ -81,7 +81,7 @@
                     <div class="row g-0">
                       <div class="col-sm-4 col-md-3 rounded overflow-hidden pb-2 pb-sm-0 pe-sm-2">
                         <a class="position-relative d-flex h-100 bg-body-tertiary" href="#!" style="min-height: 174px">
-                          <img src="assets/img/listings/real-estate/01.jpg"
+                          <img src="{{ asset('assets/img/listings/real-estate/01.jpg') }}"
                             class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
                           <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(180 / 240 * 100%)"></div>
                           <div class="ratio ratio-16x9 d-sm-none"></div>
@@ -168,7 +168,7 @@
                     <div class="row g-0">
                       <div class="col-sm-4 col-md-3 rounded overflow-hidden pb-2 pb-sm-0 pe-sm-2">
                         <a class="position-relative d-flex h-100 bg-body-tertiary" href="#!" style="min-height: 174px">
-                          <img src="assets/img/listings/real-estate/02.jpg"
+                          <img src="{{ asset('assets/img/listings/real-estate/02.jpg') }}"
                             class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
                           <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(180 / 240 * 100%)"></div>
                           <div class="ratio ratio-16x9 d-sm-none"></div>
@@ -255,7 +255,7 @@
                     <div class="row g-0">
                       <div class="col-sm-4 col-md-3 rounded overflow-hidden pb-2 pb-sm-0 pe-sm-2">
                         <a class="position-relative d-flex h-100 bg-body-tertiary" href="#!" style="min-height: 174px">
-                          <img src="assets/img/listings/real-estate/06.jpg"
+                          <img src="{{ asset('assets/img/listings/real-estate/06.jpg') }}"
                             class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
                           <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(180 / 240 * 100%)"></div>
                           <div class="ratio ratio-16x9 d-sm-none"></div>

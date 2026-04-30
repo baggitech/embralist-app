@@ -44,7 +44,7 @@
                   <div class="d-flex align-items-center pe-3">
                     <div class="ratio ratio-1x1 flex-shrink-0 bg-body-secondary rounded-circle overflow-hidden"
                       style="width: 48px">
-                      <img src="assets/img/account/reviews/ava01.jpg" alt="Avatar">
+                      <img src="{{ asset('assets/img/account/reviews/ava01.jpg') }}" alt="Avatar">
                     </div>
                     <div class="ps-3">
                       <h6 class="mb-1">Randy Walker</h6>
@@ -69,7 +69,7 @@
                   <div class="d-flex align-items-center mb-3">
                     <div class="ratio ratio-1x1 flex-shrink-0 bg-body-secondary rounded-circle overflow-hidden"
                       style="width: 38px">
-                      <img src="assets/img/account/avatar-sm.jpg" alt="Avatar">
+                      <img src="{{ asset('assets/img/account/avatar-sm.jpg') }}" alt="Avatar">
                     </div>
                     <div class="ps-3">
                       <h6 class="mb-1">Michael Williams</h6>
@@ -117,29 +117,29 @@
                     <span
                       class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
                     <div class="ratio ratio-1x1 hover-effect-target bg-body-tertiary">
-                      <img src="assets/img/account/reviews/01.jpg" alt="Image">
+                      <img src="{{ asset('assets/img/account/reviews/01.jpg') }}" alt="Image">
                     </div>
                   </a>
                   <a class="hover-effect-scale hover-effect-opacity position-relative d-block w-100 rounded overflow-hidden"
-                    href="assets/img/listings/real-estate/single/03.jpg" style="max-width: 112px" data-glightbox
+                    href="{{ asset('assets/img/listings/real-estate/single/03.jpg') }}" style="max-width: 112px" data-glightbox
                     data-gallery="review-images">
                     <i
                       class="fi-zoom-in hover-effect-target fs-4 text-white position-absolute top-50 start-50 translate-middle opacity-0 z-2"></i>
                     <span
                       class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
                     <div class="ratio ratio-1x1 hover-effect-target bg-body-tertiary">
-                      <img src="assets/img/account/reviews/02.jpg" alt="Image">
+                      <img src="{{ asset('assets/img/account/reviews/02.jpg') }}" alt="Image">
                     </div>
                   </a>
                   <a class="hover-effect-scale hover-effect-opacity position-relative d-block w-100 rounded overflow-hidden"
-                    href="assets/img/listings/real-estate/single/02.jpg" style="max-width: 112px" data-glightbox
+                    href="{{ asset('assets/img/listings/real-estate/single/02.jpg') }}" style="max-width: 112px" data-glightbox
                     data-gallery="review-images">
                     <i
                       class="fi-zoom-in hover-effect-target fs-4 text-white position-absolute top-50 start-50 translate-middle opacity-0 z-2"></i>
                     <span
                       class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-25 opacity-0 z-1"></span>
                     <div class="ratio ratio-1x1 hover-effect-target bg-body-tertiary">
-                      <img src="assets/img/account/reviews/03.jpg" alt="Image">
+                      <img src="{{ asset('assets/img/account/reviews/03.jpg') }}" alt="Image">
                     </div>
                   </a>
                 </div>
@@ -163,7 +163,7 @@
                   <div class="d-flex align-items-center pe-3">
                     <div class="ratio ratio-1x1 flex-shrink-0 bg-body-secondary rounded-circle overflow-hidden"
                       style="width: 48px">
-                      <img src="assets/img/account/reviews/ava03.jpg" alt="Avatar">
+                      <img src="{{ asset('assets/img/account/reviews/ava03.jpg') }}" alt="Avatar">
                     </div>
                     <div class="ps-3">
                       <h6 class="mb-1">Darrell Steward</h6>
@@ -205,7 +205,7 @@
                   <div class="d-flex align-items-center pe-3">
                     <div class="ratio ratio-1x1 flex-shrink-0 bg-body-secondary rounded-circle overflow-hidden"
                       style="width: 48px">
-                      <img src="assets/img/account/reviews/ava04.jpg" alt="Avatar">
+                      <img src="{{ asset('assets/img/account/reviews/ava04.jpg') }}" alt="Avatar">
                     </div>
                     <div class="ps-3">
                       <h6 class="mb-1">Ralph Edwards</h6>
@@ -265,7 +265,7 @@
               <div class="border-bottom pb-4">
                 <div class="d-flex align-items-start align-items-sm-center mb-3">
                   <div class="ratio ratio-1x1" style="max-width: 112px">
-                    <img src="assets/img/account/reviews/01.jpg" class="bg-body-tertiary rounded" alt="Image">
+                    <img src="{{ asset('assets/img/account/reviews/01.jpg') }}" class="bg-body-tertiary rounded" alt="Image">
                   </div>
                   <div class="d-flex align-items-start justify-content-between w-100">
                     <div class="ps-3 pe-2 pe-sm-3">
@@ -333,7 +333,7 @@
               <div class="border-bottom py-4">
                 <div class="d-flex align-items-start align-items-sm-center mt-2 mb-3">
                   <div class="ratio ratio-1x1" style="max-width: 112px">
-                    <img src="assets/img/account/reviews/02.jpg" class="bg-body-tertiary rounded" alt="Image">
+                    <img src="{{ asset('assets/img/account/reviews/02.jpg') }}" class="bg-body-tertiary rounded" alt="Image">
                   </div>
                   <div class="d-flex align-items-start justify-content-between w-100">
                     <div class="ps-3 pe-2 pe-sm-3">
@@ -402,7 +402,7 @@
               <div class="border-bottom py-4">
                 <div class="d-flex align-items-start align-items-sm-center mt-2 mb-3">
                   <div class="ratio ratio-1x1" style="max-width: 112px">
-                    <img src="assets/img/account/reviews/04.jpg" class="bg-body-tertiary rounded" alt="Image">
+                    <img src="{{ asset('assets/img/account/reviews/04.jpg') }}" class="bg-body-tertiary rounded" alt="Image">
                   </div>
                   <div class="d-flex align-items-start justify-content-between w-100">
                     <div class="ps-3 pe-2 pe-sm-3">
@@ -472,7 +472,7 @@
               <div class="border-bottom py-4">
                 <div class="d-flex align-items-start align-items-sm-center mt-2 mb-3">
                   <div class="ratio ratio-1x1" style="max-width: 112px">
-                    <img src="assets/img/account/reviews/05.jpg" class="bg-body-tertiary rounded" alt="Image">
+                    <img src="{{ asset('assets/img/account/reviews/05.jpg') }}" class="bg-body-tertiary rounded" alt="Image">
                   </div>
                   <div class="d-flex align-items-start justify-content-between w-100">
                     <div class="ps-3 pe-2 pe-sm-3">

@@ -22,30 +22,30 @@
             <!-- Body (Navigation) -->
             <div class="offcanvas-body d-block pt-2 pt-lg-4 pb-lg-0">
               <nav class="list-group list-group-borderless">
-                <a class="list-group-item list-group-item-action d-flex align-items-center active" aria-current="page"
+                <a class="list-group-item list-group-item-action d-flex align-items-center {{ request()->routeIs('account.profile.index') ? 'active' : '' }}" aria-current="page"
                   href="{{ route('account.profile.index') }}">
                   <i class="fi-user fs-base opacity-75 me-2"></i>
                   Meu perfil
                 </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center"
+                <a class="list-group-item list-group-item-action d-flex align-items-center {{ request()->routeIs('account.listings.index') ? 'active' : '' }}"
                   href="{{ route('account.listings.index') }}">
                   <i class="fi-layers fs-base opacity-75 me-2"></i>
                   Meus anúncios
                 </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center" href="{{ route('account.reviews.index') }}">
+                <a class="list-group-item list-group-item-action d-flex align-items-center {{ request()->routeIs('account.reviews.index') ? 'active' : '' }}" href="{{ route('account.reviews.index') }}">
                   <i class="fi-star fs-base opacity-75 me-2"></i>
                   Avaliações
                 </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center"
+                <a class="list-group-item list-group-item-action d-flex align-items-center {{ request()->routeIs('account.favorites.index') ? 'active' : '' }}"
                   href="{{ route('account.favorites.index') }}">
                   <i class="fi-heart fs-base opacity-75 me-2"></i>
                   Favoritos
                 </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center" href="{{ route('account.payments.index') }}">
+                <a class="list-group-item list-group-item-action d-flex align-items-center {{ request()->routeIs('account.payments.index') ? 'active' : '' }}" href="{{ route('account.payments.index') }}">
                   <i class="fi-credit-card fs-base opacity-75 me-2"></i>
                   Detalhes de pagamento
                 </a>
-                <a class="list-group-item list-group-item-action d-flex align-items-center"
+                <a class="list-group-item list-group-item-action d-flex align-items-center {{ request()->routeIs('account.settings.index') ? 'active' : '' }}"
                   href="{{ route('account.settings.index') }}">
                   <i class="fi-settings fs-base opacity-75 me-2"></i>
                   Configurações da conta
