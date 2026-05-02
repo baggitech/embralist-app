@@ -1,5 +1,18 @@
 @extends('layouts.app')
 
+@push('styles')
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="{{ asset('assets/vendor/choices.js/public/assets/styles/choices.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendor/flatpickr/dist/flatpickr.min.css') }}">
+@endpush
+
+@push('scripts')
+  <!-- Vendor scripts -->
+  <script src="{{ asset('assets/vendor/cleave.js/dist/cleave.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/choices.js/public/assets/scripts/choices.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/flatpickr/dist/flatpickr.min.js') }}"></script>
+@endpush
+
 @section('content')
 
     <div class="container pt-4 pt-sm-5 pb-5 mb-xxl-3">
@@ -403,3 +416,4 @@
     </div>
 
 @endsection
+
