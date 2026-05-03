@@ -9,11 +9,6 @@
   <!-- CSS por página -->
   @stack('styles')
 
-  @push('styles')
-    <!-- Vendor styles -->
-    <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}">
-  @endpush
-
   @include('partials.head-css')
 
   @vite(['resources/scss/app.scss'])
@@ -56,11 +51,6 @@
 
   <!-- JS por página -->
   @stack('scripts')
-
-  @push('scripts')
-    <!-- Vendor scripts -->
-    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script> 
-  @endpush 
 
   @include('partials.footer-scripts')
 

@@ -1,3 +1,6 @@
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}">
+ 
   <!-- Theme switcher (color modes) -->
   <script src="{{ asset('assets/js/theme-switcher.js') }}"></script>
 
