@@ -4,12 +4,46 @@
 <head>
   <?php $title = "Contractors - Homepage"; ?>
 
-  @include('partials/title-meta')
+  <meta charset="utf-8">
+
+  <!-- Viewport -->
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+  <!-- SEO Meta Tags -->
+  <title>Finder | <?php echo $title ?></title>
+  <meta name="description" content="Finder - Directory & Listings Bootstrap HTML Template">
+  <meta name="keywords"
+      content="directory, listings, search, car dealer, real estate, city guide, business listings, medical directories, event listings, e-commerce, market, multipurpose, ui kit, light and dark mode, bootstrap, html5, css3, javascript, gallery, slider, mobile, pwa">
+  <meta name="author" content="Coderthemes">
+
+  <!-- Webmanifest + Favicon / App icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
 
   <!-- CSS por página -->
   @stack('styles')
 
-  @include('partials.head-css')
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}">
+ 
+  <!-- Theme switcher (color modes) -->
+  <script src="{{ asset('assets/js/theme-switcher.js') }}"></script>
+
+  <!-- Preloaded local web font (Inter) -->
+  <link rel="preload" href="{{ asset('assets/fonts/inter-variable-latin.woff2') }}" as="font" type="font/woff2" crossorigin>
+
+  <!-- Font icons -->
+  <link rel="preload" href="{{ asset('assets/icons/finder-icons.woff2') }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ asset('assets/icons/finder-icons.min.css') }}">
+
+  <!-- Bootstrap + Theme styles -->
+  <link rel="preload" href="{{ asset('assets/css/theme.min.css') }}" as="style">
+  <link rel="preload" href="{{ asset('assets/css/theme.rtl.min.css') }}" as="style">
+  <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}" id="theme-styles">
 
   @vite(['resources/scss/app.scss'])
   
@@ -24,16 +58,11 @@
   <!-- Navigation bar (Page header) -->
   @include('partials/header')
 
-
   <!-- Page content -->
-  <main class="content-wrapper">
-    @yield('content')
-  </main>
-
-
+  @yield('content')
+  
   <!-- Page footer -->
   @include('partials/footer')
-
 
   <!-- Back to top button -->
   <div class="floating-buttons position-fixed top-50 end-0 z-sticky me-3 me-xl-4 pb-4">
@@ -52,7 +81,13 @@
   <!-- JS por página -->
   @stack('scripts')
 
-  @include('partials.footer-scripts')
+ 
+  <!-- Vendor scripts -->
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+ 
+  <!-- Bootstrap + Theme scripts -->
+  <script src="{{ asset('assets/js/theme.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/list.js/dist/list.min.js') }}"></script>
 
   @vite(['resources/js/app.js'])
 

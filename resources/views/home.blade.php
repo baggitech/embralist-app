@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+  <main class="content-wrapper">
     <!-- Hero with search form -->
     <section class="position-relative bg-info overflow-hidden py-5">
       <div class="container position-relative z-2 pb-2 py-sm-4 py-md-5 my-xxl-4">
@@ -1042,4 +1042,5 @@
       </div>
     </section>
 
+  </main>
 @endsection

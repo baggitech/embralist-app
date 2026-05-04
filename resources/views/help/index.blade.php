@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<main class="content-wrapper">
     <!-- Hero with search form -->
     <section class="container pb-5 mb-lg-3">
       <div class="bg-info rounded" data-bs-theme="light">
@@ -1151,5 +1151,5 @@
         </div>
       </div>
     </section>
-
+</main>
 @endsection

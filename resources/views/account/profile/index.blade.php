@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<main class="content-wrapper">
     <div class="container pt-4 pt-sm-5 pb-5 mb-xxl-3">
       <div class="row pt-2 pt-sm-0 pt-lg-2 pb-2 pb-sm-3 pb-md-4 pb-lg-5">
 
@@ -667,5 +667,5 @@
         </div>
       </div>
     </div>
-
+</main>
 @endsection
