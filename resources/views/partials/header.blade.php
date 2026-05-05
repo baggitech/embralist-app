@@ -8,7 +8,7 @@
       </button>
 
       <!-- Navbar brand (Logo) -->
-      <a class="navbar-brand py-1 py-md-2 py-xl-1 me-2 me-sm-n4 me-md-n5 me-lg-0" href="index.php">
+      <a class="navbar-brand py-1 py-md-2 py-xl-1 me-2 me-sm-n4 me-md-n5 me-lg-0" href="{{ route('home') }}">
         <span class="d-none d-sm-flex flex-shrink-0 text-primary rtl-flip me-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34">
             <path

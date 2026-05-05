@@ -8,11 +8,10 @@ use App\Http\Controllers\AccountReviewsController;
 use App\Http\Controllers\AccountSettingsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HelpController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 Route::middleware(['auth'])->group(function () {
