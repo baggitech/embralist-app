@@ -152,11 +152,13 @@
         </div>
         @endauth
 
+        @guest
         <!-- Join button  -->
-        <a class="btn btn-primary animate-scale" href="{{ route('register') }}">
+        <a class="btn btn-primary animate-scale" href="{{ route('contractors.location') }}">
           <i class="fi-plus fs-lg animate-target ms-n2 me-1 me-sm-2"></i>
-          Join<span class="d-none d-xl-inline ms-1">Pro Network</span>
+          <span class="d-none d-xl-inline ms-1">Cadastre-se</span>
         </a>
+        @endguest
 
       </div>
     </div>

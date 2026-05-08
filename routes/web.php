@@ -9,9 +9,17 @@ use App\Http\Controllers\AccountSettingsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HelpController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContractorController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/contractors/location', [ContractorController::class, 'addContractorLocation'])->name('contractors.location');
+Route::get('/contractors/services', [ContractorController::class, 'addContractorServices'])->name('contractors.services');
+Route::get('/contractors/profile', [ContractorController::class, 'addContractorProfile'])->name('contractors.profile');
+Route::get('/contractors/price-hours', [ContractorController::class, 'addContractorPriceHours'])->name('contractors.price-hours');
+Route::get('/contractors/project', [ContractorController::class, 'addContractorProject'])->name('contractors.project');
+
 
 
 Route::middleware(['auth'])->group(function () {
