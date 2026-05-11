@@ -4,62 +4,7 @@
   <!-- Page content -->
   <main class="content-wrapper">
 
-    <!-- Steps (Navigation) -->
-    <div class="sticky-top bg-info pt-3" style="margin-top: -76px">
-      <div class="d-block d-md-none" style="height: 62px"></div>
-      <div class="d-none d-md-block d-lg-none" style="height: 70px"></div>
-      <div class="d-none d-lg-block" style="height: 76px"></div>
-      <div class="container pt-md-1">
-        <div class="overflow-x-auto">
-          <div class="d-flex flex-nowrap align-items-center gap-1 pb-3 mb-md-1">
-            <div class="d-flex align-items-center gap-2 gap-sm-3 text-nowrap">
-              <div class="d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0"
-                style="width: 44px; height: 44px">
-                <i class="fi-map fs-lg text-info"></i>
-              </div>
-              <div class="fs-sm fw-semibold text-white">Business location</div>
-            </div>
-            <hr class="w-100 text-white opacity-25 my-0 mx-2">
-            <div class="d-flex align-items-center gap-2 gap-sm-3 text-nowrap">
-              <div
-                class="d-flex align-items-center justify-content-center border border-white rounded-circle flex-shrink-0"
-                style="width: 44px; height: 44px">
-                <i class="fi-swatches fs-lg text-white"></i>
-              </div>
-              <div class="fs-sm fw-semibold text-white">Choose services</div>
-            </div>
-            <hr class="w-100 text-white opacity-25 my-0 mx-2">
-            <div class="d-flex align-items-center gap-2 gap-sm-3 text-nowrap">
-              <div
-                class="d-flex align-items-center justify-content-center border border-white rounded-circle flex-shrink-0"
-                style="width: 44px; height: 44px">
-                <i class="fi-user-check fs-lg text-white"></i>
-              </div>
-              <div class="fs-sm fw-semibold text-white">Profile details</div>
-            </div>
-            <hr class="w-100 text-white opacity-25 my-0 mx-2">
-            <div class="d-flex align-items-center gap-2 gap-sm-3 text-nowrap">
-              <div
-                class="d-flex align-items-center justify-content-center border border-white rounded-circle flex-shrink-0"
-                style="width: 44px; height: 44px">
-                <i class="fi-clock fs-lg text-white"></i>
-              </div>
-              <div class="fs-sm fw-semibold text-white">Price and hours</div>
-            </div>
-            <hr class="w-100 text-white opacity-25 my-0 mx-2">
-            <div class="d-flex align-items-center gap-2 gap-sm-3 text-nowrap">
-              <div
-                class="d-flex align-items-center justify-content-center border border-white rounded-circle flex-shrink-0"
-                style="width: 44px; height: 44px">
-                <i class="fi-grid fs-lg text-white"></i>
-              </div>
-              <div class="fs-sm fw-semibold text-white">Create first project</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    @include('partials.steps-contractors')
 
     <!-- Business location page content -->
     <div class="container py-5 mb-xxl-3">
@@ -196,7 +141,7 @@
 
           <!-- Next step button -->
           <div class="pt-5">
-            <a class="btn btn-lg btn-dark" href="add-contractor-services.php">
+            <a class="btn btn-lg btn-dark" href="{{ route('contractors.services') }}">
               Go to services
               <i class="fi-chevron-right fs-lg ms-1 me-n2"></i>
             </a>
@@ -271,6 +216,7 @@
               fill="currentColor" style="color: var(--fn-info-border-subtle)" />
           </svg>
         </div>
+
       </div>
     </div>
   </main>
