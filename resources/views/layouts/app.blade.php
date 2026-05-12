@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="light" data-pwa="true">
 
 <head>
-  <?php $title = "Contractors - Homepage"; ?>
+  <?php $title = "Homepage"; ?>
 
   <meta charset="utf-8">
 
