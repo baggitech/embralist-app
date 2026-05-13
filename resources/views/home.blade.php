@@ -21,8 +21,8 @@
       <div class="container position-relative z-1 pt-5 pt-md-4 pt-xl-5">
         <div class="row pt-lg-3 pt-xl-0 pt-xxl-4 pb-4 pb-md-5 pb-xl-0">
           <div class="col-md-6 col-xxl-5 text-center text-md-start">
-            <h1 class="display-4 pb-sm-1 pb-lg-3">Easy way to find a perfect property</h1>
-            <p class="fs-lg mb-md-0">We provide a complete service for the sale, purchase or rental of real estate.</p>
+            <h1 class="display-4 pb-sm-1 pb-lg-3">Encontrar o imóvel perfeito</h1>
+            <p class="fs-lg mb-md-0">Oferecemos um serviço completo para a venda, compra ou aluguel de imóveis.</p>
           </div>
         </div>
         <div class="d-none d-md-block d-lg-none" style="height: 70px"></div>
@@ -130,7 +130,7 @@
             <div class="d-none d-xxl-block" style="height: 366px"></div>
             <div class="position-relative overflow-hidden">
               <div class="position-absolute top-0 z-1 fw-bold"
-                style="right: 0; margin: -75px 96px 0 0; font-size: 128px; color: var(--fn-body-bg)">Buy</div>
+                style="right: 0; margin: -40px 0 0 0; font-size: 122px; color: var(--fn-body-bg)">Comprar</div>
               <div class="ratio bg-body-tertiary rounded overflow-hidden"
                 style="--fn-aspect-ratio: calc(328 / 768 * 100%)">
                 <img src="assets/img/home/real-estate/hero/01.jpg" alt="Image">
@@ -140,8 +140,8 @@
           <div style="width: 306px">
             <div class="position-relative overflow-hidden">
               <div class="position-absolute top-0 z-1 fw-bold"
-                style="left: 0; margin: -10px 0 0 -69px; font-size: 128px; color: var(--fn-body-bg); writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(-180deg)">
-                Sell</div>
+                style="left: 0; margin: 1px 0 0 -40px; font-size: 116px; color: var(--fn-body-bg); writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(-180deg)">
+                Vender</div>
               <div class="ratio bg-info rounded overflow-hidden" style="--fn-aspect-ratio: calc(443 / 306 * 100%)">
                 <img src="assets/img/home/real-estate/hero/02.png" alt="Image">
               </div>
@@ -151,7 +151,7 @@
             <div style="height: 117px"></div>
             <div class="position-relative overflow-hidden">
               <div class="position-absolute top-0 z-1 fw-bold"
-                style="left: 0; margin: -73px 0 0 -18px; font-size: 128px; color: var(--fn-body-bg)">Rent</div>
+                style="left: 0; margin: -43px 0 0 20px; font-size: 128px; color: var(--fn-body-bg)">Alugar</div>
               <div class="ratio bg-body-tertiary rounded overflow-hidden"
                 style="--fn-aspect-ratio: calc(446 / 438 * 100%)">
                 <img src="assets/img/home/real-estate/hero/03.jpg" alt="Image">
