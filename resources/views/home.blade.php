@@ -17,1492 +17,526 @@
   <main class="content-wrapper">
 
     <!-- Hero with search form -->
-    <section class="position-relative mt-md-5">
-      <div class="container position-relative z-1 pt-5 pt-md-4 pt-xl-5">
-        <div class="row pt-lg-3 pt-xl-0 pt-xxl-4 pb-4 pb-md-5 pb-xl-0">
-          <div class="col-md-6 col-xxl-5 text-center text-md-start">
-            <h1 class="display-4 pb-sm-1 pb-lg-3">Encontrar o imóvel perfeito</h1>
-            <p class="fs-lg mb-md-0">Oferecemos um serviço completo para a venda, compra ou aluguel de imóveis.</p>
-          </div>
-        </div>
-        <div class="d-none d-md-block d-lg-none" style="height: 70px"></div>
-        <div class="d-none d-lg-block d-xl-none" style="height: 130px"></div>
-        <div class="d-none d-xl-block" style="height: 220px"></div>
+    <section class="position-relative bg-info overflow-hidden py-5">
+      <div class="container position-relative z-2 pb-2 py-sm-4 py-md-5 my-xxl-4">
+        <div class="mx-auto py-lg-4 py-xl-5" style="max-width: 630px">
+          <h1 class="display-4 text-white text-center pb-2 pb-md-0 mb-4 mb-md-5">Explore top-rated certified pros nearby
+          </h1>
 
-        <!-- Search form -->
-        <div class="row pb-5 pb-md-0">
-          <div class="col-xl-10 col-xxl-9">
-            <form class="bg-body border rounded-4 p-2">
-              <div class="row g-0 p-1">
-                <div class="col-lg-7">
-                  <div class="row g-0">
-                    <div class="col-6 col-md-4 d-flex">
-                      <div class="w-100">
-                        <select class="form-select form-select-lg border-0 ps-3" data-select='{
-                            "classNames": {
-                              "containerInner": ["form-select", "form-select-lg", "border-0", "ps-3"]
-                            },
-                            "removeItemButton": false
-                          }' aria-label="Rent or sale select" required>
-                          <option value="For rent">For rent</option>
-                          <option value="For sale">For sale</option>
-                        </select>
-                      </div>
-                      <hr class="vr m-0">
-                    </div>
-                    <div class="col-6 col-md-4 d-flex">
-                      <div class="w-100">
-                        <select class="form-select form-select-lg border-0" data-select='{
-                            "classNames": {
-                              "containerInner": ["form-select", "form-select-lg", "border-0"]
-                            },
-                            "searchEnabled": true
-                          }' aria-label="Location select" required>
-                          <option value="">Location</option>
-                          <option value="New York">New York</option>
-                          <option value="Los Angeles">Los Angeles</option>
-                          <option value="Chicago">Chicago</option>
-                          <option value="Houston">Houston</option>
-                          <option value="Phoenix">Phoenix</option>
-                          <option value="Philadelphia">Philadelphia</option>
-                          <option value="San Antonio">San Antonio</option>
-                          <option value="San Diego">San Diego</option>
-                          <option value="Dallas">Dallas</option>
-                          <option value="San Jose">San Jose</option>
-                        </select>
-                      </div>
-                      <hr class="vr d-none d-md-block m-0">
-                    </div>
-                    <div class="col-md-4 d-flex">
-                      <div class="w-100">
-                        <hr class="d-md-none my-2">
-                        <select class="form-select form-select-lg border-0 ps-3" data-select='{
-                            "classNames": {
-                              "containerInner": ["form-select", "form-select-lg", "border-0", "ps-3"]
-                            },
-                            "removeItemButton": false
-                          }' aria-label="Property type select" required>
-                          <option value="">Property type</option>
-                          <option value="Houses">Houses</option>
-                          <option value="Apartments">Apartments</option>
-                          <option value="Commercial">Commercial</option>
-                          <option value="Daily rental">Daily rental</option>
-                          <option value="Offices">Offices</option>
-                          <option value="Townhouses">Townhouses</option>
-                        </select>
-                      </div>
-                      <hr class="vr d-none d-lg-block m-0">
-                    </div>
-                  </div>
+          <!-- Search form -->
+          <form class="bg-white border rounded-4 p-2 mb-4 mb-md-5" data-bs-theme="light">
+            <div class="d-flex flex-column flex-md-row gap-3 p-1">
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2 gap-sm-3">
+                <div class="position-relative w-100">
+                  <i
+                    class="fi-search position-absolute top-50 start-0 translate-middle-y fs-xl text-secondary-emphasis ms-2"></i>
+                  <input type="search" class="form-control form-control-lg form-icon-start border-0 rounded-0 pe-0"
+                    placeholder="What service do you need?" required>
                 </div>
-                <hr class="d-lg-none mt-2 mb-0">
-                <div
-                  class="col-lg-5 d-flex flex-column flex-sm-row align-items-sm-center gap-2 gap-sm-3 pt-3 pt-lg-0 ps-lg-3">
-                  <div class="d-flex align-items-center w-100 gap-2 ps-2 ps-lg-0">
-                    Price
-                    <div class="range-slider w-100"
-                      data-range-slider='{"startMin": 2000, "min": 500, "max": 4000, "step": 100, "tooltipPrefix": "$"}'>
-                      <div class="range-slider-ui my-4"></div>
-                      <input type="hidden" class="form-control" data-range-slider-min>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-lg btn-primary">
-                    Search
-                    <i class="fi-search fs-lg ms-2 me-n1"></i>
-                  </button>
+                <hr class="d-sm-none m-0">
+                <hr class="vr d-none d-sm-block my-2">
+                <div class="position-relative w-100" style="max-width: 150px">
+                  <i
+                    class="fi-map-pin position-absolute top-50 start-0 translate-middle-y fs-xl text-secondary-emphasis ms-2"></i>
+                  <input type="text" class="form-control form-control-lg form-icon-start border-0 rounded-0 pe-0"
+                    placeholder="Zip code" required>
                 </div>
               </div>
-            </form>
+              <button type="submit" class="btn btn-lg btn-primary">Search</button>
+            </div>
+          </form>
+
+          <!-- Popular searches -->
+          <div class="d-flex flex-wrap justify-content-center gap-2 pt-2 pt-md-0">
+            <button type="button" class="btn btn-outline-light rounded-pill mt-1 me-1">Handyperson</button>
+            <button type="button" class="btn btn-outline-light rounded-pill mt-1 me-1">Electrician</button>
+            <button type="button" class="btn btn-outline-light rounded-pill mt-1 me-1">Plumbing</button>
+            <button type="button" class="btn btn-outline-light rounded-pill mt-1 me-1">Landscaping</button>
+            <button type="button" class="btn btn-outline-light rounded-pill mt-1 me-1">Roofing</button>
           </div>
         </div>
-        <div class="d-none d-md-block d-lg-none" style="height: 60px"></div>
-        <div class="d-none d-lg-block d-xxl-none" style="height: 90px"></div>
-        <div class="d-none d-xxl-block" style="height: 130px"></div>
       </div>
-
-      <!-- Background images -->
-      <span class="position-absolute top-0 start-0 w-100 h-100 bg-body-tertiary d-md-none"></span>
-      <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden mt-xxl-4 d-none d-md-block">
-        <div class="position-absolute top-0 start-50 translate-middle-x d-flex gap-4" style="width: 1560px">
-          <div style="width: 768px">
-            <div class="d-xl-none" style="height: 295px"></div>
-            <div class="d-none d-xl-block d-xxl-none" style="height: 326px"></div>
-            <div class="d-none d-xxl-block" style="height: 366px"></div>
-            <div class="position-relative overflow-hidden">
-              <div class="position-absolute top-0 z-1 fw-bold"
-                style="right: 0; margin: -40px 0 0 0; font-size: 122px; color: var(--fn-body-bg)">Comprar</div>
-              <div class="ratio bg-body-tertiary rounded overflow-hidden"
-                style="--fn-aspect-ratio: calc(328 / 768 * 100%)">
-                <img src="assets/img/home/real-estate/hero/01.jpg" alt="Image">
-              </div>
-            </div>
-          </div>
-          <div style="width: 306px">
-            <div class="position-relative overflow-hidden">
-              <div class="position-absolute top-0 z-1 fw-bold"
-                style="left: 0; margin: 1px 0 0 -40px; font-size: 116px; color: var(--fn-body-bg); writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(-180deg)">
-                Vender</div>
-              <div class="ratio bg-info rounded overflow-hidden" style="--fn-aspect-ratio: calc(443 / 306 * 100%)">
-                <img src="assets/img/home/real-estate/hero/02.png" alt="Image">
-              </div>
-            </div>
-          </div>
-          <div style="width: 438px">
-            <div style="height: 117px"></div>
-            <div class="position-relative overflow-hidden">
-              <div class="position-absolute top-0 z-1 fw-bold"
-                style="left: 0; margin: -43px 0 0 20px; font-size: 128px; color: var(--fn-body-bg)">Alugar</div>
-              <div class="ratio bg-body-tertiary rounded overflow-hidden"
-                style="--fn-aspect-ratio: calc(446 / 438 * 100%)">
-                <img src="assets/img/home/real-estate/hero/03.jpg" alt="Image">
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="d-xxl-none" style="width: 1780px"></div>
+        <div class="d-none d-xxl-block" style="width: 2157px"></div>
+        <img src="assets/img/home/contractors/hero.png" alt="Image">
       </div>
     </section>
 
 
     <!-- Categories -->
-    <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 my-xxl-3">
-      <div class="py-5">
-        <div class="border rounded py-3 py-xl-4">
-          <div class="row row-cols-2 row-cols-md-3 row-cols-xl-6 g-0 py-2">
-            <div class="col d-flex position-relative py-2">
-              <div class="vstack align-items-center text-center py-2 px-3">
-                <h3 class="h5 mb-2">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Houses</a>
-                </h3>
-                <div class="d-flex align-items-center gap-1 fs-sm">
-                  <i class="fi-bookmark fs-base"></i>
-                  6.4K offers
-                </div>
-              </div>
-              <hr class="vr m-0">
+    <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 mb-xxl-3">
+      <div class="d-flex align-items-start justify-content-between gap-4 pt-5 pb-3 mb-2 mb-sm-3 mb-lg-4">
+        <h2 class="mb-0">Browse pros in your area</h2>
+        <div class="nav">
+          <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="#!">
+            <span class="hover-effect-underline stretched-link me-1">View all</span>
+            <i class="fi-chevron-right fs-lg"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 g-sm-4">
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M24 5.516a3.27 3.27 0 0 0-3.265-3.266 3.27 3.27 0 0 0-3.265 3.266v1.84H.953c-.526 0-.953.428-.953.953l.063 12.84c.119.369.514.617.89.617h19.781A3.27 3.27 0 0 0 24 18.5V5.516zm-6.531 8.9l-3.601 1.927c-.529.283-.099 1.134.45.84l3.151-1.686v1.966l-6.252 3.35H7.551l3.437-1.841c.54-.289.09-1.13-.45-.84l-5.004 2.682H1.88l15.589-8.353v1.956zM8.382 8.309h3.6l3.913 3.913-2.344 1.256-5.169-5.169zm-3.183 3.65L.953 14.202v-1.909l2.996-1.583 1.249 1.249zM.953 15.28l4.951-2.616L7.14 13.9.953 17.169V15.28zm6.892-.675l1.257 1.257-8.149 4.367v-1.982l6.892-3.642zm9.624-3.226l-.696.373-3.442-3.442h4.139v3.069zm-4.796 2.57L9.98 15.391 2.897 8.309h4.137l5.639 5.639zM.953 8.309h.596l1.695 1.695-2.291 1.211V8.309zm12.282 12.504l4.235-2.269c.011.885.377 1.687.961 2.269h-5.196zm7.499 0c-1.275 0-2.312-1.037-2.312-2.312s1.037-2.312 2.312-2.312 2.312 1.037 2.312 2.312-1.037 2.312-2.312 2.312zm0-5.578c-.902 0-1.721.368-2.312.962v-1.876a2.34 2.34 0 0 1 2.312-2.312 2.34 2.34 0 0 1 2.312 2.312v1.876c-.592-.594-1.41-.962-2.312-.962zm2.257-3.271c-1.267-1.213-3.331-1.189-4.569.054v-.35-1.739a2.34 2.34 0 0 1 2.312-2.312 2.34 2.34 0 0 1 2.312 2.312v2.09l-.056-.054zm.001-4.392c-1.267-1.214-3.331-1.191-4.57.053V5.516c0-1.275 1.037-2.312 2.312-2.312s2.312 1.037 2.312 2.312v2.108l-.055-.053c.018.017-.02-.019 0 0zm-2.259 9.373a1.56 1.56 0 0 0-1.555 1.555 1.56 1.56 0 0 0 1.555 1.556 1.56 1.56 0 0 0 1.556-1.556 1.56 1.56 0 0 0-1.556-1.555zm0 2.158c-.332 0-.602-.27-.602-.602s.27-.602.602-.602.602.27.602.602-.27.602-.602.602zm-8.315-1.958c-.259 0-.477.218-.477.477s.218.476.477.477a.48.48 0 0 0 .476-.456.48.48 0 0 0-.476-.497z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
             </div>
-            <div class="col d-flex position-relative py-2">
-              <div class="vstack align-items-center text-center py-2 px-3">
-                <h3 class="h5 mb-2">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Apartments</a>
-                </h3>
-                <div class="d-flex align-items-center gap-1 fs-sm">
-                  <i class="fi-bookmark fs-base"></i>
-                  12.8K offers
-                </div>
-              </div>
-              <hr class="vr d-none d-md-block m-0">
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Flooring</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M17.183 11.986a4.74 4.74 0 0 1 .735.057.54.54 0 1 0 .168-1.071 5.85 5.85 0 0 0-.902-.07.542.542 0 1 0 0 1.084zm2.621.797c.989.664 1.686 1.664 1.963 2.814a.54.54 0 0 0 1.054-.254c-.341-1.415-1.198-2.644-2.413-3.46a.542.542 0 1 0-.604.9zm-8.356 2.713a.54.54 0 1 0 .938-.542l-.908-1.572a.542.542 0 1 0-.939.542l.908 1.572zm11.891 7.374h-.483a3.62 3.62 0 0 0 1.046-2.547c0-1.818-1.343-3.329-3.089-3.591v-.031c0-2.002-1.629-3.631-3.631-3.631a3.6 3.6 0 0 0-2.072.648l-.075-.137-2.168-3.755a.54.54 0 0 0-.74-.198l-.822.474-.291-.505a.54.54 0 0 0-.74-.198l-.821.474-3.618-6.267A2.17 2.17 0 0 0 6.193.975L5.787.271a.54.54 0 0 0-.74-.198L2.23 1.699a.54.54 0 0 0-.198.74l.406.704a2.17 2.17 0 0 0 1.881 1.084 2.14 2.14 0 0 0 .576-.079l3.619 6.268-.821.474a.54.54 0 0 0-.198.74l.291.505-.821.474a.54.54 0 0 0-.198.74l1.321 2.287c-.914.55-1.527 1.552-1.527 2.695l.002.103a2.77 2.77 0 0 0-2.549 2.756 2.75 2.75 0 0 0 .571 1.68h-.788a.542.542 0 1 0 0 1.084h19.544a.542.542 0 1 0 0-1.084zM4.858 2.998c-.251.145-.543.183-.823.108s-.513-.254-.658-.505l-.136-.235 1.877-1.084.136.235c.299.518.121 1.182-.397 1.481zm3.118 10.279l.821-.474a.54.54 0 0 0 .198-.74l-.291-.505 1.643-.949.291.505a.54.54 0 0 0 .74.198l.821-.474 1.897 3.286c.376.651.416 1.405.176 2.06l-.532-.029c-1.232 0-2.351.447-3.175 1.17a2.42 2.42 0 0 1-.693-.763l-1.897-3.286zm12.296 9.594H6.776c-.926 0-1.68-.754-1.68-1.68s.754-1.68 1.68-1.68c.106 0 .212.01.313.029a.54.54 0 0 0 .624-.674 2.04 2.04 0 0 1-.07-.534 2.06 2.06 0 0 1 .985-1.756l.305.529a3.5 3.5 0 0 0 .909 1.035 4.08 4.08 0 0 0-.24.402c-1.004.369-1.716 1.271-1.716 2.324a.542.542 0 1 0 1.084 0c0-.782.735-1.418 1.638-1.418s1.638.636 1.638 1.418a.542.542 0 1 0 1.084 0c0-1.251-1.004-2.291-2.311-2.474.641-.703 1.623-1.153 2.721-1.153 1.928 0 3.496 1.386 3.496 3.089a.542.542 0 1 0 1.084 0c0-1.789-1.242-3.319-2.982-3.911.164-.512.21-1.059.129-1.599a2.53 2.53 0 0 1 1.715-.664 2.55 2.55 0 0 1 2.547 2.547 2.57 2.57 0 0 1-.038.44.54.54 0 0 0 .554.635h.026a2.55 2.55 0 0 1 2.547 2.547 2.55 2.55 0 0 1-2.547 2.547zm-18.73.045H.639a.542.542 0 1 0 0 1.084h.903a.542.542 0 1 0 0-1.084z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
             </div>
-            <div class="col d-flex position-relative py-2">
-              <div class="vstack align-items-center text-center py-2 px-3">
-                <h3 class="h5 mb-2">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Commercial</a>
-                </h3>
-                <div class="d-flex align-items-center gap-1 fs-sm">
-                  <i class="fi-bookmark fs-base"></i>
-                  9.3K offers
-                </div>
-              </div>
-              <hr class="vr d-md-none d-xl-block m-0">
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Concrete</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M20.858 18.029v-7.935-1.556a.91.91 0 0 0-.626-.862v-.459A7.23 7.23 0 0 0 13.014 0a7.23 7.23 0 0 0-7.217 7.217v6.373c0 .283.23.513.513.513s.513-.23.513-.513V7.217a6.2 6.2 0 0 1 6.191-6.191 6.2 6.2 0 0 1 6.191 6.191v.414h-.978v-.414a5.22 5.22 0 0 0-5.213-5.213 5.22 5.22 0 0 0-5.213 5.213v11.039h-.978v-1.41c0-.283-.23-.513-.513-.513s-.513.23-.513.513v1.655a1.84 1.84 0 0 0-.925 1.595v.929H4.4c-.657 0-1.276.256-1.74.721a2.45 2.45 0 0 0-.721 1.741c0 .283.23.513.513.513h9.701c.283 0 .513-.23.513-.513l-.001-.033a2.61 2.61 0 0 0 1.599.546h3.968a2.61 2.61 0 0 0 .206-.009l.236.009a3.39 3.39 0 0 0 3.385-3.385c0-.998-.445-1.946-1.202-2.586zm-3.429-9.372h.286 2.004.113v.925h-2.403v-.925zM5.898 20.096c0-.449.366-.814.815-.814h1.179c.449 0 .814.365.814.814v.929H5.898v-.929zm-2.84 2.878a1.42 1.42 0 0 1 .327-.502c.271-.271.632-.421 1.015-.421h.985H9.22h.985a1.44 1.44 0 0 1 1.341.923H3.059zm8.603-7.753h-.501c-.283 0-.513.23-.513.513s.23.513.513.513h.479v.65h-.479c-.283 0-.513.23-.513.513s.23.513.513.513h.479v3.453l.003.116c-.405-.293-.902-.466-1.439-.466h-.472v-.929a1.84 1.84 0 0 0-.906-1.584V7.217c0-2.309 1.878-4.188 4.187-4.188S17.2 4.908 17.2 7.217v.421a.91.91 0 0 0-.799.9V9.74c-2.564.594-4.518 2.796-4.741 5.482zm4.528 7.693l.058.06h-1.984a1.6 1.6 0 0 1-1.598-1.598v-5.642c0-2.827 2.3-5.127 5.127-5.127h2.038v6.826c-.367-.134-.757-.203-1.157-.203a3.39 3.39 0 0 0-3.385 3.385c0 .855.32 1.672.901 2.299zm2.485.06c-.068 0-.133-.003-.196-.008a2.37 2.37 0 0 1-2.163-2.351 2.36 2.36 0 0 1 2.36-2.359 2.34 2.34 0 0 1 1.371.44c.619.443.988 1.16.988 1.919a2.36 2.36 0 0 1-2.359 2.359zm1.045-2.871c-.283 0-.513.23-.513.513a.531.531 0 1 1-1.062 0 .53.53 0 0 1 .531-.531c.283 0 .513-.23.513-.513s-.23-.513-.513-.513a1.56 1.56 0 0 0-1.557 1.557 1.56 1.56 0 0 0 1.557 1.557 1.56 1.56 0 0 0 1.556-1.557c0-.283-.23-.513-.513-.513zM6.311 14.65c-.283 0-.513.23-.513.513v.154c0 .283.23.513.513.513s.513-.23.513-.513v-.154c0-.283-.23-.513-.513-.513z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
             </div>
-            <div class="col d-flex position-relative py-2">
-              <div class="vstack align-items-center text-center py-2 px-3">
-                <h3 class="h5 mb-2">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Daily rental</a>
-                </h3>
-                <div class="d-flex align-items-center gap-1 fs-sm">
-                  <i class="fi-bookmark fs-base"></i>
-                  42.4K offers
-                </div>
-              </div>
-              <hr class="vr d-none d-md-block m-0">
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Cleaning</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M11.702 8.177h.677a.47.47 0 0 0 .469-.469.47.47 0 0 0-.469-.469h-.262l.239-.665a.47.47 0 0 0-.282-.6.47.47 0 0 0-.6.282l-.38 1.055a.65.65 0 0 0 .079.59c.12.172.318.274.528.274zM1.646 24h20.707a.47.47 0 0 0 .469-.469v-2.18a.47.47 0 0 0-.469-.469h-.716v-.575c0-.398-.168-.758-.436-1.013v-1.922a5.62 5.62 0 0 0-.032-.593.47.47 0 0 0-.516-.417.47.47 0 0 0-.417.516 4.71 4.71 0 0 1 .027.494v1.536h-.026-1.384a1.4 1.4 0 0 0-.214.016v-1.521a.47.47 0 0 0-.469-.469.47.47 0 0 0-.469.469v2.11a1.39 1.39 0 0 0-.247.792v.574h-4.987V19.49c.555-.194.954-.723.954-1.343v-.676c0-.785-.638-1.423-1.423-1.423s-1.423.638-1.423 1.423v.676c0 .62.399 1.149.954 1.343v1.389H6.514v-.574a1.39 1.39 0 0 0-.25-.796v-2.107a.47.47 0 0 0-.469-.469.47.47 0 0 0-.469.469v1.52a1.35 1.35 0 0 0-.212-.016H3.738V17.37c0-1.828 1.022-2.99 3.312-3.766l.983-.307 1.335 2.721c.134.273.502.346.731.145L12 14.492l1.863 1.638c.229.201.599.126.731-.148l1.309-2.701 1.049.327c.435.149.809.303 1.143.472a.47.47 0 0 0 .63-.207.47.47 0 0 0-.207-.63 9.83 9.83 0 0 0-1.27-.524l-1.451-.453-.027-.008-1.295-.404-.221-1.401a4.39 4.39 0 0 0 2.093-3.739V5.491h.046a.47.47 0 0 0 .469-.469V4.83A4.84 4.84 0 0 0 12.033 0h-.192a4.84 4.84 0 0 0-4.83 4.83v.192a.47.47 0 0 0 .469.469h.093v1.222a4.39 4.39 0 0 0 2.147 3.771l-.2 1.37-2.753.86c-1.228.415-2.13.932-2.77 1.583-.793.807-1.195 1.842-1.195 3.076v1.891c-.287.256-.469.629-.469 1.043v.575h-.686a.47.47 0 0 0-.469.469v2.18a.47.47 0 0 0 .469.469zm9.868-6.527c0-.268.218-.486.486-.486s.486.218.486.486v.676c0 .268-.218.486-.486.486s-.486-.218-.486-.486v-.676zM9.94 15.057l-1-2.037.902-.284 1.43 1.148-1.332 1.173zm4.079-.039l-1.29-1.134 1.395-1.121.033-.026.841.262-.979 2.02zM11.841.938h.192a3.9 3.9 0 0 1 3.883 3.616h-3.041a2.05 2.05 0 0 1-1.106-.329c-.347-.225-.567-.552-.797-.886-.062-.09-.118-.19-.191-.272-.201-.228-.576-.201-.743.053l-.339.516c-.241.365-.593.647-1.004.796-.237.086-.485.122-.737.122A3.9 3.9 0 0 1 11.841.938zM8.509 6.713V5.448a2.98 2.98 0 0 0 1.929-1.231 2.99 2.99 0 0 0 2.437 1.275h2.536v1.222c0 1.842-1.45 3.351-3.269 3.446a3.45 3.45 0 0 1-.535-.013C9.87 9.969 8.509 8.498 8.509 6.714zm2.682 4.321c.725.128 1.483.074 2.181-.164l.181 1.15-1.552 1.246-1.558-1.25.165-1.126a4.36 4.36 0 0 0 .585.145zm-7.922 9.274c0-.251.21-.461.461-.461h1.385a.46.46 0 0 1 .461.461v.574H3.269v-.574zm17.025-.457c.228.027.406.228.406.457v.574h-2.307v-.574a.46.46 0 0 1 .461-.461h1.385a.51.51 0 0 1 .055.004zM2.115 21.82h19.769v1.242H2.115V21.82zm17.388-6.717c.162.39.74.372.876-.028s-.318-.771-.684-.553c-.197.117-.28.37-.192.581z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
             </div>
-            <div class="col d-flex position-relative py-2">
-              <div class="vstack align-items-center text-center py-2 px-3">
-                <h3 class="h5 mb-2">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">New buildings</a>
-                </h3>
-                <div class="d-flex align-items-center gap-1 fs-sm">
-                  <i class="fi-bookmark fs-base"></i>
-                  22.5K offers
-                </div>
-              </div>
-              <hr class="vr m-0">
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Handyperson</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M22.105 0H5.407a1.17 1.17 0 0 0-1.171 1.171v1.511h-1.14C1.788 2.682.724 3.746.724 5.055v3.486c0 1.309 1.065 2.373 2.373 2.373h8.273c1.05 0 1.904.854 1.904 1.904v.617h-1.663c-.296 0-.536.24-.536.536v2.145c0 .296.24.536.536.536h.134v5.336c0 1.109.902 2.011 2.011 2.011s2.011-.902 2.011-2.011v-5.336h.134c.296 0 .536-.24.536-.536v-2.145c0-.296-.24-.536-.536-.536h-1.555v-.617a2.98 2.98 0 0 0-2.976-2.976H3.097c-.717 0-1.301-.583-1.301-1.301V5.055c0-.717.583-1.301 1.301-1.301h1.14v1.511a1.17 1.17 0 0 0 1.171 1.171h8.027v2.333c0 .872.71 1.582 1.582 1.582h.778a.51.51 0 0 1 .509.51v.161c0 .872.71 1.582 1.582 1.582h.751c.872 0 1.582-.71 1.582-1.582v-.563a.51.51 0 0 1 .51-.509c.872 0 1.582-.71 1.582-1.582V6.417c.548-.098.965-.577.965-1.152V1.171C23.276.525 22.75 0 22.105 0zm-7.41 21.989a.94.94 0 0 1-.938.939.94.94 0 0 1-.939-.939v-5.336h1.877v5.336zm.67-7.482v1.073h-.134-2.95-.134v-1.073h3.218zm5.873-6.141a.51.51 0 0 1-.509.509c-.872 0-1.582.71-1.582 1.582v.563a.51.51 0 0 1-.509.509h-.751a.51.51 0 0 1-.509-.509v-.161-1.743c0-.296-.24-.536-.536-.536s-.536.24-.536.536v.246a1.56 1.56 0 0 0-.509-.085h-.778a.51.51 0 0 1-.51-.509V6.436h6.731v1.931h0zm.965-3.102c0 .054-.044.098-.098.098H5.407c-.054 0-.098-.044-.098-.098V1.171c0-.054.044-.098.098-.098h16.697c.054 0 .098.044.098.098v4.094h0zm-2.883-3.23a.54.54 0 0 0-.759 0c-.21.209-.209.549 0 .758l1.609 1.609c.105.105.242.157.379.157a.53.53 0 0 0 .379-.157c.21-.209.21-.549 0-.758L19.32 2.034zm-2.994 0a.54.54 0 0 0-.759 0c-.21.209-.209.549 0 .758l1.609 1.609c.105.105.242.157.379.157s.274-.052.379-.157c.21-.209.21-.549 0-.758l-1.609-1.609zm-2.994 0c-.21-.209-.549-.209-.758 0s-.209.549 0 .758l1.609 1.609c.105.105.242.157.379.157a.53.53 0 0 0 .379-.157c.21-.209.21-.549 0-.758l-1.609-1.609zm-2.994 0a.54.54 0 0 0-.759 0c-.21.209-.209.549 0 .758l1.609 1.609c.105.105.242.157.379.157s.274-.052.379-.157c.209-.209.209-.549 0-.758l-1.609-1.609zm-2.995 0c-.209-.209-.549-.209-.758 0s-.209.549 0 .758l1.609 1.609c.105.105.242.157.379.157s.274-.052.379-.157c.21-.209.21-.549 0-.758L7.343 2.034z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
             </div>
-            <div class="col d-flex position-relative py-2">
-              <div class="vstack dropdown align-items-center text-center py-2 px-3" data-bs-toggle="dropdown"
-                data-bs-display="static">
-                <h3 class="h5 mb-2">
-                  <a class="hover-effect-underline stretched-link" href="#">More</a>
-                </h3>
-                <div class="d-flex align-items-center fs-sm text-body-emphasis">
-                  <i class="fi-chevron-down fs-xl"></i>
-                </div>
-                <ul class="dropdown-menu top-100 start-50 translate-middle-x" style="--fn-dropdown-min-width: 11rem">
-                  <li><a class="dropdown-item" href="#">Offices</a></li>
-                  <li><a class="dropdown-item" href="#">Warehouses</a></li>
-                  <li><a class="dropdown-item" href="#">Retail spaces</a></li>
-                  <li><a class="dropdown-item" href="#">Townhouses</a></li>
-                  <li><a class="dropdown-item" href="#">Vacation homes</a></li>
-                </ul>
-              </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Painting</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M15.853 5.586h-.815v-.75a.5.5 0 0 0-.5-.5h-.75V2.985h.957a.5.5 0 1 0 0-1.001h-.957v-1.4a.5.5 0 0 0-.5-.5h-2.751a.5.5 0 0 0-.5.5v1.401H8.952L7.165.151A.5.5 0 0 0 6.806 0H4.072a.5.5 0 1 0 0 1.001h2.524l1.787 1.833a.5.5 0 0 0 .358.151h1.294v1.351h-.75a.5.5 0 0 0-.5.5v.75h-.636a6.64 6.64 0 0 0-6.628 6.628V23.5a.5.5 0 0 0 .5.5h3.502a.5.5 0 0 0 .5-.5V12.214a2.13 2.13 0 0 1 2.126-2.126h1.136 5.253 1.315a2.13 2.13 0 0 1 2.126 2.126v1.376a.5.5 0 0 0 .5.5h3.502a.5.5 0 0 0 .5-.5v-1.376a6.64 6.64 0 0 0-6.628-6.628zM8.784 9.088h-.636a3.13 3.13 0 0 0-3.127 3.127V23h-2.5V12.214c0-3.103 2.525-5.628 5.628-5.628h.636v2.501h0zm2.251-8.004h1.751v.9h-1.751v-.9zm0 1.901h1.751v1.351h-1.751V2.985zm3.001 6.103H9.785V5.336h.75 2.751.75v3.752zm7.444 4.002h-2.501v-.875a3.13 3.13 0 0 0-3.127-3.127h-.815V6.587h.815c3.103 0 5.628 2.525 5.628 5.628v.875h0zm-1.327 3.835a.5.5 0 0 0-.394.192c-.268.344-1.607 2.107-1.607 3.059 0 1.103.898 2.001 2.001 2.001s2.001-.898 2.001-2.001c0-.953-1.338-2.715-1.607-3.059a.5.5 0 0 0-.394-.192zm0 4.252a1 1 0 0 1-1.001-1c0-.326.468-1.152 1.001-1.91.532.758 1 1.584 1 1.91a1 1 0 0 1-1 1zm-16.38-2.884a.5.5 0 0 0-.5.5v3.055a.5.5 0 1 0 1.001 0v-3.055a.5.5 0 0 0-.5-.5zm0-2.907a.5.5 0 0 0-.5.5v.834a.5.5 0 1 0 1.001 0v-.834a.5.5 0 0 0-.5-.5z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
             </div>
-          </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Plumbing</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M21.337 12.788l-.791-2.789a.47.47 0 0 0-.451-.341l-2.398-.002-.138-.698a3.13 3.13 0 0 0 .634-.239c.769-.394 1.192-1.077 1.192-1.923 0-.674-.167-1.18-.367-1.682-.026-.615 1.157-1.022 1.173-1.028a.47.47 0 0 0 .306-.587.47.47 0 0 0-.588-.307c-.4.126-.936.386-1.325.777l-.102-.362c.036-1.122 1.228-1.212 1.367-1.218a.47.47 0 0 0 .45-.485.47.47 0 0 0-.485-.451 2.93 2.93 0 0 0-1.101.29 2.26 2.26 0 0 0-.444.288l-.009-.42c.016-.172.132-.675.914-.675a.47.47 0 0 0 .469-.469.47.47 0 0 0-.469-.469c-1.404 0-1.824 1.028-1.851 1.571l-.001.023c0 1.849.402 2.834.726 3.625.349.854.766 2.111-.262 2.656a2.18 2.18 0 0 1-.494.184c-.304-.832-.758-1.586-1.435-2.169-.031-.026-.064-.048-.099-.065a4.7 4.7 0 0 0-1.556-.834 2.74 2.74 0 0 0 .166-.911 2.04 2.04 0 0 0-.053-.471c.337-.103.624-.289.848-.555.784-.93.545-2.485.516-2.659a.47.47 0 0 0-.54-.382.47.47 0 0 0-.382.54c.057.331.121 1.389-.309 1.898-.146.173-.345.272-.602.303a2.01 2.01 0 0 0-.654-.43l.189-.378a.47.47 0 0 0-.21-.629.47.47 0 0 0-.629.21l-.296.592c-.012.018-.447-.004-.445 0l-.296-.592a.47.47 0 0 0-.629-.21.47.47 0 0 0-.21.629l.189.378a2.01 2.01 0 0 0-.651.427c-.243-.036-.433-.135-.577-.302-.44-.512-.398-1.55-.344-1.908a.47.47 0 0 0-.392-.534.47.47 0 0 0-.535.392c-.027.174-.239 1.729.558 2.659.219.256.497.438.819.542a2.09 2.09 0 0 0-.054.48c0 .299.059.61.165.91-.047-.132-1.512.798-1.636.905a.47.47 0 0 0-.077.086C7.549 6.513 7.1 7.203 6.78 8.072a2.24 2.24 0 0 1-.527-.186c-1.053-.54-.631-1.817-.284-2.667.323-.791.726-1.775.726-3.625l-.001-.023C6.668 1.028 6.247 0 4.843 0a.47.47 0 0 0-.469.469.47.47 0 0 0 .469.469c.782 0 .898.502.914.675l-.009.42a2.26 2.26 0 0 0-.444-.288 2.93 2.93 0 0 0-1.101-.29c-.259-.011-.476.193-.485.451a.47.47 0 0 0 .451.485c.004 0 .364.018.718.193a1.09 1.09 0 0 1 .647 1.023l-.094.339c-.363-.374-.852-.626-1.221-.75a.47.47 0 0 0-.592.294.47.47 0 0 0 .293.594c.011.004 1.112.398 1.079 1.029-.2.502-.367 1.008-.367 1.683 0 .846.424 1.529 1.192 1.923a3.15 3.15 0 0 0 .685.252l-.14.685-2.463.002a.47.47 0 0 0-.451.341l-.791 2.789c-.068.24.074.508.323.579a.47.47 0 0 0 .579-.323l.695-2.449 1.984-.002a18.96 18.96 0 0 0-.081 1.816c0 .496.035.985.104 1.462a3.13 3.13 0 0 0-.622.236c-.769.394-1.192 1.077-1.192 1.923 0 .837.64 1.794 1.381 2.902.935 1.398 1.994 2.983 1.994 4.598a.47.47 0 0 0 .469.469.47.47 0 0 0 .469-.469c0-1.9-1.193-3.684-2.152-5.119-.629-.941-1.223-1.829-1.223-2.381 0-.646.47-1.064 1.055-1.235.275 1.128.746 2.163 1.389 3.031 1.109 1.494 2.596 2.317 4.188 2.317s3.079-.823 4.188-2.317c.644-.867 1.114-1.903 1.389-3.031.121.035.259.086.394.157.445.236.661.588.661 1.078 0 .552-.594 1.441-1.223 2.381-.959 1.434-2.152 3.219-2.152 5.119a.47.47 0 0 0 .469.469.47.47 0 0 0 .469-.469c0-1.615 1.059-3.2 1.994-4.598.741-1.108 1.381-2.066 1.381-2.902 0-.846-.424-1.529-1.192-1.923-.221-.113-.438-.187-.622-.236a10.29 10.29 0 0 0 .104-1.462l-.071-1.816 1.927.001.694 2.448a.47.47 0 0 0 .451.341c.306 0 .535-.303.451-.597zm-9.312-9.741c.525 0 1.406.134 1.406 1.031a1.87 1.87 0 0 1-.148.695 8.09 8.09 0 0 0-1.277-.097 7.86 7.86 0 0 0-1.24.095c-.094-.229-.147-.469-.147-.692 0-.897.881-1.031 1.406-1.031zm-.469 16.129c-2.495-.327-4.453-3.237-4.453-6.766 0-2.697.466-4.473 1.459-5.538l2.994 2.281v10.024zm.461-10.866L9.31 6.249c.707-.427 1.595-.636 2.695-.636 1.126 0 2.029.209 2.74.638l-2.729 2.06zm.477 10.866V9.14l3.023-2.281c.987 1.05 1.43 2.788 1.43 5.552 0 3.53-1.958 6.439-4.453 6.766zm-2.203-2.734c-.823-.93-1.315-2.437-1.315-4.032 0-1.129.096-2.024.293-2.734a.47.47 0 0 0-.327-.577.47.47 0 0 0-.577.327c-.22.793-.327 1.769-.327 2.985 0 1.845.565 3.541 1.55 4.654.165.186.468.211.662.04a.47.47 0 0 0 .04-.662zm5.397-7.038c-.065-.239-.337-.392-.576-.329a.47.47 0 0 0-.329.576c.192.702.286 1.604.284 2.759 0 .914-.159 1.807-.46 2.583a.48.48 0 0 0 .267.607c.238.092.515-.029.607-.267.357-.927.524-1.931.524-2.922-.001-1.257-.102-2.212-.318-3.006zm-1.602 7.846a.47.47 0 0 0 .469-.469.47.47 0 0 0-.469-.469.47.47 0 0 0-.469.469.47.47 0 0 0 .469.469z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
+            </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Pest control</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M21.699 6.563h-.511v-.387a2.43 2.43 0 0 0-2.426-2.426h-.07c-.804 0-1.518.394-1.959.998a2.47 2.47 0 0 0-3.982.003 2.47 2.47 0 0 0-3.982-.003c-.442-.605-1.155-.998-1.96-.998h-.07a2.43 2.43 0 0 0-2.426 2.426v1.329h-.701c-.389 0-.706-.317-.706-.706V1.43A1.43 1.43 0 0 0 1.477 0a1.43 1.43 0 0 0-1.43 1.43v5.583c0 1.825 1.485 3.31 3.31 3.31h.956v8.814c0 .819.408 1.544 1.031 1.983v1.474A1.41 1.41 0 0 0 6.75 24a1.41 1.41 0 0 0 1.406-1.406v-1.441c.237-.159.444-.358.612-.588a2.47 2.47 0 0 0 3.982-.003 2.47 2.47 0 0 0 3.982.003 2.44 2.44 0 0 0 .588.572v1.457A1.41 1.41 0 0 0 18.727 24a1.41 1.41 0 0 0 1.406-1.406v-1.457c.636-.438 1.055-1.171 1.055-2V11.25h.511c1.292 0 2.344-1.051 2.344-2.344s-1.051-2.344-2.344-2.344zM3.357 9.385C2.049 9.385.984 8.321.984 7.013V1.43c0-.271.221-.492.492-.492s.492.221.492.492V6.8c0 .906.737 1.643 1.643 1.643h.701v.942h-.956zm3.862 13.209a.47.47 0 0 1-.469.469.47.47 0 0 1-.469-.469v-1.075a2.46 2.46 0 0 0 .457.044h.07a2.51 2.51 0 0 0 .41-.035v1.067zm3.539-1.969c-.84 0-1.523-.665-1.523-1.482V17.32a.47.47 0 0 0-.469-.469.47.47 0 0 0-.469.469v1.816a1.49 1.49 0 0 1-1.488 1.488h-.07a1.49 1.49 0 0 1-1.488-1.488V6.176a1.49 1.49 0 0 1 1.488-1.488h.07a1.49 1.49 0 0 1 1.488 1.488v7.441a.47.47 0 0 0 .469.469.47.47 0 0 0 .469-.469V6.176c0-.823.683-1.488 1.523-1.488s1.523.665 1.523 1.482v12.973c0 .817-.683 1.482-1.523 1.482zm5.508-1.482c0 .817-.683 1.482-1.523 1.482s-1.523-.665-1.523-1.482V6.17c0-.817.683-1.482 1.523-1.482s1.523.665 1.523 1.482v12.967zm2.93 3.451a.47.47 0 0 1-.469.469.47.47 0 0 1-.469-.469v-1.071a2.43 2.43 0 0 0 .434.04h.07a2.43 2.43 0 0 0 .434-.04v1.071zm1.055-3.457a1.49 1.49 0 0 1-1.488 1.488h-.07a1.49 1.49 0 0 1-1.488-1.488V6.176a1.49 1.49 0 0 1 1.488-1.488h.07a1.49 1.49 0 0 1 1.488 1.488v12.961zm1.449-8.824h-.511V7.5h.511a1.41 1.41 0 0 1 1.406 1.406 1.41 1.41 0 0 1-1.406 1.406zm.682-1.796a.45.45 0 0 0-.081-.043c-.028-.011-.058-.021-.088-.027a.47.47 0 0 0-.183 0 .44.44 0 0 0-.088.027c-.028.012-.055.026-.081.043a.4.4 0 0 0-.071.058.47.47 0 0 0-.101.511.46.46 0 0 0 .043.081.45.45 0 0 0 .058.071.5.5 0 0 0 .071.058c.025.017.053.031.081.043a.45.45 0 0 0 .088.027.47.47 0 0 0 .183 0 .47.47 0 0 0 .088-.027c.029-.012.055-.026.081-.043a.4.4 0 0 0 .071-.058.5.5 0 0 0 .058-.071.46.46 0 0 0 .043-.081.45.45 0 0 0 .027-.088.47.47 0 0 0-.128-.423.46.46 0 0 0-.071-.058zm-13.16 6.749c-.012-.028-.026-.056-.043-.081a.44.44 0 0 0-.058-.071.45.45 0 0 0-.071-.058.46.46 0 0 0-.081-.043.45.45 0 0 0-.088-.027.47.47 0 0 0-.183 0 .45.45 0 0 0-.088.027.46.46 0 0 0-.081.043.45.45 0 0 0-.071.058.44.44 0 0 0-.058.071c-.017.026-.031.053-.043.081a.45.45 0 0 0-.027.088.47.47 0 0 0 .128.422.45.45 0 0 0 .071.058.42.42 0 0 0 .081.043c.028.011.058.021.088.027a.46.46 0 0 0 .091.009.46.46 0 0 0 .091-.009.45.45 0 0 0 .088-.027c.029-.012.056-.026.081-.043a.45.45 0 0 0 .071-.058.47.47 0 0 0 .128-.422.47.47 0 0 0-.027-.088z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
+            </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Heating &amp;
+                furnace</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M16.747 5.507h-.572v-3.88A1.63 1.63 0 0 0 14.548 0a1.63 1.63 0 0 0-1.627 1.627v3.88h-1.844v-3.88A1.63 1.63 0 0 0 9.45 0a1.63 1.63 0 0 0-1.627 1.627v3.88h-.572c-.626 0-1.135.509-1.135 1.135v5.402c0 1.239.638 2.406 1.666 3.044a2.55 2.55 0 0 1 1.212 2.18v.058a2.45 2.45 0 0 0 2.42 2.448v1.125a.5.5 0 1 0 1.001 0v-1.125h.138c1.35 0 2.449-1.099 2.449-2.449v-.033a2.63 2.63 0 0 1 .56-1.623 3.26 3.26 0 0 1 .192-.217c.133-.133.28-.253.441-.353 1.055-.655 1.685-1.788 1.685-3.03V6.641c0-.626-.509-1.135-1.135-1.135zm-2.824-3.88c0-.345.281-.626.626-.626s.626.281.626.626v3.88h-1.252v-3.88h0zm-5.098 0c0-.345.281-.626.626-.626s.626.281.626.626v3.88H8.825v-3.88h0zm8.056 10.442a2.55 2.55 0 0 1-1.212 2.18c-.227.141-.434.307-.62.494h-2.781a.5.5 0 1 0 0 1.001h2.082a3.64 3.64 0 0 0-.347 1.548v.033a1.45 1.45 0 0 1-1.448 1.448h-1.11a1.45 1.45 0 0 1-1.448-1.448v-.058c0-1.242-.63-2.375-1.685-3.03-.736-.457-1.193-1.297-1.193-2.193V6.641c0-.074.06-.133.133-.133h9.495c.074 0 .133.06.133.133v5.427zm-3.193-4.405a.5.5 0 0 0-.708 0l-2.67 2.67a.5.5 0 0 0 .354.854h1.461l-1.749 1.749a.5.5 0 1 0 .708.708l2.603-2.603a.5.5 0 0 0-.354-.855h-1.461l1.815-1.815a.5.5 0 0 0 0-.708zm-1.773 14.5a.5.5 0 0 0-.501.501v.834a.5.5 0 1 0 1.001 0v-.834a.5.5 0 0 0-.501-.501z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
+            </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Electrician</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <use href="#B" />
+                <use href="#C" />
+                <use href="#B" x="15.29" />
+                <use href="#B" y="-5.618" />
+                <use href="#C" y="-5.618" />
+                <use href="#B" x="15.29" y="-5.618" />
+                <use href="#D" />
+                <path
+                  d="M13.689 5.902c-.294 0-.533.239-.533.533A1.16 1.16 0 0 1 12 7.591c-.294 0-.533.239-.533.533s.239.533.533.533c1.225 0 2.222-.997 2.222-2.222 0-.295-.239-.533-.533-.533zm9.778-3.662H.533c-.295 0-.533.239-.533.533v14.631a4.36 4.36 0 0 0 4.356 4.356 4.36 4.36 0 0 0 3.822-2.269 4.36 4.36 0 0 0 7.644 0A4.36 4.36 0 0 0 24 17.404V2.773c0-.294-.239-.533-.533-.533zm-22.4 1.067h6.578v3.129c0 1.813-1.475 3.289-3.289 3.289S1.067 8.249 1.067 6.436V3.307zm6.578 14.098c0 1.814-1.475 3.289-3.289 3.289s-3.289-1.475-3.289-3.289v-2.767c.799.921 1.977 1.505 3.289 1.505s2.49-.584 3.289-1.505v2.767zm0-5.618c0 1.813-1.475 3.289-3.289 3.289S1.067 13.6 1.067 11.787v-2.5c.799.921 1.977 1.505 3.289 1.505s2.49-.584 3.289-1.505v2.5zm7.644 5.618c0 1.814-1.475 3.289-3.289 3.289s-3.289-1.475-3.289-3.289v-2.767c.799.921 1.977 1.505 3.289 1.505s2.49-.584 3.289-1.505v2.767zm0-5.618c0 1.813-1.475 3.289-3.289 3.289S8.711 13.6 8.711 11.787v-2.5c.799.921 1.977 1.505 3.289 1.505s2.49-.584 3.289-1.505v2.5zM12 9.724c-1.813 0-3.289-1.475-3.289-3.289V3.307h6.578v3.129h0c0 1.813-1.475 3.289-3.289 3.289zm10.933 7.68c0 1.814-1.475 3.289-3.289 3.289s-3.289-1.475-3.289-3.289v-2.767c.799.921 1.977 1.505 3.289 1.505s2.49-.584 3.289-1.505v2.767zm0-5.618c0 1.813-1.475 3.289-3.289 3.289s-3.289-1.476-3.289-3.289v-2.5c.799.921 1.977 1.505 3.289 1.505s2.49-.584 3.289-1.505v2.5zm0-5.351c0 1.813-1.475 3.289-3.289 3.289s-3.289-1.475-3.289-3.289V3.307h6.578v3.129h0z" />
+                <use href="#D" x="15.29" />
+                <defs>
+                  <path id="B"
+                    d="M6.043 16.871c-.295 0-.533.239-.533.533 0 .637-.518 1.156-1.156 1.156-.295 0-.533.239-.533.533s.239.533.533.533c1.225 0 2.222-.997 2.222-2.222 0-.294-.239-.533-.533-.533z" />
+                  <path id="C"
+                    d="M13.689 16.871c-.294 0-.533.239-.533.533 0 .637-.518 1.156-1.156 1.156-.294 0-.533.239-.533.533s.239.533.533.533c1.225 0 2.222-.997 2.222-2.222 0-.294-.239-.533-.533-.533z" />
+                  <path id="D"
+                    d="M4.354 8.658c1.225 0 2.222-.997 2.222-2.222 0-.295-.239-.533-.533-.533s-.533.239-.533.533c0 .637-.518 1.156-1.156 1.156-.295 0-.533.239-.533.533s.239.533.533.533z" />
+                </defs>
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
+            </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Roofing</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M12.33 14.472a.47.47 0 0 0-.517.415l-.096.874-.874-.096a.47.47 0 0 0-.517.415l-.096.874-.873-.096a.47.47 0 0 0-.517.415l-.096.874-.874-.096a.47.47 0 0 0-.517.415l-.096.874-.874-.096a.47.47 0 0 0-.517.415l-.096.874-.874-.096a.47.47 0 0 0-.517.415l-.042.39-2.104-2.104 7.363-7.363a.47.47 0 0 0 0-.663.47.47 0 0 0-.663 0l-7.694 7.694a.47.47 0 0 0 0 .663l3.127 3.127a.47.47 0 0 0 .797-.28l.098-.896.873.096a.47.47 0 0 0 .517-.415l.096-.874.874.096a.47.47 0 0 0 .517-.415l.096-.873.874.096a.47.47 0 0 0 .517-.415l.096-.873.873.096a.47.47 0 0 0 .517-.415l.096-.874.874.096a.47.47 0 0 0 .517-.415l.147-1.339a.47.47 0 0 0-.415-.517zm5.129-.986c-1.602-1.602-3.07-3.347-4.377-5.201l2.629-2.629 3.042 3.042a.47.47 0 0 0 .331.137h1.298l-.99.99-1.116-.123a.47.47 0 0 0-.517.415l-.096.874-.873-.096a.47.47 0 0 0-.517.415.47.47 0 0 0 .415.517l1.339.147c.017.002.035.003.052.003a.47.47 0 0 0 .465-.418l.096-.873.874.096a.47.47 0 0 0 .383-.135l1.948-1.948 1.621-1.621a1.83 1.83 0 0 0 0-2.587l-2.664-2.664a1.83 1.83 0 0 0-2.587 0L15.38 4.662 12.542 7.5l-.188-.282-1.019-1.55a1.12 1.12 0 0 0-.332-.791L8.192 2.065c-.323-.323-.795-.409-1.198-.259l-.251-.251a.99.99 0 0 0-.706-.293.99.99 0 0 0-.706.293L4.299 2.586a1 1 0 0 0 0 1.413l.093.093-4.18 2.736A.47.47 0 0 0 0 7.231c.072 3.202 2.636 5.766 5.838 5.838.168 0 .316-.079.403-.212l2.622-4.006.624.938c1.487 2.234 3.202 4.328 5.1 6.225l3.677 3.677a8.68 8.68 0 0 1 1.678 2.358 1.22 1.22 0 0 0 .895.671 1.25 1.25 0 0 0 .202.017c.321 0 .633-.127.864-.357l1.363-1.362a1.21 1.21 0 0 0 .357-.863 1.21 1.21 0 0 0-.357-.863l-5.806-5.806zm3.21-10.465l1.475 1.475-1.486 1.485h-.652l-1.148-1.148 1.802-1.802zm-1.792-.531c.303-.302.77-.341 1.115-.118l-2.129 2.129a.47.47 0 0 0 0 .663l1.617 1.617a.47.47 0 0 0 .331.137h1.04a.47.47 0 0 0 .331-.137l1.613-1.613c.353.338.352.901.006 1.247L21.32 7.898h-2.042l-2.904-2.905 2.503-2.503zm-13.915.758l1.031-1.031c.024-.024.063-.024.087 0l.179.179-1.118 1.118-.179-.179c-.024-.024-.024-.063 0-.087zm1.634 7.354l-.712.014a3.49 3.49 0 0 1-3.367-2.84.47.47 0 0 0-.55-.371.47.47 0 0 0-.371.55 4.47 4.47 0 0 0 1.487 2.541c.776.659 1.766 1.035 2.789 1.058l.102-.002-.371.567A5.03 5.03 0 0 1 .949 7.466l4.12-2.697 3.23 3.23-1.704 2.603zm-.792-6.425l1.449-1.449c.076-.076.2-.076.276 0L10.34 5.54c.05.05.057.108.057.138s-.007.088-.057.138L8.891 7.265 5.804 4.177zm13.718 15.504l-.596-.653-3.677-3.677a39.83 39.83 0 0 1-4.982-6.082l-.821-1.234 1.402-1.402.723 1.099a40.76 40.76 0 0 0 5.226 6.416l4.129 4.129-1.403 1.403zm3.08.674l-1.363 1.362c-.093.093-.204.086-.247.079a.28.28 0 0 1-.208-.156 9.68 9.68 0 0 0-.694-1.203l1.497-1.497 1.014 1.014a.28.28 0 0 1 .083.2.28.28 0 0 1-.083.2zm-4.729-4.34l-1.402-1.402a.47.47 0 0 0-.663 0 .47.47 0 0 0 0 .663l1.402 1.402a.47.47 0 0 0 .331.137c.119 0 .24-.046.332-.137a.47.47 0 0 0 0-.663zm-2.485-2.486c-.088-.087-.208-.137-.331-.137a.47.47 0 0 0-.469.469.47.47 0 0 0 .469.469.47.47 0 0 0 .331-.8z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
+            </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Carpentry</a>
+            </h3>
+          </article>
+        </div>
+
+        <!-- Category -->
+        <div class="col">
+          <article class="hover-effect-scale position-relative d-inline-flex align-items-center gap-3">
+            <div class="position-relative d-flex align-items-center justify-content-center text-secondary-emphasis"
+              style="width: 56px; height: 56px">
+              <svg class="position-relative z-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor">
+                <path
+                  d="M19.331 17.263a4.68 4.68 0 0 0 4.671-4.672c0-1.296-.528-2.511-1.461-3.392a5.59 5.59 0 0 0 .545-2.407c0-3.081-2.507-5.588-5.588-5.588-3.004 0-5.463 2.383-5.583 5.359a5.65 5.65 0 0 0-2.624 2.34c-.296-.057-.602-.088-.914-.088-2.647 0-4.8 2.153-4.8 4.8a4.81 4.81 0 0 0 4.31 4.775v3.454H3.566a.49.49 0 0 0 0 .98h16.342a.49.49 0 0 0 0-.98h-2.895v-4.582h2.318 0zM8.378 12.306a.49.49 0 0 0-.49.49v2.594 2.014c-1.876-.241-3.331-1.847-3.331-3.788 0-2.107 1.714-3.82 3.82-3.82s3.82 1.714 3.82 3.82c0 1.941-1.455 3.547-3.331 3.788v-1.811l1.744-1.744a.49.49 0 0 0-.693-.693l-1.051 1.051v-1.411a.49.49 0 0 0-.49-.49zm7.656 9.539h-1.821l.688-.688a.49.49 0 1 0-.693-.693l-.688.688v-.959a.49.49 0 1 0-.98 0v.959l-.688-.688a.49.49 0 1 0-.693.693l.688.688h-2.98v-3.454c1.218-.124 2.303-.706 3.08-1.57.688.293 1.418.442 2.177.442h1.909v4.582zm.49-14.825a.49.49 0 0 0-.49.49v2.242l-.57-.57a1.57 1.57 0 0 0 .171-.713 1.58 1.58 0 0 0-1.577-1.577 1.58 1.58 0 0 0-1.577 1.577 1.58 1.58 0 0 0 1.577 1.577 1.57 1.57 0 0 0 .713-.171l1.263 1.263v1.938 1.088l-1.133-1.132a.49.49 0 1 0-.693.693l1.825 1.825v.735h-1.909a4.56 4.56 0 0 1-1.584-.279 4.77 4.77 0 0 0 .637-2.388c0-1.979-1.204-3.683-2.919-4.416a4.64 4.64 0 0 1 2.311-1.842.49.49 0 0 0 .324-.471l-.003-.094c0-2.541 2.067-4.608 4.608-4.608s4.608 2.067 4.608 4.608a4.61 4.61 0 0 1-.604 2.28.49.49 0 0 0 .121.626c.889.706 1.399 1.76 1.399 2.892 0 2.036-1.656 3.692-3.692 3.692h-2.318v-.938-2.067l1.744-1.744a.49.49 0 1 0-.693-.693l-1.051 1.051v-.959V7.51a.49.49 0 0 0-.49-.49zm-1.869 1.448c0 .151-.057.289-.15.394l-.028.026-.026.028a.59.59 0 0 1-.394.149.6.6 0 0 1-.597-.597.6.6 0 0 1 .597-.597.6.6 0 0 1 .597.597zM1.898 21.845H.513a.49.49 0 0 0 0 .98h1.385a.49.49 0 1 0 0-.98zm21.589 0h-1.916a.49.49 0 0 0 0 .98h1.916a.49.49 0 0 0 0-.98zM6.973 2.908c-.474-1.048-1.518-1.733-2.69-1.733a2.95 2.95 0 0 0-2.752 1.88C.664 3.199 0 3.954 0 4.862a.49.49 0 0 0 .49.49h7.588a.49.49 0 0 0 .49-.49c0-.968-.677-1.77-1.594-1.954zM1.135 4.373a.85.85 0 0 1 .697-.362l.042.001a.49.49 0 0 0 .497-.369 1.97 1.97 0 0 1 1.913-1.487 1.97 1.97 0 0 1 1.875 1.357.49.49 0 0 0 .449.337 1.01 1.01 0 0 1 .856.524H1.135z" />
+              </svg>
+              <span
+                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded-circle"
+                style="--fn-transform-scale: 1.1"></span>
+            </div>
+            <h3 class="h6 fw-normal mb-0">
+              <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Landscaping</a>
+            </h3>
+          </article>
         </div>
       </div>
     </section>
 
 
-    <!-- Action cards -->
-    <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 my-xxl-3">
-
-      <!-- Row of cards that turns into carousel on screens < 768px wide (md breakpoint) -->
-      <div class="swiper pb-5" data-swiper='{
-          "slidesPerView": 1,
-          "spaceBetween": 24,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "500": {
-              "slidesPerView": 2
-            },
-            "768": {
-              "slidesPerView": 3
-            }
-          }
-        }'>
-        <div class="swiper-wrapper">
-
-          <!-- Buy card -->
-          <div class="swiper-slide">
-            <article class="card hover-effect-scale bg-primary-subtle border-0 overflow-hidden text-center">
-              <div class="card-body pt-sm-5 pb-3">
-                <svg class="text-dark-emphasis my-3 mt-sm-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                  fill="currentColor">
-                  <path
-                    d="M43.777.231H3.73C1.673.231 0 1.905 0 3.961v22.548c0 2.057 1.673 3.73 3.73 3.73h9.225a.941.941 0 1 0 0-1.882H3.73a1.85 1.85 0 0 1-1.847-1.847V3.961A1.85 1.85 0 0 1 3.73 2.114h40.048a1.85 1.85 0 0 1 1.847 1.847v22.548a1.85 1.85 0 0 1-1.847 1.847h-2.826a.941.941 0 1 0 0 1.882h2.826c2.057 0 3.73-1.673 3.73-3.73V3.961c0-2.056-1.673-3.73-3.73-3.73zm4.22 34.579a1.81 1.81 0 0 0-1.185-1.647h0l-15.567-5.775a2.81 2.81 0 0 0-3.653 3.653l5.761 15.541a1.81 1.81 0 0 0 1.655 1.186l.052.001a1.81 1.81 0 0 0 1.666-1.093l1.593-3.658 3.455 3.456c.983.984 2.584.984 3.567.001l1.333-1.332c.476-.476.739-1.11.739-1.784a2.51 2.51 0 0 0-.738-1.784l-3.411-3.412 3.658-1.633a1.81 1.81 0 0 0 1.077-1.72zm-6.751 2.191a.94.94 0 0 0-.282 1.525l4.378 4.379a.64.64 0 0 1 0 .905l-1.333 1.332c-.121.121-.282.187-.452.187h0a.64.64 0 0 1-.453-.187l-4.431-4.433a.94.94 0 0 0-1.529.29l-2.082 4.781-5.706-15.394c-.198-.535.119-.91.221-1.012.079-.079.319-.285.67-.285a.98.98 0 0 1 .342.064l15.422 5.721-4.765 2.127zm4.911-2.073l.327-.883-.327.883zm-19.352-9.664l-2.659-2.66a.941.941 0 1 0-1.331 1.331l2.66 2.66a.94.94 0 1 0 1.331-1.331zm-2.606 3.1h-3.761a.941.941 0 1 0 0 1.882h3.761a.941.941 0 1 0 0-1.882zm5.398-9.161a.94.94 0 0 0-.941.941v3.761a.941.941 0 1 0 1.882 0v-3.761a.94.94 0 0 0-.941-.941zm7.9 1.748a.94.94 0 0 0-1.331 0l-2.66 2.66a.94.94 0 1 0 1.332 1.331l2.66-2.66a.94.94 0 0 0 0-1.331zM25.716 32.736a.94.94 0 0 0-1.331 0l-2.66 2.66a.94.94 0 1 0 1.331 1.331l2.66-2.66a.94.94 0 0 0 0-1.331zm-9.026-2.495c.521 0 .944-.423.944-.944s-.423-.944-.944-.944-.944.423-.944.944.423.944.944.944zm-.166-16.121c.825-.358 1.323-1.198 1.323-2.475 0-2.21-1.51-2.739-3.128-2.739h-3.004c-.451 0-.887.218-.887.638V19.66c0 .327.342.623.887.623h3.299c1.759 0 3.112-.872 3.112-3.299v-.327c0-1.556-.654-2.163-1.603-2.537zm-3.688-3.439h1.727c.794 0 1.261.498 1.261 1.307 0 .794-.405 1.338-1.245 1.338h-1.743v-2.645zm3.268 6.132c0 1.183-.56 1.696-1.51 1.696h-1.758v-3.595h1.758c.949 0 1.51.436 1.51 1.65v.249zm9.882-7.906c-.514 0-1.012.187-1.012.623v7.283c0 1.214-.638 1.79-1.712 1.79s-1.712-.576-1.712-1.79V9.529c0-.436-.514-.623-1.012-.623-.514 0-1.012.187-1.012.623v7.283c0 2.599 1.634 3.564 3.735 3.564 2.085 0 3.735-.965 3.735-3.564V9.529c0-.436-.514-.623-1.011-.623zm9.352 0c-.327 0-.467.14-.607.405L32.35 13.81l-2.366-4.498c-.14-.28-.296-.405-.623-.405-.545 0-1.338.342-1.338.84a.61.61 0 0 0 .047.202l3.221 5.571a.39.39 0 0 1 .047.202v3.922c0 .42.514.638 1.012.638.514 0 1.012-.218 1.012-.638v-3.922a.39.39 0 0 1 .062-.202l3.206-5.571c.047-.078.047-.156.047-.202 0-.498-.794-.84-1.338-.84z" />
-                </svg>
-                <h3 class="h5 mb-0">Buy a property</h3>
-              </div>
-              <div class="card-footer d-flex flex-column align-items-center gap-4 gap-sm-5 bg-transparent border-0 p-0">
-                <a class="btn btn-dark stretched-link mx-4" href="listings-real-estate.php">Find a home</a>
-                <div class="ratio hover-effect-target mt-3 mt-sm-0" style="--fn-aspect-ratio: calc(216 / 416 * 100%)">
-                  <img src="assets/img/home/real-estate/categories/01.png" alt="Image">
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Sell card -->
-          <div class="swiper-slide">
-            <article class="card hover-effect-scale bg-info border-0 overflow-hidden text-center">
-              <div class="card-body pt-sm-5 pb-3">
-                <svg class="text-white my-3 mt-sm-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                  fill="currentColor">
-                  <path
-                    d="M27.216 18.697c-2.198 0-3.986 1.752-3.986 3.905s1.788 3.905 3.986 3.905 3.986-1.752 3.986-3.905-1.788-3.905-3.986-3.905zm0 5.972c-1.164 0-2.111-.928-2.111-2.068s.947-2.068 2.111-2.068 2.111.928 2.111 2.068-.947 2.068-2.111 2.068zm17.328 2.772l3.182-3.117c.366-.359.366-.94 0-1.299l-5.337-5.228V8.664c0-.507-.42-.918-.937-.918h-5.25c-.518 0-.937.411-.937.918v2.153L29.47 5.142a3.24 3.24 0 0 0-4.508 0L21.8 8.239c-1.194-4.72-5.555-8.23-10.738-8.23a11.22 11.22 0 0 0-3.958.714c-.483.182-.725.713-.54 1.186s.728.71 1.211.529a9.32 9.32 0 0 1 3.287-.593c5.066 0 9.188 4.038 9.188 9s-4.121 9-9.187 9-9.188-4.037-9.188-9a8.8 8.8 0 0 1 .605-3.219c.185-.474-.057-1.005-.54-1.186s-1.026.056-1.211.53C.245 8.206 0 9.51 0 10.846c0 5.077 3.583 9.349 8.401 10.519l-1.694 1.659c-.366.359-.366.94 0 1.299l3.182 3.117a.94.94 0 0 0 .452.245v13.833H8.654c-.518 0-.937.411-.937.918v3.674c0 .507.42.918.937.918h37.125c.518 0 .938-.411.938-.918v-3.674c0-.507-.42-.918-.937-.918h-1.687V27.685a.93.93 0 0 0 .452-.245zM37.139 9.583h3.375v6.378l-3.375-3.306V9.583zM26.288 6.44a1.32 1.32 0 0 1 .928-.377 1.32 1.32 0 0 1 .928.377l17.592 17.234-1.856 1.818L27.879 9.817a.95.95 0 0 0-1.326 0l-5.263 5.155a10.59 10.59 0 0 0 .834-4.127 10.75 10.75 0 0 0-.005-.322l4.169-4.084zM8.696 23.674l2.038-1.996.329.005a11.2 11.2 0 0 0 4.213-.817l-4.723 4.627-1.856-1.818zm36.145 21.518H9.591v-1.837h35.25v1.837zm-14.062-3.674h-7.125V30.682h7.125v10.837zm1.875 0V29.763c0-.507-.42-.918-.937-.918h-9c-.518 0-.937.411-.937.918v11.755h-9.562V26.46l15-14.694 15 14.694v15.059h-9.562zM11.019 13.897c-.801.006-1.03-.03-1.637-.419a.95.95 0 0 0-1.298.266c-.283.425-.162.994.271 1.271.677.434 1.179.614 1.783.682v.286c0 .507.42.918.938.918s.938-.411.938-.918v-.402a3.2 3.2 0 0 0 2.165-2.471c.242-1.413-.539-2.689-1.946-3.176-.753-.261-1.585-.575-2.046-.929-.119-.091-.17-.321-.124-.558.024-.123.134-.536.559-.661.793-.233 1.507.264 1.514.269a.95.95 0 0 0 1.309-.19c.306-.403.218-.976-.186-1.281-.266-.194-.708-.43-1.245-.57v-.306c0-.507-.42-.918-.937-.918s-.937.411-.937.918v.303l-.057.016c-.956.281-1.669 1.078-1.862 2.079-.178.925.132 1.823.81 2.344.672.517 1.637.89 2.578 1.216.753.261.775.826.721 1.14a1.31 1.31 0 0 1-1.311 1.092zM3.904 4.75c.518 0 .938-.411.938-.918s-.42-.918-.937-.918-.937.411-.937.918.42.918.938.918z" />
-                </svg>
-                <h3 class="h5 text-white mb-0">Sell a property</h3>
-              </div>
-              <div class="card-footer d-flex flex-column align-items-center gap-4 gap-sm-5 bg-transparent border-0 p-0">
-                <a class="btn btn-dark stretched-link mx-4" href="add-property-type.php">Place an ad</a>
-                <div class="ratio hover-effect-target mt-3 mt-sm-0" style="--fn-aspect-ratio: calc(216 / 416 * 100%)">
-                  <img src="assets/img/home/real-estate/categories/02.png" alt="Image">
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Rent card -->
-          <div class="swiper-slide">
-            <article class="card hover-effect-scale bg-warning-subtle border-0 overflow-hidden text-center">
-              <div class="card-body pt-sm-5 pb-3">
-                <svg class="text-dark-emphasis my-3 mt-sm-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                  fill="currentColor">
-                  <path
-                    d="M5.208 44.81h37.691A5.09 5.09 0 0 0 48 39.682V26.689c0-2.842-2.258-5.181-5.101-5.181h-1.573L27.491 8.564a3.77 3.77 0 0 0 .375-1.64c-.001-2.105-1.709-3.811-3.815-3.81s-3.811 1.709-3.81 3.815c0 .566.128 1.125.375 1.634L6.781 21.508H5.208C2.366 21.508 0 23.847 0 26.689v12.993c0 2.842 2.366 5.128 5.208 5.128zM24.054 4.837c1.157 0 2.094.938 2.094 2.094s-.937 2.094-2.094 2.094-2.094-.937-2.094-2.094.938-2.093 2.094-2.094zm-2.359 5.072a3.77 3.77 0 0 0 4.719-.003l12.399 11.603H9.295L21.694 9.908zm24.588 29.747c0 1.898-1.539 3.436-3.436 3.436H5.154c-1.898 0-3.436-1.539-3.436-3.436V26.662c0-1.898 1.539-3.436 3.436-3.436h37.691c1.898 0 3.436 1.539 3.436 3.436v12.993zm-34.954-2.639c.419 0 .805-.172.805-.516v-2.537h.763l1.471 2.831a.56.56 0 0 0 .537.299c.494 0 1.052-.457 1.052-.876.001-.069-.018-.138-.054-.196l-1.31-2.375c.752-.29 1.3-.995 1.3-2.198 0-1.75-1.17-2.316-2.642-2.316h-2.223a.52.52 0 0 0-.505.54v6.829c0 .344.387.516.805.516zm.805-6.381h1.117c.601 0 .966.268.966 1.02s-.365 1.02-.966 1.02h-1.117v-2.04zm6.453 6.335h3.823c.354 0 .505-.343.505-.687 0-.397-.183-.709-.505-.709h-2.867v-1.826h1.6c.354 0 .505-.344.505-.633 0-.344-.183-.655-.505-.655h-1.6v-1.826h2.867c.322 0 .505-.365.505-.762 0-.344-.15-.741-.505-.741h-3.823c-.365 0-.763.206-.763.55v6.819c0 .344.397.47.763.47zm6.971.045c.419 0 .859-.172.859-.516v-3.65l2.029 3.716c.204.376.526.451.913.451.419 0 .816-.172.816-.516v-6.829c0-.354-.387-.505-.805-.505s-.805.151-.805.505v3.651l-1.756-3.318c-.408-.784-.652-.838-1.253-.838-.419 0-.857.161-.857.515v6.819c0 .343.441.516.859.516zm6.892-6.381h1.482v5.866c0 .344.44.516.859.516s.859-.172.859-.516v-5.866h1.439c.322 0 .505-.355.505-.762 0-.354-.151-.741-.505-.741H32.45c-.354 0-.505.387-.505.741 0 .408.183.762.505.762z" />
-                </svg>
-                <h3 class="h5 mb-0">Rent a property</h3>
-              </div>
-              <div class="card-footer d-flex flex-column align-items-center gap-4 gap-sm-5 bg-transparent border-0 p-0">
-                <a class="btn btn-dark stretched-link mx-4" href="listings-real-estate.php">Find a rental</a>
-                <div class="ratio hover-effect-target mt-3 mt-sm-0" style="--fn-aspect-ratio: calc(216 / 416 * 100%)">
-                  <img src="assets/img/home/real-estate/categories/03.png" alt="Image">
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Pagination (Bullets) -->
-        <div class="swiper-pagination position-static mt-3 mt-sm-4"></div>
-      </div>
-    </section>
-
-
-    <!-- Top offers -->
-    <section class="container pt-2 pb-sm-2 pt-sm-3 py-md-4 py-lg-5 mt-xxl-3 mb-xxl-2">
-      <div class="d-flex align-items-center justify-content-between gap-4 pb-3 mb-2 mb-sm-3 mb-lg-4">
-        <h2 class="h1 mb-0">Top offers</h2>
-
-        <!-- Prev/next buttons -->
-        <div class="d-flex gap-2">
-          <button type="button"
-            class="btn btn-icon btn-outline-secondary animate-slide-start bg-body rounded-circle me-1" id="offers-prev"
-            aria-label="Prev">
-            <i class="fi-chevron-left fs-lg animate-target"></i>
-          </button>
-          <button type="button" class="btn btn-icon btn-outline-secondary animate-slide-end bg-body rounded-circle"
-            id="offers-next" aria-label="Next">
-            <i class="fi-chevron-right fs-lg animate-target"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Carousel -->
-      <div class="swiper pb-5" data-swiper='{
-          "slidesPerView": 1,
-          "spaceBetween": 24,
-          "loop": true,
-          "navigation": {
-            "prevEl": "#offers-prev",
-            "nextEl": "#offers-next"
-          },
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "460": {
-              "slidesPerView": 2
-            },
-            "768": {
-              "slidesPerView": 3
-            },
-            "992": {
-              "slidesPerView": 4
-            }
-          }
-        }'>
-        <div class="swiper-wrapper">
-
-          <!-- Listing -->
-          <div class="swiper-slide h-auto">
-            <article class="card hover-effect-opacity h-100">
-              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
-                <div class="swiper z-2" data-swiper='{
-                    "pagination": {
-                      "el": ".swiper-pagination"
-                    },
-                    "navigation": {
-                      "prevEl": ".btn-prev",
-                      "nextEl": ".btn-next"
-                    },
-                    "breakpoints": {
-                      "991": {
-                        "allowTouchMove": false
-                      }
-                    }
-                  }'>
-                  <a class="swiper-wrapper" href="single-entry-real-estate.php">
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/01.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/01.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/01.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                  </a>
-                  <div
-                    class="d-flex flex-column gap-2 align-items-start position-absolute top-0 start-0 z-1 pt-1 pt-sm-0 ps-1 ps-sm-0 mt-2 mt-sm-3 ms-2 ms-sm-3">
-                    <span class="badge text-bg-info d-inline-flex align-items-center">
-                      Verified
-                      <i class="fi-shield ms-1"></i>
-                    </span>
-                    <span class="badge text-bg-primary">New</span>
-                  </div>
-                  <div
-                    class="position-absolute top-0 end-0 z-1 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
-                    <button type="button"
-                      class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
-                      aria-label="Add to wishlist">
-                      <i class="fi-heart animate-target fs-sm"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 start-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 ms-3">
-                    <button type="button"
-                      class="btn btn-sm btn-prev btn-icon btn-light bg-light rounded-circle animate-slide-start"
-                      aria-label="Prev">
-                      <i class="fi-chevron-left fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 end-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 me-3">
-                    <button type="button"
-                      class="btn btn-sm btn-next btn-icon btn-light bg-light rounded-circle animate-slide-end"
-                      aria-label="Next">
-                      <i class="fi-chevron-right fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div class="swiper-pagination bottom-0 mb-2" data-bs-theme="light"></div>
-                </div>
-              </div>
-              <div class="card-body p-3">
-                <div class="pb-1 mb-2">
-                  <span class="badge text-body-emphasis bg-body-secondary">For rent</span>
-                </div>
-                <div class="h5 mb-2">$1,620</div>
-                <h3 class="fs-sm fw-normal text-body mb-2">
-                  <a class="stretched-link text-body" href="single-entry-real-estate.php">40 S 9th St, Brooklyn, NY
-                    11249</a>
-                </h3>
-                <div class="h6 fs-sm mb-0">65 sq.m</div>
-              </div>
-              <div class="card-footer d-flex gap-2 border-0 bg-transparent pt-0 pb-3 px-3 mt-n1">
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  2<i class="fi-bed-single fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-shower fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-car-garage fs-base text-secondary-emphasis"></i>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Listing -->
-          <div class="swiper-slide h-auto">
-            <article class="card hover-effect-opacity h-100">
-              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
-                <div class="swiper z-2" data-swiper='{
-                    "pagination": {
-                      "el": ".swiper-pagination"
-                    },
-                    "navigation": {
-                      "prevEl": ".btn-prev",
-                      "nextEl": ".btn-next"
-                    },
-                    "breakpoints": {
-                      "991": {
-                        "allowTouchMove": false
-                      }
-                    }
-                  }'>
-                  <a class="swiper-wrapper" href="single-entry-real-estate.php">
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/04.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/04.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/04.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                  </a>
-                  <div
-                    class="d-flex flex-column gap-2 align-items-start position-absolute top-0 start-0 z-1 pt-1 pt-sm-0 ps-1 ps-sm-0 mt-2 mt-sm-3 ms-2 ms-sm-3">
-                    <span class="badge text-bg-primary">New</span>
-                  </div>
-                  <div
-                    class="position-absolute top-0 end-0 z-1 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
-                    <button type="button"
-                      class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
-                      aria-label="Add to wishlist">
-                      <i class="fi-heart animate-target fs-sm"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 start-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 ms-3">
-                    <button type="button"
-                      class="btn btn-sm btn-prev btn-icon btn-light bg-light rounded-circle animate-slide-start"
-                      aria-label="Prev">
-                      <i class="fi-chevron-left fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 end-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 me-3">
-                    <button type="button"
-                      class="btn btn-sm btn-next btn-icon btn-light bg-light rounded-circle animate-slide-end"
-                      aria-label="Next">
-                      <i class="fi-chevron-right fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div class="swiper-pagination bottom-0 mb-2" data-bs-theme="light"></div>
-                </div>
-              </div>
-              <div class="card-body p-3">
-                <div class="pb-1 mb-2">
-                  <span class="badge text-body-emphasis bg-body-secondary">For rent</span>
-                </div>
-                <div class="h5 mb-2">$1,170</div>
-                <h3 class="fs-sm fw-normal text-body mb-2">
-                  <a class="stretched-link text-body" href="single-entry-real-estate.php">67-04 Myrtle Ave Glendale, NY
-                    11385</a>
-                </h3>
-                <div class="h6 fs-sm mb-0">42 sq.m</div>
-              </div>
-              <div class="card-footer d-flex gap-2 border-0 bg-transparent pt-0 pb-3 px-3 mt-n1">
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-bed-single fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-shower fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  0<i class="fi-car-garage fs-base text-secondary-emphasis"></i>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Listing -->
-          <div class="swiper-slide h-auto">
-            <article class="card hover-effect-opacity h-100">
-              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
-                <div class="swiper z-2" data-swiper='{
-                    "pagination": {
-                      "el": ".swiper-pagination"
-                    },
-                    "navigation": {
-                      "prevEl": ".btn-prev",
-                      "nextEl": ".btn-next"
-                    },
-                    "breakpoints": {
-                      "991": {
-                        "allowTouchMove": false
-                      }
-                    }
-                  }'>
-                  <a class="swiper-wrapper" href="single-entry-real-estate.php">
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/06.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/06.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/06.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                  </a>
-                  <div
-                    class="d-flex flex-column gap-2 align-items-start position-absolute top-0 start-0 z-1 pt-1 pt-sm-0 ps-1 ps-sm-0 mt-2 mt-sm-3 ms-2 ms-sm-3">
-                    <span class="badge text-bg-info d-inline-flex align-items-center">
-                      Verified
-                      <i class="fi-shield ms-1"></i>
-                    </span>
-                    <span class="badge text-bg-primary">New</span>
-                  </div>
-                  <div
-                    class="position-absolute top-0 end-0 z-1 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
-                    <button type="button"
-                      class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
-                      aria-label="Add to wishlist">
-                      <i class="fi-heart animate-target fs-sm"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 start-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 ms-3">
-                    <button type="button"
-                      class="btn btn-sm btn-prev btn-icon btn-light bg-light rounded-circle animate-slide-start"
-                      aria-label="Prev">
-                      <i class="fi-chevron-left fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 end-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 me-3">
-                    <button type="button"
-                      class="btn btn-sm btn-next btn-icon btn-light bg-light rounded-circle animate-slide-end"
-                      aria-label="Next">
-                      <i class="fi-chevron-right fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div class="swiper-pagination bottom-0 mb-2" data-bs-theme="light"></div>
-                </div>
-              </div>
-              <div class="card-body p-3">
-                <div class="pb-1 mb-2">
-                  <span class="badge text-body-emphasis bg-body-secondary">For sale</span>
-                </div>
-                <div class="h5 mb-2">$475,000</div>
-                <h3 class="fs-sm fw-normal text-body mb-2">
-                  <a class="stretched-link text-body" href="single-entry-real-estate.php">929 Hart St, Brooklyn, NY
-                    11237</a>
-                </h3>
-                <div class="h6 fs-sm mb-0">108 sq.m</div>
-              </div>
-              <div class="card-footer d-flex gap-2 border-0 bg-transparent pt-0 pb-3 px-3 mt-n1">
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  3<i class="fi-bed-single fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  2<i class="fi-shower fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-car-garage fs-base text-secondary-emphasis"></i>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Listing -->
-          <div class="swiper-slide h-auto">
-            <article class="card hover-effect-opacity h-100">
-              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
-                <div class="swiper z-2" data-swiper='{
-                    "pagination": {
-                      "el": ".swiper-pagination"
-                    },
-                    "navigation": {
-                      "prevEl": ".btn-prev",
-                      "nextEl": ".btn-next"
-                    },
-                    "breakpoints": {
-                      "991": {
-                        "allowTouchMove": false
-                      }
-                    }
-                  }'>
-                  <a class="swiper-wrapper" href="single-entry-real-estate.php">
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/07.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/07.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/07.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                  </a>
-                  <div
-                    class="d-flex flex-column gap-2 align-items-start position-absolute top-0 start-0 z-1 pt-1 pt-sm-0 ps-1 ps-sm-0 mt-2 mt-sm-3 ms-2 ms-sm-3">
-                    <span class="badge text-bg-info d-inline-flex align-items-center">
-                      Verified
-                      <i class="fi-shield ms-1"></i>
-                    </span>
-                  </div>
-                  <div
-                    class="position-absolute top-0 end-0 z-1 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
-                    <button type="button"
-                      class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
-                      aria-label="Add to wishlist">
-                      <i class="fi-heart animate-target fs-sm"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 start-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 ms-3">
-                    <button type="button"
-                      class="btn btn-sm btn-prev btn-icon btn-light bg-light rounded-circle animate-slide-start"
-                      aria-label="Prev">
-                      <i class="fi-chevron-left fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 end-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 me-3">
-                    <button type="button"
-                      class="btn btn-sm btn-next btn-icon btn-light bg-light rounded-circle animate-slide-end"
-                      aria-label="Next">
-                      <i class="fi-chevron-right fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div class="swiper-pagination bottom-0 mb-2" data-bs-theme="light"></div>
-                </div>
-              </div>
-              <div class="card-body p-3">
-                <div class="pb-1 mb-2">
-                  <span class="badge text-body-emphasis bg-body-secondary">For rent</span>
-                </div>
-                <div class="h5 mb-2">$1,490</div>
-                <h3 class="fs-sm fw-normal text-body mb-2">
-                  <a class="stretched-link text-body" href="single-entry-real-estate.php">123 Bedford Avenue, Brooklyn,
-                    NY 11211</a>
-                </h3>
-                <div class="h6 fs-sm mb-0">80 sq.m</div>
-              </div>
-              <div class="card-footer d-flex gap-2 border-0 bg-transparent pt-0 pb-3 px-3 mt-n1">
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  2<i class="fi-bed-single fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-shower fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-car-garage fs-base text-secondary-emphasis"></i>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Listing -->
-          <div class="swiper-slide h-auto">
-            <article class="card hover-effect-opacity h-100">
-              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
-                <div class="swiper z-2" data-swiper='{
-                    "pagination": {
-                      "el": ".swiper-pagination"
-                    },
-                    "navigation": {
-                      "prevEl": ".btn-prev",
-                      "nextEl": ".btn-next"
-                    },
-                    "breakpoints": {
-                      "991": {
-                        "allowTouchMove": false
-                      }
-                    }
-                  }'>
-                  <a class="swiper-wrapper" href="single-entry-real-estate.php">
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/02.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/02.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="ratio d-block" style="--fn-aspect-ratio: calc(248 / 362 * 100%)">
-                        <img src="assets/img/listings/real-estate/02.jpg" alt="Image">
-                        <span class="position-absolute top-0 start-0 w-100 h-100 z-1"
-                          style="background: linear-gradient(180deg, rgba(0,0,0, 0) 0%, rgba(0,0,0, .11) 100%)"></span>
-                      </div>
-                    </div>
-                  </a>
-                  <div
-                    class="d-flex flex-column gap-2 align-items-start position-absolute top-0 start-0 z-1 pt-1 pt-sm-0 ps-1 ps-sm-0 mt-2 mt-sm-3 ms-2 ms-sm-3">
-                    <span class="badge text-bg-primary">New</span>
-                  </div>
-                  <div
-                    class="position-absolute top-0 end-0 z-1 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
-                    <button type="button"
-                      class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
-                      aria-label="Add to wishlist">
-                      <i class="fi-heart animate-target fs-sm"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 start-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 ms-3">
-                    <button type="button"
-                      class="btn btn-sm btn-prev btn-icon btn-light bg-light rounded-circle animate-slide-start"
-                      aria-label="Prev">
-                      <i class="fi-chevron-left fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div
-                    class="position-absolute top-50 end-0 z-1 translate-middle-y d-none d-lg-block hover-effect-target opacity-0 me-3">
-                    <button type="button"
-                      class="btn btn-sm btn-next btn-icon btn-light bg-light rounded-circle animate-slide-end"
-                      aria-label="Next">
-                      <i class="fi-chevron-right fs-lg animate-target"></i>
-                    </button>
-                  </div>
-                  <div class="swiper-pagination bottom-0 mb-2" data-bs-theme="light"></div>
-                </div>
-              </div>
-              <div class="card-body p-3">
-                <div class="pb-1 mb-2">
-                  <span class="badge text-body-emphasis bg-body-secondary">For rent</span>
-                </div>
-                <div class="h5 mb-2">$1,320</div>
-                <h3 class="fs-sm fw-normal text-body mb-2">
-                  <a class="stretched-link text-body" href="single-entry-real-estate.php">517 82nd St, Brooklyn, NY
-                    11209</a>
-                </h3>
-                <div class="h6 fs-sm mb-0">45 sq.m</div>
-              </div>
-              <div class="card-footer d-flex gap-2 border-0 bg-transparent pt-0 pb-3 px-3 mt-n1">
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-bed-single fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  1<i class="fi-shower fs-base text-secondary-emphasis"></i>
-                </div>
-                <div class="d-flex align-items-center fs-sm gap-1 me-1">
-                  0<i class="fi-car-garage fs-base text-secondary-emphasis"></i>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Pagination (Bullets) -->
-        <div class="swiper-pagination position-static pt-lg-1 mt-3 mt-sm-4"></div>
-      </div>
-    </section>
-
-
-    <!-- Recently added -->
-    <section class="position-relative pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
-      <div class="container position-relative z-1 pt-5 mt-xxl-2">
-        <div class="d-md-flex align-items-start justify-content-between gap-4 mb-2 mb-sm-3 mb-lg-4">
-          <h2 class="h1">Added today</h2>
-          <div class="overflow-x-auto pb-3">
-            <ul class="nav nav-pills flex-nowrap gap-2 text-nowrap">
-              <li class="nav-item me-1">
-                <a class="nav-link active" aria-current="page" href="#!">Apartments</a>
-              </li>
-              <li class="nav-item me-1">
-                <a class="nav-link" href="#!">Houses</a>
-              </li>
-              <li class="nav-item me-1">
-                <a class="nav-link" href="#!">Rooms</a>
-              </li>
-              <li class="nav-item me-1">
-                <a class="nav-link" href="#!">Commercials</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4 g-md-3 g-xl-4">
-          <div class="col">
-
-            <!-- Listing -->
-            <article class="hover-effect-scale position-relative bg-body-tertiary rounded overflow-hidden h-100">
-              <div class="d-flex gap-2 position-absolute top-0 start-0 z-1 pt-3 ps-3 mt-lg-2 mt-xl-3 ms-lg-2 ms-xl-3">
-                <span class="badge text-bg-info d-inline-flex align-items-center">
-                  Verified
-                  <i class="fi-shield ms-1"></i>
-                </span>
-                <span class="badge text-bg-warning">Featured</span>
-              </div>
-              <img src="assets/img/listings/real-estate/featured/01.jpg"
-                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
-              <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(307 / 636 * 100%)"></div>
-              <div class="ratio d-sm-none" style="--fn-aspect-ratio: calc(410 / 636 * 100%)"></div>
-              <div class="position-absolute top-0 start-0 w-100 h-100 z-1 p-3">
-                <div class="d-flex align-items-end h-100 p-lg-2 p-xl-3">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between w-100 gap-3">
-                    <div class="mb-1 mb-sm-0">
-                      <h3 class="text-white d-flex flex-wrap align-items-center mb-1 mb-lg-2">3-bed apartment<span
-                          class="fs-6 fw-medium mx-2">|</span><span class="fs-6">127 sq.m</span></h3>
-                      <p class="fs-sm text-white mb-0">3811 Ditmars Blvd Astoria, NY 11105</p>
-                    </div>
-                    <a class="btn btn-primary stretched-link" href="single-entry-real-estate.php">From $3,850</a>
-                  </div>
-                </div>
-              </div>
-              <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark d-sm-none" style="opacity: .4"></span>
-              <span class="position-absolute top-0 start-0 w-100 h-100 d-none d-sm-block"
-                style="background: linear-gradient(0deg, rgba(64,64,64, .74) 10.5%, rgba(0,0,0, 0) 54.86%)"></span>
-            </article>
-          </div>
-          <div class="col vstack gap-4 gap-md-3 gap-xl-4">
-
-            <!-- Listing -->
-            <article class="hover-effect-scale position-relative bg-body-tertiary rounded overflow-hidden">
-              <div class="d-flex gap-2 position-absolute top-0 start-0 z-1 pt-3 ps-3 mt-lg-2 mt-xl-3 ms-lg-2 ms-xl-3">
-                <span class="badge text-bg-warning">Featured</span>
-              </div>
-              <img src="assets/img/listings/real-estate/featured/02.jpg"
-                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
-              <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(307 / 636 * 100%)"></div>
-              <div class="ratio d-sm-none" style="--fn-aspect-ratio: calc(410 / 636 * 100%)"></div>
-              <div class="position-absolute top-0 start-0 w-100 h-100 z-1 p-3">
-                <div class="d-flex align-items-end h-100 p-lg-2 p-xl-3">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between w-100 gap-3">
-                    <div class="mb-1 mb-sm-0">
-                      <h3 class="text-white d-flex flex-wrap align-items-center mb-1 mb-lg-2">2-bed apartment<span
-                          class="fs-6 fw-medium mx-2">|</span><span class="fs-6">78 sq.m</span></h3>
-                      <p class="fs-sm text-white mb-0">40 S 9th St, Brooklyn, NY 11249</p>
-                    </div>
-                    <a class="btn btn-primary stretched-link" href="single-entry-real-estate.php">From $2,600</a>
-                  </div>
-                </div>
-              </div>
-              <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark d-sm-none" style="opacity: .4"></span>
-              <span class="position-absolute top-0 start-0 w-100 h-100 d-none d-sm-block"
-                style="background: linear-gradient(0deg, rgba(64,64,64, .74) 10.5%, rgba(0,0,0, 0) 54.86%)"></span>
-            </article>
-
-            <!-- Listing -->
-            <article class="hover-effect-scale position-relative bg-body-tertiary rounded overflow-hidden">
-              <div class="d-flex gap-2 position-absolute top-0 start-0 z-1 pt-3 ps-3 mt-lg-2 mt-xl-3 ms-lg-2 ms-xl-3">
-                <span class="badge text-bg-warning">Featured</span>
-              </div>
-              <img src="assets/img/listings/real-estate/featured/03.jpg"
-                class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
-              <div class="ratio d-none d-sm-block" style="--fn-aspect-ratio: calc(307 / 636 * 100%)"></div>
-              <div class="ratio d-sm-none" style="--fn-aspect-ratio: calc(410 / 636 * 100%)"></div>
-              <div class="position-absolute top-0 start-0 w-100 h-100 z-1 p-3">
-                <div class="d-flex align-items-end h-100 p-lg-2 p-xl-3">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between w-100 gap-3">
-                    <div class="mb-1 mb-sm-0">
-                      <h3 class="text-white d-flex flex-wrap align-items-center mb-1 mb-lg-2">1-bed apartment<span
-                          class="fs-6 fw-medium mx-2">|</span><span class="fs-6">52 sq.m</span></h3>
-                      <p class="fs-sm text-white mb-0">444 Park Ave, Brooklyn, NY 11205</p>
-                    </div>
-                    <a class="btn btn-primary stretched-link" href="single-entry-real-estate.php">From $1,750</a>
-                  </div>
-                </div>
-              </div>
-              <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark d-sm-none" style="opacity: .4"></span>
-              <span class="position-absolute top-0 start-0 w-100 h-100 d-none d-sm-block"
-                style="background: linear-gradient(0deg, rgba(64,64,64, .74) 10.5%, rgba(0,0,0, 0) 54.86%)"></span>
-            </article>
-          </div>
-        </div>
-      </div>
-      <span class="position-absolute top-0 start-0 w-100 bg-body-tertiary" style="height: 81%"></span>
-    </section>
-
-
-    <!-- Property cost calculator -->
+    <!-- Popular projects near you -->
     <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
-      <div class="bg-info rounded py-5 py-lg-4 px-4 px-sm-5 px-lg-0">
-        <div class="row align-items-center justify-content-center justify-content-lg-start py-lg-3">
-          <div class="col-10 col-sm-8 col-md-7 col-lg-5 offset-lg-1 pb-3 pb-lg-0 mb-3 mb-lg-0">
-            <div class="ratio mx-auto mx-lg-0" style="max-width: 479px; --fn-aspect-ratio: calc(300 / 479 * 100%)">
-              <img src="assets/img/home/real-estate/building.png" alt="Image">
+      <div class="row align-items-center">
+
+        <!-- Banner -->
+        <aside class="col-lg-4 d-none d-lg-block">
+          <div>
+            <div class="position-relative" style="max-width: 306px">
+              <div class="position-relative h-100 z-1 p-5 mb-3">
+                <h3 class="mb-2">
+                  <a class="stretched-link" href="#!">Get matched with local pros</a>
+                </h3>
+                <p class="fs-sm mb-0">for your next home project.</p>
+              </div>
+              <a class="d-block position-relative z-1 pb-4 ps-xl-5 ms-lg-n3 ms-xl-0 ms-xxl-3" href="#!">
+                <div class="ratio mb-2" style="width: 324px; --fn-aspect-ratio: calc(221 / 324 * 100%)">
+                  <img src="assets/img/home/contractors/banner.png" alt="Image">
+                </div>
+              </a>
+              <span
+                class="position-absolute top-0 start-0 w-100 h-100 bg-body-secondary rounded overflow-hidden d-none-dark">
+                <span
+                  class="position-absolute top-100 start-0 translate-middle-y bg-white bg-opacity-50 rounded-circle mt-n5 ms-n5 ms-xl-4"
+                  style="width: 480px; height: 480px"></span>
+              </span>
+              <span
+                class="position-absolute top-0 start-0 w-100 h-100 bg-body-tertiary rounded overflow-hidden d-none d-block-dark">
+                <span
+                  class="position-absolute top-100 start-0 translate-middle-y bg-white bg-opacity-10 rounded-circle mt-n5 ms-n5 ms-xl-4"
+                  style="width: 480px; height: 480px"></span>
+              </span>
             </div>
           </div>
-          <div class="col-lg-5 text-center text-lg-start py-lg-4">
-            <h2 class="text-white">Calculate your property's cost</h2>
-            <p class="fs-lg text-white opacity-75 pb-2 pb-sm-3">Real estate appraisal is a procedure that allows you to
-              determine the average market value of real estate (apartment, house, land, etc.).</p>
-            <a class="btn btn-lg btn-primary" href="#!">Start now</a>
+        </aside>
+
+        <!-- Projects grid -->
+        <div class="col-lg-8">
+          <div class="d-flex align-items-start justify-content-between gap-4 pb-2 mb-3 mb-lg-4">
+            <h2 class="mb-0">Popular projects near you</h2>
+            <div class="nav">
+              <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="#!">
+                <span class="hover-effect-underline stretched-link me-1">View all</span>
+                <i class="fi-chevron-right fs-lg"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+
+            <!-- Project -->
+            <div class="col d-flex">
+              <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-2">
+                <div class="flex-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 112px">
+                  <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(80 / 112 * 100%)">
+                    <img src="assets/img/home/contractors/projects/th01.jpg" alt="Image">
+                  </div>
+                </div>
+                <div class="pt-1 ps-3">
+                  <h3 class="h6 mb-1">
+                    <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Decks &amp;
+                      porches</a>
+                  </h3>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.7</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(95)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $1,890</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project -->
+            <div class="col d-flex">
+              <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-2">
+                <div class="flex-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 112px">
+                  <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(80 / 112 * 100%)">
+                    <img src="assets/img/home/contractors/projects/th02.jpg" alt="Image">
+                  </div>
+                </div>
+                <div class="pt-1 ps-3">
+                  <h3 class="h6 mb-1">
+                    <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Roof repair</a>
+                  </h3>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.5</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(48)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $1,120</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project -->
+            <div class="col d-flex">
+              <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-2">
+                <div class="flex-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 112px">
+                  <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(80 / 112 * 100%)">
+                    <img src="assets/img/home/contractors/projects/th03.jpg" alt="Image">
+                  </div>
+                </div>
+                <div class="pt-1 ps-3">
+                  <h3 class="h6 mb-1">
+                    <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Appliance
+                      repair</a>
+                  </h3>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.8</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(113)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $120</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project -->
+            <div class="col d-flex">
+              <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-2">
+                <div class="flex-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 112px">
+                  <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(80 / 112 * 100%)">
+                    <img src="assets/img/home/contractors/projects/th04.jpg" alt="Image">
+                  </div>
+                </div>
+                <div class="pt-1 ps-3">
+                  <h3 class="h6 mb-1">
+                    <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Gutter service</a>
+                  </h3>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">5.0</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(73)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $390</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project -->
+            <div class="col d-flex">
+              <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-2">
+                <div class="flex-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 112px">
+                  <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(80 / 112 * 100%)">
+                    <img src="assets/img/home/contractors/projects/th05.jpg" alt="Image">
+                  </div>
+                </div>
+                <div class="pt-1 ps-3">
+                  <h3 class="h6 mb-1">
+                    <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Home cleaning</a>
+                  </h3>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.9</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(256)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $75</div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project -->
+            <div class="col d-flex">
+              <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-2">
+                <div class="flex-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 112px">
+                  <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(80 / 112 * 100%)">
+                    <img src="assets/img/home/contractors/projects/th06.jpg" alt="Image">
+                  </div>
+                </div>
+                <div class="pt-1 ps-3">
+                  <h3 class="h6 mb-1">
+                    <a class="hover-effect-underline stretched-link" href="listings-contractors.php">Fence repair</a>
+                  </h3>
+                  <div class="d-flex align-items-center gap-1 mb-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.8</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(29)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $205</div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <!-- Properties by city -->
-    <section class="container pt-2 pb-sm-2 pt-sm-3 py-md-4 py-lg-5 mt-xxl-3 mb-xxl-2">
-      <div class="d-flex align-items-center justify-content-between gap-4 pb-3 mb-2 mb-sm-3 mb-lg-4">
-        <h2 class="h1 mb-0">Search by city</h2>
-
-        <!-- Prev/next buttons -->
-        <div class="d-flex gap-2">
-          <button type="button"
-            class="btn btn-icon btn-outline-secondary animate-slide-start bg-body rounded-circle me-1" id="city-prev"
-            aria-label="Prev">
-            <i class="fi-chevron-left fs-lg animate-target"></i>
-          </button>
-          <button type="button" class="btn btn-icon btn-outline-secondary animate-slide-end bg-body rounded-circle"
-            id="city-next" aria-label="Next">
-            <i class="fi-chevron-right fs-lg animate-target"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Carousel -->
-      <div class="swiper pb-5" data-swiper='{
-          "slidesPerView": 1,
-          "spaceBetween": 24,
-          "loop": true,
-          "navigation": {
-            "prevEl": "#city-prev",
-            "nextEl": "#city-next"
-          },
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "460": {
-              "slidesPerView": 2,
-              "spaceBetween": 16
-            },
-            "768": {
-              "slidesPerView": 2,
-              "spaceBetween": 24
-            },
-            "860": {
-              "slidesPerView": 3
-            },
-            "1200": {
-              "slidesPerView": 4
-            }
-          }
-        }'>
-        <div class="swiper-wrapper">
-
-          <!-- City card -->
-          <div class="swiper-slide h-auto">
-            <article class="card h-100 hover-effect-scale bg-transparent">
-              <div class="card-img-top bg-body-tertiary overflow-hidden">
-                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(230 / 306 * 100%)">
-                  <img src="assets/img/home/real-estate/cities/01.jpg" alt="Image">
-                </div>
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="h5 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">New York</a>
-                </h3>
-              </div>
-              <div class="card-footer d-flex bg-transparent border-0 pt-0 pb-3 px-3 mt-n1">
-                <div class="w-50 text-center pe-1">
-                  <i class="fi-zap mb-1"></i>
-                  <div class="fs-sm">for sale <span class="fw-semibold">1739</span></div>
-                </div>
-                <hr class="vr my-0 mx-2">
-                <div class="w-50 text-center ps-1">
-                  <i class="fi-tag mb-1"></i>
-                  <div class="fs-sm">for rent <span class="fw-semibold">3845</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- City card -->
-          <div class="swiper-slide h-auto">
-            <article class="card h-100 hover-effect-scale bg-transparent">
-              <div class="card-img-top bg-body-tertiary overflow-hidden">
-                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(230 / 306 * 100%)">
-                  <img src="assets/img/home/real-estate/cities/02.jpg" alt="Image">
-                </div>
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="h5 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Dallas</a>
-                </h3>
-              </div>
-              <div class="card-footer d-flex bg-transparent border-0 pt-0 pb-3 px-3 mt-n1">
-                <div class="w-50 text-center pe-1">
-                  <i class="fi-zap mb-1"></i>
-                  <div class="fs-sm">for sale <span class="fw-semibold">986</span></div>
-                </div>
-                <hr class="vr my-0 mx-2">
-                <div class="w-50 text-center ps-1">
-                  <i class="fi-tag mb-1"></i>
-                  <div class="fs-sm">for rent <span class="fw-semibold">2903</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- City card -->
-          <div class="swiper-slide h-auto">
-            <article class="card h-100 hover-effect-scale bg-transparent">
-              <div class="card-img-top bg-body-tertiary overflow-hidden">
-                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(230 / 306 * 100%)">
-                  <img src="assets/img/home/real-estate/cities/03.jpg" alt="Image">
-                </div>
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="h5 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">San Francisco</a>
-                </h3>
-              </div>
-              <div class="card-footer d-flex bg-transparent border-0 pt-0 pb-3 px-3 mt-n1">
-                <div class="w-50 text-center pe-1">
-                  <i class="fi-zap mb-1"></i>
-                  <div class="fs-sm">for sale <span class="fw-semibold">2134</span></div>
-                </div>
-                <hr class="vr my-0 mx-2">
-                <div class="w-50 text-center ps-1">
-                  <i class="fi-tag mb-1"></i>
-                  <div class="fs-sm">for rent <span class="fw-semibold">4561</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- City card -->
-          <div class="swiper-slide h-auto">
-            <article class="card h-100 hover-effect-scale bg-transparent">
-              <div class="card-img-top bg-body-tertiary overflow-hidden">
-                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(230 / 306 * 100%)">
-                  <img src="assets/img/home/real-estate/cities/04.jpg" alt="Image">
-                </div>
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="h5 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Los Angeles</a>
-                </h3>
-              </div>
-              <div class="card-footer d-flex bg-transparent border-0 pt-0 pb-3 px-3 mt-n1">
-                <div class="w-50 text-center pe-1">
-                  <i class="fi-zap mb-1"></i>
-                  <div class="fs-sm">for sale <span class="fw-semibold">1875</span></div>
-                </div>
-                <hr class="vr my-0 mx-2">
-                <div class="w-50 text-center ps-1">
-                  <i class="fi-tag mb-1"></i>
-                  <div class="fs-sm">for rent <span class="fw-semibold">3262</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- City card -->
-          <div class="swiper-slide h-auto">
-            <article class="card h-100 hover-effect-scale bg-transparent">
-              <div class="card-img-top bg-body-tertiary overflow-hidden">
-                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(230 / 306 * 100%)">
-                  <img src="assets/img/home/real-estate/cities/05.jpg" alt="Image">
-                </div>
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="h5 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Chicago</a>
-                </h3>
-              </div>
-              <div class="card-footer d-flex bg-transparent border-0 pt-0 pb-3 px-3 mt-n1">
-                <div class="w-50 text-center pe-1">
-                  <i class="fi-zap mb-1"></i>
-                  <div class="fs-sm">for sale <span class="fw-semibold">1549</span></div>
-                </div>
-                <hr class="vr my-0 mx-2">
-                <div class="w-50 text-center ps-1">
-                  <i class="fi-tag mb-1"></i>
-                  <div class="fs-sm">for rent <span class="fw-semibold">2806</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- City card -->
-          <div class="swiper-slide h-auto">
-            <article class="card h-100 hover-effect-scale bg-transparent">
-              <div class="card-img-top bg-body-tertiary overflow-hidden">
-                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(230 / 306 * 100%)">
-                  <img src="assets/img/home/real-estate/cities/06.jpg" alt="Image">
-                </div>
-              </div>
-              <div class="card-body text-center p-3">
-                <h3 class="h5 mb-0">
-                  <a class="hover-effect-underline stretched-link" href="listings-real-estate.php">Philadelphia</a>
-                </h3>
-              </div>
-              <div class="card-footer d-flex bg-transparent border-0 pt-0 pb-3 px-3 mt-n1">
-                <div class="w-50 text-center pe-1">
-                  <i class="fi-zap mb-1"></i>
-                  <div class="fs-sm">for sale <span class="fw-semibold">874</span></div>
-                </div>
-                <hr class="vr my-0 mx-2">
-                <div class="w-50 text-center ps-1">
-                  <i class="fi-tag mb-1"></i>
-                  <div class="fs-sm">for rent <span class="fw-semibold">1625</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Pagination (Bullets) -->
-        <div class="swiper-pagination position-static pt-lg-1 mt-3 mt-sm-4"></div>
-      </div>
-    </section>
-
-
-    <!-- Partners -->
-    <section class="bg-body-tertiary py-5">
-      <div class="container pt-2 pb-sm-2 pt-sm-3 py-md-4 py-lg-5 my-xxl-3">
-        <h2 class="h1 text-center pb-sm-2 pb-md-3 mb-lg-4">Our partners</h2>
-
-        <!-- Row of logos that turns into carousel on screens < 1200px wide (xl breakpoint) -->
-        <div class="swiper" data-swiper='{
-            "slidesPerView": 1,
-            "spaceBetween": 0,
-            "pagination": {
-              "el": ".swiper-pagination",
-              "clickable": true
-            },
-            "breakpoints": {
-              "400": {
-                "slidesPerView": 2
-              },
-              "600": {
-                "slidesPerView": 3,
-                "spaceBetween": 0
-              },
-              "900": {
-                "slidesPerView": 4,
-                "spaceBetween": 16
-              },
-              "1200": {
-                "slidesPerView": 5,
-                "spaceBetween": 16
-              },
-              "1400": {
-                "slidesPerView": 5,
-                "spaceBetween": 24
-              }
-            }
-          }'>
-          <div class="swiper-wrapper">
-
-            <!-- Logo -->
-            <div class="swiper-slide">
-              <div class="nav justify-content-center">
-                <a class="nav-link text-body-secondary p-0" href="#!" aria-label="Partner">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="240" viewBox="0 0 240 81" fill="currentColor">
-                    <path
-                      d="M87.887 31.097h3.096v16.896h5.094v2.816h-8.19V31.097zm14.04 19.993c-1.52 0-2.684-.432-3.49-1.295s-1.21-2.084-1.21-3.661V35.771c0-1.577.403-2.797 1.21-3.661s1.97-1.295 3.49-1.295 2.683.432 3.489 1.295 1.211 2.084 1.211 3.661v10.363c0 1.577-.404 2.797-1.211 3.661s-1.97 1.295-3.489 1.295zm0-2.816c1.069 0 1.604-.648 1.604-1.943V35.574c0-1.295-.535-1.943-1.604-1.943s-1.605.648-1.605 1.943v10.757c0 1.295.535 1.943 1.605 1.943zm11.187 2.816c-1.501 0-2.646-.422-3.434-1.267-.788-.863-1.182-2.093-1.182-3.689V35.771c0-1.596.394-2.816 1.182-3.661.788-.863 1.933-1.295 3.434-1.295s2.645.432 3.433 1.295c.788.845 1.182 2.065 1.182 3.661v1.69h-2.927v-1.887c0-1.295-.534-1.943-1.604-1.943s-1.604.648-1.604 1.943v10.785c0 1.277.535 1.915 1.604 1.915s1.604-.638 1.604-1.915v-3.858h-1.548v-2.816h4.475v6.449c0 1.596-.394 2.825-1.182 3.689-.788.845-1.932 1.267-3.433 1.267zm11.072 0c-1.519 0-2.683-.432-3.489-1.295s-1.211-2.084-1.211-3.661V35.771c0-1.577.404-2.797 1.211-3.661s1.97-1.295 3.489-1.295 2.683.432 3.49 1.295 1.21 2.084 1.21 3.661v10.363c0 1.577-.403 2.797-1.21 3.661s-1.97 1.295-3.49 1.295zm0-2.816c1.07 0 1.605-.648 1.605-1.943V35.574c0-1.295-.535-1.943-1.605-1.943s-1.604.648-1.604 1.943v10.757c0 1.295.535 1.943 1.604 1.943zm6.8-17.177h3.096v19.712h-3.096V31.097zm5.416 0h4.56c1.538 0 2.692.413 3.461 1.239s1.154 2.037 1.154 3.633v1.943c0 1.596-.384 2.807-1.154 3.633s-1.923 1.239-3.461 1.239h-1.464v8.026h-3.096V31.097zm4.56 8.87c.506 0 .882-.141 1.126-.422.262-.282.393-.76.393-1.436v-2.337c0-.676-.131-1.155-.393-1.436-.244-.282-.62-.422-1.126-.422h-1.464v6.054h1.464zm10.431 11.123c-1.5 0-2.636-.422-3.405-1.267-.769-.863-1.154-2.093-1.154-3.689v-1.126h2.927v1.352c0 1.277.535 1.915 1.604 1.915.526 0 .919-.15 1.182-.451.282-.319.423-.826.423-1.521 0-.826-.188-1.549-.563-2.168-.375-.638-1.07-1.399-2.083-2.281-1.276-1.126-2.167-2.14-2.674-3.041-.506-.92-.759-1.952-.759-3.098 0-1.558.393-2.76 1.181-3.605.789-.863 1.933-1.295 3.434-1.295 1.482 0 2.599.432 3.349 1.295.77.845 1.154 2.065 1.154 3.661v.817h-2.927v-1.014c0-.676-.131-1.164-.394-1.464-.262-.319-.647-.479-1.154-.479-1.032 0-1.547.629-1.547 1.887a3.79 3.79 0 0 0 .562 1.999c.394.619 1.098 1.37 2.111 2.253 1.295 1.126 2.186 2.149 2.674 3.069s.732 1.999.732 3.238c0 1.614-.404 2.853-1.211 3.717-.788.863-1.942 1.295-3.462 1.295zm10.951 0c-1.501 0-2.645-.422-3.434-1.267-.788-.864-1.181-2.093-1.181-3.689V31.097h3.096v15.262c0 .676.131 1.164.393 1.464.282.3.676.451 1.182.451s.891-.15 1.154-.451c.281-.3.422-.789.422-1.464V31.097h2.983v15.037c0 1.596-.393 2.825-1.181 3.689-.789.845-1.933 1.267-3.434 1.267zm6.822-19.993h4.419l1.97 14.108h.056l1.971-14.108H182v19.712h-2.927V35.884h-.056l-2.252 14.925h-2.589l-2.252-14.925h-.056v14.925h-2.702V31.097zM58 50.808a6.9 6.9 0 1 0 0-13.8v4.83a2.07 2.07 0 1 1 0 4.14v4.83zm22.988-11.5c-1.178-.373-2.433-.575-3.735-.575-6.824 0-12.356 5.535-12.356 12.362a12.45 12.45 0 0 0 .163 2.013h7.677a4.93 4.93 0 0 1-.426-2.013c0-2.731 2.213-4.945 4.942-4.945a4.93 4.93 0 0 1 3.735 1.707v-8.55zm-21.777-9.2a10.35 10.35 0 0 0 20.562 0h-7.398c-.457 1.146-1.576 1.955-2.883 1.955s-2.427-.809-2.883-1.955h-7.398z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Logo -->
-            <div class="swiper-slide">
-              <div class="nav justify-content-center">
-                <a class="nav-link text-body-secondary p-0" href="#!" aria-label="Partner">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="240" viewBox="0 0 240 81" fill="currentColor">
-                    <path
-                      d="M66 53.108h24.547v-24H66v24zm19.823-14.309h-5.187v-5.071h5.187v5.071zm-15.099-5.071h5.19v9.69h9.909v5.071H70.724V33.728zm35.808-4.619c-2.427 0-4.8.704-6.818 2.022s-3.592 3.193-4.521 5.385-1.172 4.605-.698 6.933a11.92 11.92 0 0 0 3.359 6.144c1.716 1.678 3.904 2.821 6.285 3.284s4.849.225 7.091-.683a12.22 12.22 0 0 0 5.509-4.42c1.348-1.973 2.068-4.294 2.068-6.667-.004-3.181-1.298-6.232-3.599-8.481s-5.421-3.515-8.675-3.519zm0 19.381c-1.493 0-2.952-.433-4.194-1.244s-2.209-1.964-2.78-3.312-.721-2.833-.43-4.264 1.01-2.747 2.066-3.779 2.401-1.735 3.866-2.02 2.982-.139 4.361.42a7.51 7.51 0 0 1 3.388 2.718 7.26 7.26 0 0 1 1.272 4.1 7.31 7.31 0 0 1-2.214 5.216c-1.415 1.384-3.333 2.162-5.335 2.165zm56.195-19.381c-2.428 0-4.8.703-6.819 2.022s-3.592 3.193-4.521 5.385-1.172 4.605-.699 6.933 1.643 4.466 3.359 6.144 3.904 2.821 6.285 3.284 4.848.226 7.091-.683 4.16-2.446 5.508-4.42A11.81 11.81 0 0 0 175 41.108c-.004-3.181-1.298-6.231-3.598-8.481s-5.421-3.515-8.675-3.519zm0 19.381c-1.493 0-2.952-.433-4.194-1.243s-2.209-1.964-2.781-3.312-.721-2.833-.43-4.265a7.33 7.33 0 0 1 2.066-3.779c1.056-1.032 2.401-1.735 3.865-2.02a7.71 7.71 0 0 1 4.362.42 7.51 7.51 0 0 1 3.388 2.718c.829 1.214 1.272 2.641 1.272 4.101-.003 1.956-.799 3.832-2.214 5.215a7.65 7.65 0 0 1-5.334 2.165zm-28.098-19.381c-2.427 0-4.8.704-6.819 2.022s-3.591 3.193-4.52 5.385-1.172 4.605-.699 6.933 1.643 4.466 3.359 6.144 3.904 2.821 6.285 3.284 4.849.225 7.091-.683a12.22 12.22 0 0 0 5.509-4.42c1.348-1.973 2.068-4.294 2.068-6.667-.004-3.181-1.298-6.232-3.599-8.481s-5.421-3.515-8.675-3.519zm0 19.381a7.68 7.68 0 0 1-3.942-1.084 7.45 7.45 0 0 1-2.783-2.937 7.24 7.24 0 0 1-.805-3.925c.106-1.356.594-2.657 1.409-3.759s1.926-1.963 3.21-2.486 2.69-.691 4.065-.482a7.63 7.63 0 0 1 3.724 1.664c1.061.88 1.853 2.029 2.288 3.32h-7.166v4.618h7.166c-.498 1.474-1.458 2.757-2.745 3.667s-2.833 1.401-4.421 1.404z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Logo -->
-            <div class="swiper-slide">
-              <div class="nav justify-content-center">
-                <a class="nav-link text-body-secondary p-0" href="#!" aria-label="Partner">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="240" viewBox="0 0 240 81" fill="currentColor">
-                    <path
-                      d="M61.167 33.872A7.5 7.5 0 0 0 57 32.608v-7.5a15 15 0 0 1 13.858 9.26 15 15 0 0 1-3.252 16.347 15 15 0 0 1-16.347 3.252A15 15 0 0 1 42 40.108h7.5a7.5 7.5 0 0 0 4.63 6.929 7.5 7.5 0 0 0 8.173-1.626 7.5 7.5 0 0 0 1.626-8.173 7.5 7.5 0 0 0-2.762-3.366z" />
-                    <path
-                      d="M49.5 25.108a7.5 7.5 0 0 1-2.197 5.303A7.5 7.5 0 0 1 42 32.608v7.5a15 15 0 0 0 10.607-4.393A15 15 0 0 0 57 25.108h-7.5z" />
-                    <path
-                      d="M139.23 35.948h-3.755v11.559h3.755V35.948zm-3.341-2.165c.393.381.883.571 1.472.571s1.072-.19 1.448-.571c.377-.396.565-.872.565-1.427 0-.571-.188-1.046-.565-1.427s-.859-.571-1.448-.571-1.079.19-1.472.571c-.377.381-.565.856-.565 1.427 0 .555.188 1.031.565 1.427zM81.592 47.507V30.715h3.854v13.51h7.682v3.282H81.592z" />
-                    <path
-                      d="M100.072 47.769c-1.227 0-2.34-.262-3.338-.785-.982-.539-1.759-1.268-2.332-2.188s-.859-1.95-.859-3.092.286-2.164.859-3.068 1.35-1.617 2.332-2.141c.982-.539 2.094-.809 3.338-.809s2.356.262 3.338.785a6.04 6.04 0 0 1 2.332 2.164c.572.904.859 1.927.859 3.068s-.287 2.172-.859 3.092-1.35 1.649-2.332 2.188c-.982.523-2.095.785-3.338.785zm0-3.306c.54 0 1.014-.111 1.424-.333a2.36 2.36 0 0 0 .932-.975c.229-.428.344-.912.344-1.451s-.115-1.007-.344-1.403c-.229-.412-.548-.729-.957-.951-.393-.238-.859-.357-1.399-.357-.524 0-.99.119-1.399.357a2.37 2.37 0 0 0-.957.951c-.229.412-.344.888-.344 1.427 0 .523.115.999.344 1.427a2.53 2.53 0 0 0 .957.975c.409.222.876.333 1.399.333zm9.5 7.563c.998.444 2.152.666 3.461.666 1.276 0 2.414-.246 3.412-.737s1.783-1.173 2.356-2.045.86-1.903.86-3.092v-10.87h-3.683v.777c-.273-.223-.584-.411-.932-.563-.638-.301-1.367-.452-2.185-.452-1.096 0-2.07.254-2.921.761a5.34 5.34 0 0 0-2.012 2.045c-.491.856-.737 1.824-.737 2.902 0 1.062.246 2.03.737 2.902s1.161 1.562 2.012 2.069 1.825.761 2.921.761c.802 0 1.53-.151 2.185-.452.317-.146.603-.318.859-.516v.73c0 .809-.27 1.435-.81 1.879-.524.444-1.252.666-2.185.666-.752 0-1.399-.127-1.939-.381a4.45 4.45 0 0 1-1.423-1.118l-2.308 2.236c.573.793 1.35 1.403 2.332 1.831zm5.351-8.443c-.376.222-.826.333-1.35.333s-.982-.111-1.374-.333a2.38 2.38 0 0 1-.884-.904c-.213-.396-.319-.817-.319-1.261a2.58 2.58 0 0 1 .319-1.284 2.33 2.33 0 0 1 .908-.904c.393-.222.843-.333 1.35-.333.524 0 .974.111 1.35.333a2.17 2.17 0 0 1 .884.904c.212.381.319.809.319 1.284s-.107.904-.319 1.284a2.21 2.21 0 0 1-.884.88zm12.641 4.186c-1.227 0-2.34-.262-3.338-.785-.982-.539-1.759-1.268-2.332-2.188s-.859-1.95-.859-3.092.287-2.164.859-3.068a6.1 6.1 0 0 1 2.332-2.141c.982-.539 2.095-.809 3.338-.809s2.356.262 3.338.785a6.04 6.04 0 0 1 2.332 2.164c.573.904.859 1.927.859 3.068s-.286 2.172-.859 3.092-1.35 1.649-2.332 2.188c-.982.523-2.095.785-3.338.785zm0-3.306c.54 0 1.014-.111 1.424-.333a2.36 2.36 0 0 0 .932-.975c.23-.428.344-.912.344-1.451s-.114-1.007-.344-1.403c-.229-.412-.548-.729-.957-.951-.392-.238-.859-.357-1.399-.357a2.73 2.73 0 0 0-1.399.357c-.409.222-.728.539-.957.951s-.344.888-.344 1.427c0 .523.115.999.344 1.427a2.53 2.53 0 0 0 .957.975c.409.222.875.333 1.399.333zm20.693 3.282c-.801 0-1.538-.151-2.209-.452-.353-.158-.672-.348-.957-.568v5.658h-3.706V35.948h3.755v.798c.273-.216.575-.403.908-.56.671-.317 1.408-.476 2.209-.476 1.129 0 2.128.262 2.994.785.884.523 1.572 1.237 2.062 2.141.508.904.761 1.935.761 3.092s-.253 2.188-.761 3.092c-.49.904-1.178 1.617-2.062 2.141-.866.523-1.865.785-2.994.785zm-.687-3.282c.54 0 1.007-.119 1.399-.357a2.53 2.53 0 0 0 .957-.975 2.84 2.84 0 0 0 .344-1.403c0-.539-.115-1.015-.344-1.427s-.548-.729-.957-.951c-.392-.238-.851-.357-1.375-.357s-.99.119-1.398.357a2.41 2.41 0 0 0-.933.951c-.229.412-.343.888-.343 1.427 0 .523.106.991.318 1.403a2.53 2.53 0 0 0 .958.975 2.68 2.68 0 0 0 1.374.357z" />
-                    <path
-                      d="M157.752 47.531a8.46 8.46 0 0 0 2.085.262c1.49 0 2.668-.333 3.535-.999a3.19 3.19 0 0 0 1.325-2.688c0-.729-.138-1.316-.417-1.76a3.19 3.19 0 0 0-1.08-1.094c-.442-.27-.908-.484-1.399-.642l-1.399-.404c-.441-.111-.801-.238-1.08-.381s-.417-.333-.417-.571c0-.222.107-.389.319-.5.213-.127.531-.19.957-.19.442 0 .892.087 1.35.262.474.174.9.476 1.276.904l2.136-2.093c-.54-.666-1.243-1.166-2.111-1.498-.851-.349-1.783-.523-2.798-.523-.965 0-1.808.159-2.528.476s-1.277.753-1.669 1.308c-.393.539-.589 1.181-.589 1.927 0 .698.139 1.276.417 1.736.278.444.638.793 1.08 1.047a6.37 6.37 0 0 0 1.399.595l1.399.404c.442.111.802.246 1.08.404.295.143.442.357.442.642 0 .222-.123.396-.368.523-.23.127-.565.19-1.007.19-.638 0-1.227-.111-1.767-.333-.54-.238-1.007-.563-1.399-.975l-2.135 2.093c.409.428.9.809 1.473 1.142a8.46 8.46 0 0 0 1.89.737zm13.787.238c-1.096 0-2.069-.214-2.92-.642-.835-.444-1.489-1.047-1.964-1.808-.475-.777-.712-1.665-.712-2.664v-6.707h3.756v6.66c0 .396.065.737.196 1.023a1.59 1.59 0 0 0 .638.666c.279.159.614.238 1.006.238.557 0 .999-.166 1.326-.499.327-.349.491-.824.491-1.427v-6.66h3.755v6.683c0 1.015-.237 1.911-.712 2.688-.474.761-1.128 1.364-1.964 1.808-.834.428-1.799.642-2.896.642zm11.195-11.821h-3.755v11.559h3.755v-6.755c0-.396.082-.729.245-.999.181-.27.418-.476.712-.618a2.09 2.09 0 0 1 1.006-.238c.541 0 .99.166 1.35.499.377.317.565.769.565 1.356v6.755h3.756v-6.755c0-.396.082-.729.245-.999.18-.27.417-.476.712-.618.294-.159.63-.238 1.006-.238.54 0 .99.166 1.35.499.376.317.564.769.564 1.356v6.755h3.756v-7.159c0-.967-.212-1.792-.638-2.474a4.04 4.04 0 0 0-1.694-1.593c-.703-.381-1.514-.571-2.43-.571-.933 0-1.775.198-2.528.595a4.56 4.56 0 0 0-1.282.978 4.15 4.15 0 0 0-1.246-1.025c-.654-.365-1.399-.547-2.233-.547-.884 0-1.677.182-2.381.547-.307.152-.584.334-.835.545v-.854z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Logo -->
-            <div class="swiper-slide">
-              <div class="nav justify-content-center">
-                <a class="nav-link text-body-secondary p-0" href="#!" aria-label="Partner">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="240" viewBox="0 0 240 81" fill="currentColor">
-                    <path
-                      d="M61.12 28.687l1.97-3.578 5.584 3.382-1.969 3.577c-.346.628.172 1.391.85 1.254l3.773-.764 1.221 6.642-3.773.763c-6.103 1.235-10.763-5.629-7.656-11.276zM57.919 51.53l-2.149 3.578-6.092-3.382 2.149-3.578c.377-.628-.187-1.391-.928-1.254l-4.116.763-1.332-6.641 4.116-.763c6.659-1.235 11.741 5.629 8.352 11.276z" />
-                    <path
-                      d="M57.918 28.687l-2.148-3.578-6.092 3.382 2.149 3.577c.377.628-.187 1.391-.928 1.254l-4.116-.764-1.331 6.642 4.116.763c6.659 1.235 11.743-5.629 8.352-11.276h-.001zm3.203 22.843l1.968 3.578 5.585-3.382-1.969-3.578c-.345-.628.172-1.391.851-1.254l3.773.763 1.221-6.641-3.773-.763c-6.104-1.235-10.763 5.629-7.656 11.276h.001z" />
-                    <path
-                      d="M181.251 48.191v-6.864c0-.951.226-1.805.678-2.56.469-.77 1.133-1.374 1.992-1.813s1.882-.657 3.069-.657c.554-.005 1.106.063 1.64.203.5.121.953.295 1.359.521.421.212.781.468 1.078.77h.047a4.58 4.58 0 0 1 1.077-.77 5.76 5.76 0 0 1 1.383-.521 6.49 6.49 0 0 1 1.663-.203c1.187 0 2.21.218 3.069.657s1.522 1.042 1.991 1.813c.469.755.703 1.608.703 2.56v6.864h-3.655V41.44c0-.377-.101-.717-.304-1.019-.186-.316-.452-.581-.773-.77a2.15 2.15 0 0 0-1.125-.295c-.422 0-.804.098-1.148.295a2.18 2.18 0 0 0-.773.77 1.89 1.89 0 0 0-.281 1.019v6.751h-3.631V41.44c0-.377-.102-.717-.305-1.019a2.12 2.12 0 0 0-.797-.77c-.338-.199-.728-.301-1.125-.295a2.27 2.27 0 0 0-1.147.295 2.18 2.18 0 0 0-.773.77 1.9 1.9 0 0 0-.282 1.019v6.751h-3.63zm-7.943.272c-1.233 0-2.304-.226-3.209-.68-.89-.468-1.578-1.095-2.062-1.88-.484-.8-.726-1.685-.726-2.651v-6.684h3.631v6.593c0 .408.101.786.304 1.133.203.332.477.604.82.816.359.196.766.295 1.219.295a2.32 2.32 0 0 0 1.171-.295c.359-.212.641-.484.844-.816.203-.347.305-.725.305-1.133v-6.593h3.63v6.684c0 .967-.234 1.851-.703 2.651-.468.785-1.147 1.413-2.037 1.88-.875.453-1.938.68-3.187.68zm-17.694-.272v-2.786h5.787a.96.96 0 0 0 .422-.091c.124-.075.226-.174.304-.294s.117-.256.117-.397-.041-.277-.117-.396-.179-.211-.304-.272a.8.8 0 0 0-.422-.113h-2.109c-.781 0-1.492-.121-2.132-.363a3.36 3.36 0 0 1-1.499-1.178c-.36-.544-.539-1.246-.539-2.107a3.44 3.44 0 0 1 .492-1.812 3.91 3.91 0 0 1 1.382-1.315c.59-.331 1.262-.503 1.945-.498h5.786v2.81h-5.224c-.208-.004-.409.069-.562.204-.069.065-.123.142-.159.228a.66.66 0 0 0-.053.27.77.77 0 0 0 .212.544c.153.135.354.208.562.204h2.061c.875 0 1.625.128 2.249.384.641.242 1.133.635 1.477 1.179.359.544.538 1.245.538 2.106a3.36 3.36 0 0 1-.538 1.857c-.341.556-.826 1.017-1.407 1.337-.577.333-1.233.498-1.967.498h-6.302zm-7.912-11.894c1.016 0 1.913.158 2.694.476a5.36 5.36 0 0 1 2.015 1.314c.57.57 1.009 1.249 1.289 1.994.296.755.445 1.593.445 2.515 0 1.148-.25 2.168-.75 3.058-.462.854-1.159 1.567-2.014 2.062-.86.498-1.859.748-2.999.748-.484 0-.945-.06-1.383-.181-.414-.118-.809-.294-1.171-.522a3.2 3.2 0 0 1-.866-.838h-.071v6.186h-3.631V42.595c0-1.284.265-2.395.796-3.331.515-.921 1.297-1.677 2.249-2.176.969-.528 2.101-.792 3.397-.792v.001zm0 3.036c-.562 0-1.054.136-1.475.408-.407.257-.719.619-.938 1.088-.218.452-.327.967-.327 1.54a3.51 3.51 0 0 0 .327 1.541 2.69 2.69 0 0 0 .938 1.088c.421.257.913.385 1.475.385s1.047-.129 1.452-.385a2.68 2.68 0 0 0 .938-1.088c.234-.453.351-.967.351-1.541s-.117-1.087-.351-1.54c-.219-.468-.531-.832-.938-1.088-.405-.272-.89-.408-1.452-.408zm-11.96 8.858V36.568h3.655v11.623h-3.655zm1.827-12.937a2.08 2.08 0 0 1-1.499-.611c-.422-.408-.633-.892-.633-1.45s.211-1.042.633-1.45c.421-.423.921-.635 1.499-.635s1.078.212 1.499.635c.422.408.633.891.633 1.45a1.95 1.95 0 0 1-.633 1.45 2.08 2.08 0 0 1-1.499.611zm-9.771 13.209c-1.233 0-2.342-.264-3.327-.793-.965-.512-1.774-1.262-2.342-2.175-.562-.921-.843-1.956-.843-3.104 0-1.163.281-2.197.843-3.104.568-.912 1.377-1.663 2.342-2.175.985-.544 2.094-.816 3.327-.816s2.335.271 3.304.816a5.97 5.97 0 0 1 2.319 2.175c.578.906.867 1.941.867 3.104 0 1.148-.289 2.183-.867 3.104a5.97 5.97 0 0 1-2.319 2.175c-.984.529-2.085.793-3.304.793zm0-3.058c.578 0 1.078-.136 1.5-.408a2.8 2.8 0 0 0 .984-1.088c.234-.453.351-.967.351-1.541 0-.559-.117-1.064-.351-1.518-.223-.44-.562-.815-.984-1.087s-.922-.408-1.5-.408-1.085.136-1.522.408c-.422.272-.762.647-.985 1.088a3.26 3.26 0 0 0-.35 1.518c0 .573.117 1.087.35 1.54.223.441.563.816.985 1.088.437.271.944.408 1.522.408zm-18.314 7.386v-3.014h5.997c.235 0 .43-.075.586-.226a.67.67 0 0 0 .177-.236.64.64 0 0 0 .057-.286v-2.56h-.07a5.46 5.46 0 0 1-1.007.884 3.76 3.76 0 0 1-1.172.544c-.465.126-.946.187-1.429.181-1.062 0-2.015-.242-2.858-.725-.828-.498-1.484-1.186-1.968-2.062-.468-.876-.703-1.873-.703-2.99 0-1.102.243-2.107.727-3.013.499-.906 1.226-1.631 2.179-2.175s2.116-.816 3.49-.816c1.312 0 2.444.264 3.397.793.957.502 1.739 1.266 2.249 2.197.531.937.797 2.04.797 3.309v6.797c0 1.042-.32 1.865-.961 2.47-.624.619-1.491.929-2.6.929l-6.888.001zm4.03-7.658c.562 0 1.046-.121 1.453-.363.401-.252.724-.604.936-1.019.222-.437.334-.918.328-1.405 0-.543-.109-1.042-.327-1.495s-.532-.808-.938-1.065c-.406-.272-.89-.408-1.453-.408-.546 0-1.031.128-1.452.385a2.56 2.56 0 0 0-.937 1.042c-.218.438-.328.929-.328 1.473 0 .529.109 1.012.328 1.45a2.6 2.6 0 0 0 .937 1.019c.421.257.906.385 1.453.385zm-13.801 3.33c-1.234 0-2.342-.264-3.326-.793-.966-.512-1.775-1.262-2.343-2.175-.562-.921-.843-1.956-.843-3.104 0-1.163.281-2.197.843-3.104.569-.913 1.377-1.663 2.343-2.175.984-.544 2.093-.816 3.326-.816s2.335.271 3.304.816a5.97 5.97 0 0 1 2.319 2.175c.578.906.867 1.941.867 3.104 0 1.148-.289 2.183-.867 3.104a5.97 5.97 0 0 1-2.319 2.175c-.984.529-2.085.793-3.304.793zm0-3.058c.578 0 1.077-.136 1.5-.408a2.8 2.8 0 0 0 .984-1.088c.233-.453.35-.967.35-1.541 0-.559-.117-1.064-.35-1.518a2.8 2.8 0 0 0-.984-1.087c-.422-.272-.922-.408-1.5-.408s-1.086.136-1.522.408a2.8 2.8 0 0 0-.984 1.088c-.239.472-.359.993-.351 1.518 0 .573.117 1.087.351 1.54a2.8 2.8 0 0 0 .984 1.088c.437.271.945.408 1.522.408zm-11.629 2.786c-1.015 0-1.906-.218-2.671-.657-.744-.417-1.359-1.02-1.78-1.744S83 44.264 83 43.388V32.332h3.936V43.66c0 .363.134.68.398.952a1.32 1.32 0 0 0 .984.408h4.334v3.171h-4.568z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Logo -->
-            <div class="swiper-slide">
-              <div class="nav justify-content-center">
-                <a class="nav-link text-body-secondary p-0" href="#!" aria-label="Partner">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="240" viewBox="0 0 240 81" fill="currentColor">
-                    <path
-                      d="M88.82 45.8c0 .742-.148 1.313-.443 1.711-.288.398-.769.598-1.444.598-.637 0-1.088-.199-1.353-.598-.258-.398-.386-.969-.386-1.711V33.413c0-.742.129-1.312.386-1.711.265-.399.716-.598 1.353-.598.674 0 1.156.199 1.444.598.296.398.443.969.443 1.711V45.8zm1.102-3.598c0-.828.129-1.609.387-2.344.265-.742.659-1.391 1.182-1.945.531-.555 1.19-.996 1.978-1.324.796-.328 1.728-.492 2.797-.492 1.023 0 1.929.152 2.717.457s1.451.73 1.989 1.277c.538.539.948 1.184 1.228 1.934.281.742.421 1.555.421 2.438 0 .82-.133 1.598-.398 2.332a5.45 5.45 0 0 1-1.194 1.922c-.53.547-1.194.984-1.989 1.313-.796.32-1.721.48-2.774.48-1.038 0-1.955-.152-2.751-.457-.788-.312-1.451-.738-1.989-1.277-.531-.547-.932-1.187-1.205-1.922a7.05 7.05 0 0 1-.398-2.391zm3.786 0a7.74 7.74 0 0 0 .136 1.477 4.11 4.11 0 0 0 .432 1.219c.205.352.47.633.796.844.326.203.724.305 1.194.305.432 0 .807-.094 1.125-.281.326-.187.591-.449.796-.785.212-.336.371-.738.477-1.207a7.24 7.24 0 0 0 .159-1.57c0-.516-.049-1.004-.148-1.465-.091-.469-.239-.879-.444-1.23a2.33 2.33 0 0 0-.796-.844c-.318-.211-.709-.316-1.171-.316s-.856.102-1.182.305-.591.48-.796.832-.352.762-.443 1.23a7.8 7.8 0 0 0-.136 1.488zm18.243 3.645a3.63 3.63 0 0 1-.75.996 4.04 4.04 0 0 1-.966.68 4.82 4.82 0 0 1-1.126.387 6.25 6.25 0 0 1-1.216.117c-.698 0-1.334-.129-1.91-.387a4.22 4.22 0 0 1-1.49-1.113c-.409-.492-.727-1.094-.955-1.805s-.341-1.523-.341-2.437c0-.859.106-1.664.319-2.414s.519-1.402.921-1.957c.409-.555.909-.992 1.5-1.312s1.266-.48 2.024-.48c.864 0 1.629.172 2.296.516.675.344 1.255.906 1.74 1.688v-.305c0-.562.148-.984.443-1.266.303-.289.72-.434 1.251-.434.318 0 .587.055.807.164.22.102.394.258.523.469.129.203.22.457.273.762a5.18 5.18 0 0 1 .091 1.02v7.852c0 .953-.118 1.805-.353 2.555-.227.75-.583 1.383-1.068 1.899s-1.107.906-1.865 1.172c-.758.273-1.66.41-2.706.41-.735 0-1.387-.035-1.955-.105a7.4 7.4 0 0 1-1.455-.293c-.41-.148-.72-.312-.933-.492-.204-.18-.307-.414-.307-.703a1.58 1.58 0 0 1 .069-.469 1.22 1.22 0 0 1 .204-.398 1.15 1.15 0 0 1 .376-.27c.159-.062.352-.094.579-.094a5.74 5.74 0 0 1 .728.047l.773.094.853.105c.303.031.629.047.977.047a4.39 4.39 0 0 0 1.115-.129c.325-.086.602-.238.829-.457s.402-.512.523-.879c.122-.359.182-.82.182-1.383V45.85zm0-3.645a8.87 8.87 0 0 0-.125-1.559c-.076-.469-.208-.867-.398-1.196-.189-.336-.443-.594-.761-.773-.319-.187-.717-.281-1.194-.281-.47 0-.86.098-1.171.293a2.12 2.12 0 0 0-.728.809c-.182.344-.31.746-.386 1.207a10.12 10.12 0 0 0-.103 1.477c0 1.195.205 2.094.614 2.695s1.005.902 1.785.902c.364-.008.694-.078.989-.211a2.08 2.08 0 0 0 .785-.645c.22-.29.39-.656.511-1.102s.182-.984.182-1.617zm4.479 0a7.05 7.05 0 0 1 .386-2.344 5.51 5.51 0 0 1 1.183-1.945c.53-.555 1.189-.996 1.978-1.324.796-.328 1.728-.492 2.796-.492 1.024 0 1.929.152 2.718.457s1.451.73 1.989 1.277c.538.539.948 1.184 1.228 1.934.28.742.421 1.555.421 2.438 0 .82-.133 1.598-.398 2.332a5.46 5.46 0 0 1-1.194 1.922c-.531.547-1.194.984-1.99 1.313-.795.32-1.72.48-2.774.48-1.038 0-1.955-.152-2.751-.457-.788-.312-1.451-.738-1.989-1.277a5.43 5.43 0 0 1-1.205-1.922c-.266-.742-.398-1.539-.398-2.391zm3.785 0a7.74 7.74 0 0 0 .137 1.477 4.11 4.11 0 0 0 .432 1.219c.205.352.47.633.796.844.326.203.724.305 1.193.305.432 0 .808-.094 1.126-.281a2.22 2.22 0 0 0 .796-.785c.212-.336.371-.738.477-1.207a7.24 7.24 0 0 0 .159-1.57 7.03 7.03 0 0 0-.147-1.465c-.091-.469-.239-.879-.444-1.23-.204-.359-.47-.641-.796-.844-.318-.211-.708-.316-1.171-.316s-.856.102-1.182.305a2.36 2.36 0 0 0-.796.832c-.204.352-.352.762-.443 1.23a7.8 7.8 0 0 0-.137 1.488zm13.788-10.054c0 .258-.057.488-.17.691a1.61 1.61 0 0 1-.444.492 2.03 2.03 0 0 1-.636.305 2.82 2.82 0 0 1-.728.094 2.73 2.73 0 0 1-.762-.105 2.04 2.04 0 0 1-.625-.305 1.59 1.59 0 0 1-.432-.504c-.106-.195-.159-.418-.159-.668a1.31 1.31 0 0 1 .148-.621 1.66 1.66 0 0 1 .42-.504 1.93 1.93 0 0 1 .626-.328 2.58 2.58 0 0 1 .795-.117c.251 0 .493.035.728.105.243.07.455.172.637.305a1.47 1.47 0 0 1 .432.492 1.31 1.31 0 0 1 .17.668zm-.17 13.652c0 .742-.148 1.313-.444 1.711-.288.398-.769.598-1.444.598-.636 0-1.087-.199-1.352-.598-.258-.398-.387-.969-.387-1.711v-7.172c0-.742.129-1.312.387-1.711.265-.398.716-.598 1.352-.598.675 0 1.156.199 1.444.598.296.398.444.969.444 1.711V45.8zm5.231-3.621a8.98 8.98 0 0 0 .113 1.465 3.94 3.94 0 0 0 .41 1.195 2.25 2.25 0 0 0 .773.797c.326.195.727.293 1.205.293.439 0 .807-.094 1.103-.281a2.15 2.15 0 0 0 .728-.797c.181-.344.31-.746.386-1.207.083-.461.125-.961.125-1.5a9.65 9.65 0 0 0-.091-1.312c-.061-.453-.174-.863-.341-1.231a2.39 2.39 0 0 0-.694-.902c-.295-.234-.682-.352-1.159-.352s-.883.078-1.217.234a1.92 1.92 0 0 0-.796.715c-.197.32-.337.723-.42 1.207-.084.477-.125 1.035-.125 1.676zm-.012-3.551c.19-.414.432-.777.728-1.09a4.5 4.5 0 0 1 .978-.785 4.35 4.35 0 0 1 1.114-.469 4.36 4.36 0 0 1 1.17-.164c.698 0 1.328.16 1.888.48a4.46 4.46 0 0 1 1.432 1.313c.402.547.709 1.195.922 1.945a8.71 8.71 0 0 1 .318 2.391c0 .883-.114 1.691-.341 2.426-.22.734-.535 1.367-.944 1.898a4.36 4.36 0 0 1-1.456 1.23c-.56.297-1.185.445-1.875.445-.849 0-1.607-.203-2.274-.609s-1.22-.976-1.66-1.711v4.219c0 .742-.147 1.313-.443 1.711-.288.398-.769.598-1.444.598-.636 0-1.087-.199-1.353-.598-.257-.398-.386-.969-.386-1.711v-11.52c0-.742.129-1.312.386-1.711.266-.398.717-.598 1.353-.598.675 0 1.156.199 1.444.598.296.398.443.969.443 1.711zm12.547.832c0 .305.129.543.386.715.258.164.614.301 1.069.41l1.33.293 1.33.328a9.01 9.01 0 0 1 1.217.422 3.82 3.82 0 0 1 1 .621 2.61 2.61 0 0 1 .682.891c.167.344.25.758.25 1.242 0 .609-.121 1.153-.364 1.629-.242.469-.587.867-1.034 1.195-.439.328-.966.582-1.58.762a7.51 7.51 0 0 1-2.035.281c-.705 0-1.384-.047-2.036-.141a8.12 8.12 0 0 1-1.739-.41c-.5-.187-.901-.418-1.205-.691-.303-.281-.454-.609-.454-.984 0-.328.102-.582.306-.762s.466-.27.785-.27a1.63 1.63 0 0 1 .432.07l.545.176.626.235.704.211a9.02 9.02 0 0 0 .933.211 7.03 7.03 0 0 0 1.001.07c.211 0 .42-.02.624-.059.205-.047.388-.113.547-.199a1.31 1.31 0 0 0 .409-.352 1.03 1.03 0 0 0 .193-.516 1.03 1.03 0 0 0 .056-.141.51.51 0 0 0 .024-.164c0-.219-.099-.414-.296-.586-.189-.172-.459-.309-.807-.41l-1.672-.387-1.477-.375a9.08 9.08 0 0 1-1.229-.457 3.44 3.44 0 0 1-.932-.633 2.73 2.73 0 0 1-.591-.902c-.137-.352-.204-.777-.204-1.277 0-.539.117-1.02.352-1.441a3.08 3.08 0 0 1 1.035-1.078c.447-.289.988-.508 1.626-.656.636-.156 1.356-.234 2.159-.234 1.44 0 2.535.18 3.286.539.758.352 1.137.813 1.137 1.383 0 .32-.103.566-.307.738-.205.164-.451.246-.739.246-.152 0-.311-.027-.478-.082l-.579-.199a5.36 5.36 0 0 0-.819-.199c-.31-.062-.697-.094-1.159-.094l-.956.047c-.28.031-.523.086-.727.164-.197.078-.353.184-.466.316-.107.133-.159.301-.159.504zm11.881 4.301a3.02 3.02 0 0 0 .137.961 2.1 2.1 0 0 0 .397.691c.167.18.36.316.58.41a2.04 2.04 0 0 0 .727.129 2.74 2.74 0 0 0 .876-.141 2.02 2.02 0 0 0 .739-.434 2.07 2.07 0 0 0 .523-.738c.129-.297.193-.645.193-1.043v-4.969c0-.742.129-1.313.387-1.711.265-.398.716-.598 1.353-.598.674 0 1.155.199 1.443.598.296.398.444.969.444 1.711V45.8c0 .742-.148 1.313-.444 1.711-.288.398-.769.598-1.443.598-.637 0-1.088-.199-1.353-.598-.258-.398-.387-.969-.387-1.711a3.88 3.88 0 0 1-.625.984 3.93 3.93 0 0 1-.887.773c-.334.211-.704.375-1.114.492a4.65 4.65 0 0 1-1.307.176c-.508 0-.997-.09-1.467-.27a3.64 3.64 0 0 1-1.228-.82c-.356-.367-.64-.82-.852-1.359s-.318-1.168-.318-1.887v-5.262c0-.742.129-1.313.386-1.711.265-.398.716-.598 1.353-.598.674 0 1.155.199 1.444.598.295.398.443.969.443 1.711v5.133zm9.442-5.133c0-.742.129-1.312.387-1.711.265-.398.716-.598 1.352-.598.676 0 1.157.199 1.445.598.295.398.443.969.443 1.711a3.74 3.74 0 0 1 .614-1.019 4.19 4.19 0 0 1 .898-.797 4.31 4.31 0 0 1 1.103-.504c.394-.125.803-.187 1.228-.187a4.17 4.17 0 0 1 1.159.164 3.22 3.22 0 0 1 1.069.504 3.46 3.46 0 0 1 .875.867c.251.352.444.773.581 1.266a5.16 5.16 0 0 1 .829-1.324c.318-.359.664-.648 1.034-.867a4.14 4.14 0 0 1 1.16-.469 5.47 5.47 0 0 1 1.228-.141c.485 0 .947.09 1.387.27a3.16 3.16 0 0 1 1.171.82c.341.359.61.816.807 1.371.205.547.307 1.188.307 1.922V45.8c0 .742-.148 1.313-.444 1.711-.287.398-.769.598-1.443.598-.637 0-1.088-.199-1.353-.598-.258-.398-.387-.969-.387-1.711v-5.133c0-.352-.045-.664-.136-.938-.091-.281-.22-.516-.387-.703-.159-.195-.348-.34-.568-.434a1.65 1.65 0 0 0-.704-.152 2.59 2.59 0 0 0-.887.152 2 2 0 0 0-.739.469 2.4 2.4 0 0 0-.501.809c-.121.328-.181.723-.181 1.184V45.8c0 .742-.149 1.313-.444 1.711-.288.398-.769.598-1.444.598-.637 0-1.088-.199-1.353-.598-.258-.398-.387-.969-.387-1.711v-4.91c0-.805-.163-1.414-.488-1.828-.319-.414-.755-.621-1.307-.621a2.48 2.48 0 0 0-.91.164c-.281.109-.523.27-.728.48s-.368.473-.489.785c-.114.313-.17.672-.17 1.078V45.8c0 .742-.148 1.313-.443 1.711-.288.398-.769.598-1.445.598-.636 0-1.087-.199-1.352-.598-.258-.398-.387-.969-.387-1.711v-7.172zM62 46.108a6 6 0 1 1 0-12 6 6 0 1 1 0 12zm-11.575-3.575c-1.72.298-2.899 1.929-2.238 3.516a14.59 14.59 0 0 0 4.298 5.733c2.726 2.206 6.164 3.385 9.696 3.324s6.926-1.356 9.572-3.654a14.56 14.56 0 0 0 4.092-5.877c.603-1.609-.633-3.198-2.362-3.437s-3.282.997-4.136 2.493a8.39 8.39 0 0 1-1.784 2.171c-1.518 1.319-3.466 2.062-5.492 2.097s-3.999-.642-5.563-1.907a8.4 8.4 0 0 1-1.86-2.109c-.907-1.465-2.503-2.647-4.222-2.349zm26.459-.932c.077-.6.116-1.212.116-1.832 0-8.097-6.716-14.661-15-14.661s-15 6.564-15 14.661a14.44 14.44 0 0 0 .19 2.34c.689-.922 1.764-1.58 2.926-1.78 1.257-.217 2.399.081 3.364.638-.057-.391-.087-.791-.087-1.197 0-4.646 3.853-8.412 8.606-8.412s8.606 3.766 8.606 8.412a8.33 8.33 0 0 1-.049.907c.945-.59 2.076-.927 3.34-.753 1.168.16 2.265.781 2.987 1.678z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pagination (Bullets) -->
-          <div class="swiper-pagination position-static mt-sm-2"></div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Top agents -->
-    <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 my-xxl-3">
-      <h2 class="h1 text-center pt-5 pb-3 mb-2 mb-sm-3 mb-lg-4">Top real estate agents</h2>
-      <div class="row row-cols-2 row-cols-md-4 g-4 mb-n3">
-
-        <!-- Agent -->
-        <div class="col mb-3">
-          <article class="hover-effect-scale text-center">
-            <div class="position-relative mb-3">
-              <div class="ratio ratio-1x1 bg-body-secondary rounded-circle overflow-hidden mx-auto"
-                style="width: 132px">
-                <img src="assets/img/home/real-estate/agents/01.png" class="hover-effect-target" alt="Avatar">
-              </div>
-              <h3 class="h5 pt-3 mt-sm-1 mb-1">
-                <a class="hover-effect-underline stretched-link" href="vendor-real-estate.php">Ivy Taylor</a>
-              </h3>
-              <p class="fs-sm mb-0">Imperial Property Group Agent</p>
-            </div>
-            <div class="d-flex justify-content-center gap-1">
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Instagram" aria-label="Instagram">
-                <i class="fi-instagram fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Facebook" aria-label="Facebook">
-                <i class="fi-facebook fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="LinkedIn" aria-label="LinkedIn">
-                <i class="fi-linkedin fs-base"></i>
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <!-- Agent -->
-        <div class="col mb-3">
-          <article class="hover-effect-scale text-center">
-            <div class="position-relative mb-3">
-              <div class="ratio ratio-1x1 bg-body-secondary rounded-circle overflow-hidden mx-auto"
-                style="width: 132px">
-                <img src="assets/img/home/real-estate/agents/02.png" class="hover-effect-target" alt="Avatar">
-              </div>
-              <h3 class="h5 pt-3 mt-sm-1 mb-1">
-                <a class="hover-effect-underline stretched-link" href="vendor-real-estate.php">Floyd Miles</a>
-              </h3>
-              <p class="fs-sm mb-0">Urban Nest Realty Group Agent</p>
-            </div>
-            <div class="d-flex justify-content-center gap-1">
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Instagram" aria-label="Instagram">
-                <i class="fi-instagram fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Facebook" aria-label="Facebook">
-                <i class="fi-facebook fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="LinkedIn" aria-label="LinkedIn">
-                <i class="fi-linkedin fs-base"></i>
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <!-- Agent -->
-        <div class="col mb-3">
-          <article class="hover-effect-scale text-center">
-            <div class="position-relative mb-3">
-              <div class="ratio ratio-1x1 bg-body-secondary rounded-circle overflow-hidden mx-auto"
-                style="width: 132px">
-                <img src="assets/img/home/real-estate/agents/03.png" class="hover-effect-target" alt="Avatar">
-              </div>
-              <h3 class="h5 pt-3 mt-sm-1 mb-1">
-                <a class="hover-effect-underline stretched-link" href="vendor-real-estate.php">Adrian Frederick</a>
-              </h3>
-              <p class="fs-sm mb-0">Prime Path Properties Agent</p>
-            </div>
-            <div class="d-flex justify-content-center gap-1">
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Instagram" aria-label="Instagram">
-                <i class="fi-instagram fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Facebook" aria-label="Facebook">
-                <i class="fi-facebook fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="LinkedIn" aria-label="LinkedIn">
-                <i class="fi-linkedin fs-base"></i>
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <!-- Agent -->
-        <div class="col mb-3">
-          <article class="hover-effect-scale text-center">
-            <div class="position-relative mb-3">
-              <div class="ratio ratio-1x1 bg-body-secondary rounded-circle overflow-hidden mx-auto"
-                style="width: 132px">
-                <img src="assets/img/home/real-estate/agents/04.png" class="hover-effect-target" alt="Avatar">
-              </div>
-              <h3 class="h5 pt-3 mt-sm-1 mb-1">
-                <a class="hover-effect-underline stretched-link" href="vendor-real-estate.php">Hugh Blake</a>
-              </h3>
-              <p class="fs-sm mb-0">Harbor View Real Estate Agent</p>
-            </div>
-            <div class="d-flex justify-content-center gap-1">
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Instagram" aria-label="Instagram">
-                <i class="fi-instagram fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="Facebook" aria-label="Facebook">
-                <i class="fi-facebook fs-base"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-outline-secondary border-0" href="#!" data-bs-toggle="tooltip"
-                data-bs-custom-class="tooltip-sm" title="LinkedIn" aria-label="LinkedIn">
-                <i class="fi-linkedin fs-base"></i>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Latest blog posts -->
+    <!-- Popular home projects -->
     <section class="container py-2 py-sm-3 py-md-4 py-lg-5 my-xxl-3">
       <div class="d-flex align-items-start justify-content-between gap-4 pb-3 mb-2 mb-sm-3 mb-lg-4">
-        <h2 class="h1 mb-0">Latest blogs</h2>
+        <h2 class="mb-0">Popular home projects</h2>
         <div class="nav">
-          <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="blog-layout-v1.php">
+          <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="#!">
             <span class="hover-effect-underline stretched-link me-1">View all</span>
             <i class="fi-chevron-right fs-lg"></i>
           </a>
         </div>
       </div>
 
-      <!-- Row of articles that turns into carousel on screens < 992px wide (lg breakpoint) -->
+      <!-- Row of cards that turns into carousel on screens < 992px wide (lg breakpoint) -->
       <div class="swiper pb-5" data-swiper='{
           "slidesPerView": 1,
           "spaceBetween": 24,
@@ -1511,7 +545,7 @@
             "clickable": true
           },
           "breakpoints": {
-            "500": {
+            "650": {
               "slidesPerView": 2
             },
             "992": {
@@ -1521,69 +555,504 @@
         }'>
         <div class="swiper-wrapper">
 
-          <!-- Article -->
-          <article class="swiper-slide">
-            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
-              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
-              <img src="assets/img/blog/v1/01.jpg" class="hover-effect-target" alt="Image">
+          <!-- Project -->
+          <div class="swiper-slide">
+            <article class="card hover-effect-scale hover-effect-opacity">
+              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
+                <div
+                  class="position-absolute top-0 end-0 z-2 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
+                  <button type="button"
+                    class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
+                    aria-label="Add to wishlist">
+                    <i class="fi-heart animate-target fs-sm"></i>
+                  </button>
+                </div>
+                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(280 / 416 * 100%)">
+                  <img src="assets/img/home/contractors/projects/01.jpg" alt="Image">
+                </div>
+                <h3
+                  class="h5 position-absolute bottom-0 start-0 d-flex align-items-end w-100 h-100 text-white z-1 p-3 mb-0">
+                  One-time cleaning service</h3>
+                <span class="position-absolute top-0 start-0 w-100 h-100"
+                  style="background: linear-gradient(1deg, rgba(33,42,54, .75) 0.33%, rgba(33,42,54, 0) 45.72%)"></span>
+              </div>
+              <div class="card-body p-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="d-flex align-items-center gap-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.9</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(256)</span>
+                  </div>
+                  <a class="stretched-link fs-sm text-dark-emphasis text-decoration-none"
+                    href="listings-contractors.php">From $80</a>
+                  <button type="button" class="btn btn-outline-dark position-relative z-2 ms-auto">Book now</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project -->
+          <div class="swiper-slide">
+            <article class="card hover-effect-scale hover-effect-opacity">
+              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
+                <div
+                  class="position-absolute top-0 end-0 z-2 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
+                  <button type="button"
+                    class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
+                    aria-label="Add to wishlist">
+                    <i class="fi-heart animate-target fs-sm"></i>
+                  </button>
+                </div>
+                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(280 / 416 * 100%)">
+                  <img src="assets/img/home/contractors/projects/02.jpg" alt="Image">
+                </div>
+                <h3
+                  class="h5 position-absolute bottom-0 start-0 d-flex align-items-end w-100 h-100 text-white z-1 p-3 mb-0">
+                  Handyperson for small projects</h3>
+                <span class="position-absolute top-0 start-0 w-100 h-100"
+                  style="background: linear-gradient(1deg, rgba(33,42,54, .75) 0.33%, rgba(33,42,54, 0) 45.72%)"></span>
+              </div>
+              <div class="card-body p-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="d-flex align-items-center gap-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.7</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(63)</span>
+                  </div>
+                  <a class="stretched-link fs-sm text-dark-emphasis text-decoration-none"
+                    href="listings-contractors.php">From $250</a>
+                  <button type="button" class="btn btn-outline-dark position-relative z-2 ms-auto">Book now</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project -->
+          <div class="swiper-slide">
+            <article class="card hover-effect-scale hover-effect-opacity">
+              <div class="card-img-top position-relative bg-body-tertiary overflow-hidden">
+                <div
+                  class="position-absolute top-0 end-0 z-2 hover-effect-target opacity-0 pt-1 pt-sm-0 pe-1 pe-sm-0 mt-2 mt-sm-3 me-2 me-sm-3">
+                  <button type="button"
+                    class="btn btn-sm btn-icon btn-light bg-light border-0 rounded-circle animate-pulse"
+                    aria-label="Add to wishlist">
+                    <i class="fi-heart animate-target fs-sm"></i>
+                  </button>
+                </div>
+                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(280 / 416 * 100%)">
+                  <img src="assets/img/home/contractors/projects/03.jpg" alt="Image">
+                </div>
+                <h3
+                  class="h5 position-absolute bottom-0 start-0 d-flex align-items-end w-100 h-100 text-white z-1 p-3 mb-0">
+                  Fence installation &amp; repair</h3>
+                <span class="position-absolute top-0 start-0 w-100 h-100"
+                  style="background: linear-gradient(1deg, rgba(33,42,54, .75) 0.33%, rgba(33,42,54, 0) 45.72%)"></span>
+              </div>
+              <div class="card-body p-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="d-flex align-items-center gap-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.8</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(29)</span>
+                  </div>
+                  <a class="stretched-link fs-sm text-dark-emphasis text-decoration-none"
+                    href="listings-contractors.php">From $310</a>
+                  <button type="button" class="btn btn-outline-dark position-relative z-2 ms-auto">Book now</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Pagination (Bullets) -->
+        <div class="swiper-pagination position-static mt-3"></div>
+      </div>
+    </section>
+
+
+    <!-- Expert advice -->
+    <section class="bg-body-tertiary pt-1 pb-2 py-sm-3 py-md-4 py-lg-5">
+      <div class="container py-5 mb-xxl-3">
+        <div class="d-flex align-items-start justify-content-between gap-4 pb-3 mb-sm-3 mb-lg-4">
+          <h2 class="mb-0">Expert advice</h2>
+          <div class="nav">
+            <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="#!">
+              <span class="hover-effect-underline stretched-link me-1">View all</span>
+              <i class="fi-chevron-right fs-lg"></i>
             </a>
-            <div class="nav pb-1 mb-2">
-              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Renting advice</a>
-            </div>
-            <h3 class="h5 mb-2">
-              <a class="hover-effect-underline" href="blog-single-v1.php">What to know when renting an apartment</a>
-            </h3>
-            <p class="fs-sm">It is quite difficult to find a good apartment for long-term rent in large cities. In
-              addition, potential tenants can face prob...</p>
-            <div class="nav fs-sm gap-3">
-              <a class="nav-link fw-semibold p-0" href="#!">by Cody Fisher</a>
-              <span class="text-body-secondary">July 09, 2024</span>
-            </div>
-          </article>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2 g-4 gy-sm-5">
 
           <!-- Article -->
-          <article class="swiper-slide">
-            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
-              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
-              <img src="assets/img/blog/v1/02.jpg" class="hover-effect-target" alt="Image">
-            </a>
-            <div class="nav pb-1 mb-2">
-              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Investment advice</a>
-            </div>
-            <h3 class="h5 mb-2">
-              <a class="hover-effect-underline" href="blog-single-v1.php">Types of luxury housing</a>
-            </h3>
-            <p class="fs-sm">What luxury housing is clear to every person. Housing characterized by increased comfort,
-              interior, quality and ma...</p>
-            <div class="nav fs-sm gap-3">
-              <a class="nav-link fw-semibold p-0" href="#!">by Kristin Watson</a>
-              <span class="text-body-secondary">June 26, 2024</span>
-            </div>
-          </article>
+          <div class="col d-flex">
+            <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-3 mt-sm-0">
+              <div class="flex-sm-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 130px">
+                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(150 / 130 * 100%)">
+                  <img src="assets/img/home/contractors/advice/01.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="ps-3 ps-sm-4 pe-lg-4 pe-xxl-5">
+                <span class="badge text-body-emphasis bg-body-secondary">Cleaning</span>
+                <h3 class="h5 pt-1 my-2">
+                  <a class="hover-effect-underline stretched-link" href="#!">Expert advice from masters of
+                    cleanliness</a>
+                </h3>
+                <p class="mb-2">Unlock the secrets to a spotless home with tips from cleaning professionals. From
+                  tackling stubborn...</p>
+                <span class="fs-sm text-body-secondary">Oct 19, 2024</span>
+              </div>
+            </article>
+          </div>
 
           <!-- Article -->
-          <article class="swiper-slide">
-            <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="blog-single-v1.php"
-              style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
-              <img src="assets/img/blog/v1/03.jpg" class="hover-effect-target" alt="Image">
-            </a>
-            <div class="nav pb-1 mb-2">
-              <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Home improvement</a>
+          <div class="col d-flex">
+            <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-3 mt-sm-0">
+              <div class="flex-sm-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 130px">
+                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(150 / 130 * 100%)">
+                  <img src="assets/img/home/contractors/advice/02.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="ps-3 ps-sm-4 pe-lg-4 pe-xxl-5">
+                <span class="badge text-body-emphasis bg-body-secondary">Flooring</span>
+                <h3 class="h5 pt-1 my-2">
+                  <a class="hover-effect-underline stretched-link" href="#!">How to quickly clean laminate flooring</a>
+                </h3>
+                <p class="mb-2">Learn the fastest and most effective methods to clean laminate flooring without damaging
+                  its surface...</p>
+                <span class="fs-sm text-body-secondary">Sep 13, 2024</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article -->
+          <div class="col d-flex">
+            <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-3 mt-sm-0">
+              <div class="flex-sm-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 130px">
+                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(150 / 130 * 100%)">
+                  <img src="assets/img/home/contractors/advice/03.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="ps-3 ps-sm-4 pe-lg-4 pe-xxl-5">
+                <span class="badge text-body-emphasis bg-body-secondary">Air Conditioning</span>
+                <h3 class="h5 pt-1 my-2">
+                  <a class="hover-effect-underline stretched-link" href="#!">Choose air conditioner with air
+                    ionization</a>
+                </h3>
+                <p class="mb-2">Explore the benefits of air conditioners with air ionization technology. Find out how
+                  these units improve air...</p>
+                <span class="fs-sm text-body-secondary">Sep 05, 2024</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Article -->
+          <div class="col d-flex">
+            <article class="hover-effect-scale position-relative d-inline-flex align-items-start mt-3 mt-sm-0">
+              <div class="flex-sm-shrink-0 bg-body-tertiary rounded overflow-hidden" style="width: 130px">
+                <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(150 / 130 * 100%)">
+                  <img src="assets/img/home/contractors/advice/04.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="ps-3 ps-sm-4 pe-lg-4 pe-xxl-5">
+                <span class="badge text-body-emphasis bg-body-secondary">Landscaping</span>
+                <h3 class="h5 pt-1 my-2">
+                  <a class="hover-effect-underline stretched-link" href="#!">Landscaping ideas from top local
+                    experts</a>
+                </h3>
+                <p class="mb-2">Get inspired by creative landscaping ideas from the best local experts. Whether you're
+                  revamping your garden...</p>
+                <span class="fs-sm text-body-secondary">Aug 26, 2024</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- How it works -->
+    <section class="container py-2 py-sm-3 py-md-4 py-lg-5 mb-xxl-3">
+      <h2 class="pt-5">How it works</h2>
+      <p class="fs-lg pb-3">Effortlessly find, connect, and hire the perfect contractor for your job - all in just three
+        easy steps.</p>
+
+      <!-- Row of items that turns into carousel on screens < 800px wide -->
+      <div class="swiper pb-5" data-swiper='{
+          "slidesPerView": 1,
+          "spaceBetween": 24,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "450": {
+              "slidesPerView": 2
+            },
+            "800": {
+              "slidesPerView": 3
+            }
+          }
+        }'>
+        <div class="swiper-wrapper">
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <svg class="text-secondary-emphasis" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+              fill="currentColor">
+              <path
+                d="M41.441 35.281a.95.95 0 0 1-.184-.018.99.99 0 0 1-.175-.054.93.93 0 0 1-.162-.086.91.91 0 0 1-.142-.116c-.043-.043-.082-.091-.117-.142s-.063-.105-.085-.162-.042-.116-.053-.175a.95.95 0 0 1-.019-.184.93.93 0 0 1 .019-.183.88.88 0 0 1 .053-.175c.023-.057.052-.112.085-.162a.93.93 0 0 1 .117-.142c.174-.174.416-.275.663-.275a.94.94 0 0 1 .663.275c.043.043.082.091.116.142a.97.97 0 0 1 .087.162c.024.057.041.115.053.175a.93.93 0 0 1 .019.183.95.95 0 0 1-.019.184c-.012.059-.03.118-.053.175a.94.94 0 0 1-.087.162c-.034.052-.073.099-.116.142s-.091.082-.143.116a.86.86 0 0 1-.162.086.95.95 0 0 1-.175.054.93.93 0 0 1-.183.018zM27.48 37.367c-9.238 0-16.753-7.515-16.753-16.752S18.242 3.862 27.48 3.862s16.754 7.515 16.754 16.752-7.516 16.753-16.754 16.753zm0-31.63c-8.204 0-14.878 6.674-14.878 14.877A14.9 14.9 0 0 0 27.48 35.492a14.9 14.9 0 0 0 14.879-14.878A14.9 14.9 0 0 0 27.48 5.737zm-3.993 17.638a.94.94 0 0 1-.925-.79.94.94 0 0 1 .617-1.033c.162-.489.689-.756 1.18-.596l1.025.334a.94.94 0 0 1 .644.965c-.034.432-.359.784-.787.852l-1.605.256a.94.94 0 0 1-.149.012zm8.37 0a.94.94 0 0 1-.149-.012l-1.605-.256a.94.94 0 0 1-.143-1.817l1.025-.334a.94.94 0 0 1 1.18.596.94.94 0 0 1 .617 1.033.94.94 0 0 1-.925.79zM41.989 6.104A20.38 20.38 0 0 0 27.478.094a20.39 20.39 0 0 0-14.511 6.01 20.38 20.38 0 0 0-6.011 14.51 20.37 20.37 0 0 0 5.363 13.833l-1.308 1.308-1.546-1.546a.94.94 0 0 0-1.326 0l-6.95 6.95C.423 41.925 0 42.945 0 44.03s.423 2.105 1.189 2.871a4.05 4.05 0 0 0 2.872 1.188 4.05 4.05 0 0 0 2.872-1.188l6.95-6.949c.176-.176.275-.414.275-.663s-.099-.487-.275-.663l-1.546-1.546 1.308-1.308c3.018 2.76 6.728 4.53 10.788 5.136 1.029.154 2.057.23 3.08.23a20.38 20.38 0 0 0 9.325-2.256.94.94 0 0 0 .407-1.262.94.94 0 0 0-1.262-.407c-7.226 3.703-15.941 2.332-21.688-3.414a18.52 18.52 0 0 1-5.463-13.186A18.52 18.52 0 0 1 14.293 7.43c7.271-7.27 19.101-7.27 26.371 0 5.964 5.963 7.184 15.221 2.966 22.512a.94.94 0 0 0 .342 1.281.94.94 0 0 0 1.281-.342c4.643-8.025 3.3-18.214-3.263-24.777zM11.895 39.289l-6.287 6.287a2.19 2.19 0 0 1-3.092 0 2.17 2.17 0 0 1 0-3.092l6.287-6.287.883.883-2.639 2.639a.94.94 0 0 0 0 1.326c.183.183.423.275.663.275s.48-.092.663-.275l2.639-2.639.883.883zm23.459-13.825v-2.415c.184-.75 1.136-4.809 1.137-8.386 0-1.47-.33-2.859-.607-3.765l-.418-1.188c-.201-.5-.284-.707-.579-.879a.94.94 0 0 0-1.058.078l-.241.193a6.23 6.23 0 0 1-5.206 1.234c-2.622-.557-5.338.498-6.898 2.64-.835.124-1.604.543-2.164 1.192a3.55 3.55 0 0 0-.824 2.839 1.01 1.01 0 0 0 .024.114l1.46 5.258v3.086c0 1.853.942 3.422 2.725 4.535.703.439 1.511.796 2.408 1.063l-.022 1.583a.94.94 0 0 0 .938.95h3.273a.94.94 0 0 0 .938-.95l-.022-1.581c.9-.266 1.709-.622 2.413-1.061 1.779-1.111 2.72-2.68 2.72-4.539zm-6.222 3.95l-.103.025a.94.94 0 0 0-.693.918l.018 1.363h-1.372l.019-1.363a.94.94 0 0 0-.693-.918l-.097-.024c-1.309-.314-4.352-1.325-4.352-3.952v-6.082c0-.19.155-.345.345-.345h3.445a8.71 8.71 0 0 0 6.002-2.385.94.94 0 0 0 .038-1.325.94.94 0 0 0-1.325-.038c-1.28 1.208-2.955 1.873-4.715 1.873h-3.444c-.601 0-1.148.241-1.548.63l-.309-1.111a1.67 1.67 0 0 1 .395-1.288c.319-.369.781-.58 1.268-.58a.94.94 0 0 0 .799-.447l.015-.024c1.09-1.724 3.168-2.596 5.169-2.171a8.09 8.09 0 0 0 5.992-1.054c.291.869.63 2.176.63 3.547l-.103 2.099a.95.95 0 0 0-.148-.01.94.94 0 0 0-.93.945l.043 5.239v2.528c0 2.636-3.04 3.641-4.347 3.95zm-1.461-1.163a2.41 2.41 0 0 1-2.201-1.433.94.94 0 0 1 .479-1.237.94.94 0 0 1 1.236.478.53.53 0 0 0 .971 0c.209-.474.763-.688 1.236-.478a.94.94 0 0 1 .479 1.237 2.41 2.41 0 0 1-2.201 1.433z" />
+            </svg>
+            <h3 class="h5 pt-3 pt-md-4 mb-2">Explore</h3>
+            <p class="mb-0">Browse through our curated list of contractors.</p>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <svg class="text-secondary-emphasis" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+              fill="currentColor">
+              <path
+                d="M43.313 0H18.938c-2.585 0-4.687 2.103-4.687 4.688v8.438H4.688C2.103 13.125 0 15.228 0 17.813v19.875c0 2.585 2.103 4.688 4.688 4.688h1.875v4.688a.94.94 0 0 0 .938.937.94.94 0 0 0 .663-.275l5.35-5.35h15.549c2.585 0 4.688-2.103 4.688-4.687V29.25h1.875v4.688a.94.94 0 0 0 .938.937.94.94 0 0 0 .663-.275l5.35-5.35h1.487c2.392 0 3.938-1.84 3.938-4.687V4.688A4.7 4.7 0 0 0 43.313 0zM31.875 37.688c0 1.551-1.262 2.813-2.812 2.813H13.125a.94.94 0 0 0-.663.275l-4.025 4.025v-3.362A.94.94 0 0 0 7.5 40.5H4.688c-1.551 0-2.812-1.262-2.812-2.812V17.813C1.875 16.262 3.137 15 4.688 15h24.375c1.551 0 2.813 1.262 2.813 2.813v19.875zm14.25-13.125c0 1.05-.268 2.813-2.062 2.813h-1.875a.94.94 0 0 0-.663.275L37.5 31.674v-3.362a.94.94 0 0 0-.937-.937H33.75v-6.75h5.813a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937H33.75v-.937c0-2.585-2.103-4.687-4.687-4.687H16.125V4.688c0-1.551 1.262-2.812 2.813-2.812h24.375c1.551 0 2.813 1.262 2.813 2.813v19.875zM39.563 7.5H22.688a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h16.875a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zm0 5.625h-3.75a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h3.75a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zM8.438 22.5a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938zm16.875-1.875H12.188a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h13.125a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zm0 5.625h-9.375a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h9.375a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937zM8.438 28.125h3.75a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937h-3.75a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938zm9.375 3.75H8.625a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h9.188a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937z" />
+            </svg>
+            <h3 class="h5 pt-3 pt-md-4 mb-2">Connect</h3>
+            <p class="mb-0">Connect with them through our platform.</p>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide">
+            <svg class="text-secondary-emphasis" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+              fill="currentColor">
+              <path
+                d="M4.519 8.136c.196.471.752.703 1.224.507s.703-.752.507-1.224-.752-.703-1.224-.507-.704.753-.507 1.224zm3.875 0c.153.368.535.607.935.576.391-.03.729-.307.834-.685.222-.798-.673-1.478-1.384-1.054-.393.234-.56.74-.384 1.163zM4.752 44.84h35.053A8.21 8.21 0 0 0 48 36.645a8.21 8.21 0 0 0-7.257-8.141l-.001-20.593A4.76 4.76 0 0 0 35.99 3.16H4.752A4.76 4.76 0 0 0 0 7.912v32.175a4.76 4.76 0 0 0 4.752 4.753zm0-1.875a2.88 2.88 0 0 1-2.877-2.878V12.202h36.993v16.302a8.28 8.28 0 0 0-6.536 4.779H5.76a.94.94 0 0 0-.937.938v4.766a.94.94 0 0 0 .938.938h9.613a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937H6.698V35.16h25.048a8.24 8.24 0 0 0-.135 1.487c0 .47.04.941.12 1.405h-8.109a.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938h8.675a8.28 8.28 0 0 0 2.298 3.04H4.752zm41.373-6.32a6.33 6.33 0 0 1-6.32 6.32 6.39 6.39 0 0 1-6.32-6.32 6.31 6.31 0 0 1 .132-1.285c.595-2.871 3.144-5.035 6.188-5.035a6.33 6.33 0 0 1 6.32 6.319zM4.752 5.035H35.99a2.88 2.88 0 0 1 2.877 2.877v2.415H1.875V7.912a2.88 2.88 0 0 1 2.877-2.877zm2.879 23.769a8.43 8.43 0 0 0 5.579 2.124 8.43 8.43 0 0 0 5.58-2.125 8.4 8.4 0 0 0-5.579-14.654 8.4 8.4 0 0 0-5.579 14.655zm5.293.242a6.54 6.54 0 0 1-3.678-1.339 4.04 4.04 0 0 1 3.954-3.3c1.973.004 3.628 1.419 3.972 3.3-1.208.927-2.728 1.407-4.249 1.34zm-1.021-7.821a1.31 1.31 0 0 1 1.307-1.307 1.31 1.31 0 0 1 1.307 1.307 1.31 1.31 0 0 1-1.301 1.307 1.31 1.31 0 0 1-1.312-1.307zm1.307-5.201c3.593 0 6.515 2.922 6.515 6.514 0 1.287-.383 2.534-1.08 3.589-.563-1.321-1.596-2.39-2.879-3.01.393-.529.626-1.184.626-1.893 0-1.755-1.428-3.182-3.182-3.182s-3.182 1.427-3.182 3.182c0 .708.233 1.363.626 1.892-1.283.62-2.315 1.69-2.878 3.011a6.52 6.52 0 0 1-1.08-3.589c0-3.592 2.922-6.514 6.514-6.514zm25.504 21.598l-1.285-1.285a.94.94 0 0 0-1.326 0 .94.94 0 0 0 0 1.326l1.948 1.948a.94.94 0 0 0 1.326 0l4.368-4.367a.94.94 0 0 0 0-1.326.94.94 0 0 0-1.326 0l-3.704 3.705z" />
+            </svg>
+            <h3 class="h5 pt-3 pt-md-4 mb-2">Get quotes and hire</h3>
+            <p class="mb-0">Receive quotes from interested contractors.</p>
+          </div>
+        </div>
+
+        <!-- Pagination (Bullets) -->
+        <div class="swiper-pagination position-static mt-3"></div>
+      </div>
+    </section>
+
+
+    <!-- Become a Pro CTA -->
+    <section class="position-relative bg-info py-5 px-sm-5 px-md-0">
+      <div class="container position-relative z-2 py-lg-5">
+        <div class="row py-2 py-sm-4 py-lg-5">
+          <div class="col-md-4 col-lg-5 py-lg-2 py-xl-4 py-xxl-5 mb-md-3">
+            <h2 class="text-white text-center text-md-start pb-2 pb-sm-3">Grow your business with us. Become a Pro today
+            </h2>
+            <div
+              class="d-flex flex-column flex-sm-row flex-md-column flex-lg-row justify-content-center justify-content-md-start gap-3">
+              <a class="btn btn-lg btn-primary animate-scale" href="add-contractor-location.php">
+                <i class="fi-plus fs-lg animate-target ms-n2 me-2"></i>
+                Add business
+              </a>
+              <a class="btn btn-lg btn-outline-light animate-slide-end" href="#!">
+                Learn more
+                <i class="fi-chevron-right fs-lg animate-target ms-2 me-n2"></i>
+              </a>
             </div>
-            <h3 class="h5 mb-2">
-              <a class="hover-effect-underline" href="blog-single-v1.php">How to modernize your home on a budget</a>
-            </h3>
-            <p class="fs-sm">Modernizing your home doesn't have to break the bank. Here are some budget-friendly tips to
-              give your living space a mo...</p>
-            <div class="nav fs-sm gap-3">
-              <a class="nav-link fw-semibold p-0" href="#!">by Darrell Steward</a>
-              <span class="text-body-secondary">May 13, 2024</span>
+            <div
+              class="position-absolute top-50 start-50 translate-middle d-none d-md-flex align-items-center justify-content-center"
+              style="width: 164px; height: 164px">
+              <svg class="animate-spin" width="144" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                style="animation-duration: 22s">
+                <path id="circlePath" fill="none" d="M 10, 50a 40,40 0 1,1 80,0a 40,40 0 1,1 -80,0" />
+                <text id="text" font-size="7.7" fill="#fff" style="letter-spacing: -.05">
+                  <textPath id="textPath" href="#circlePath">Feature your business customers &nbsp; Feature your
+                    business customers</textPath>
+                </text>
+              </svg>
+              <span
+                class="position-absolute top-0 start-0 w-100 h-100 border border-2 border-white rounded-circle"></span>
+              <span
+                class="position-absolute top-50 start-50 translate-middle border border-2 border-white rounded-circle"
+                style="width: 87px; height: 87px"></span>
+              <span class="position-absolute top-50 start-50 translate-middle bg-primary rounded-circle"
+                style="width: 30px; height: 30px"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/img/home/contractors/become-pro-cta.jpg"
+        class="position-absolute top-0 end-0 w-50 h-100 object-fit-cover d-none d-md-block" alt="Image">
+    </section>
+
+
+    <!-- Mobile app download CTA -->
+    <section class="container pt-2 pt-sm-3 pt-md-4 pt-lg-5 pb-5 mt-xxl-3">
+      <div class="bg-primary-subtle rounded mt-5">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 col-lg-4 offset-lg-1 text-center text-md-start">
+            <div class="p-4 ps-lg-0 pe-md-0">
+              <h2 class="h1 pt-3 pt-md-0 mb-2">Get Finder App</h2>
+              <p class="mb-4">Explore top-rated certified pros</p>
+              <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-3">
+                <a class="btn btn-market btn-lg" href="#!" aria-label="Download on App Store">
+                  <i class="fi-apple lead ms-n1 me-2"></i>
+                  <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="77" height="24"
+                    viewBox="0 0 77 24" fill="currentColor">
+                    <path
+                      d="M40.713 15.797c.701-.624 1.055-1.431 1.055-2.427 0-.806-.242-1.486-.733-2.032-.483-.546-1.232-1.02-2.255-1.423-.838-.324-1.418-.625-1.732-.901a1.41 1.41 0 0 1-.548-1.138 1.39 1.39 0 0 1 .475-1.059c.379-.316.91-.482 1.579-.482.854 0 1.611.182 2.288.538l.483-1.518c-.717-.372-1.619-.553-2.699-.553-1.216 0-2.191.308-2.924.917a2.94 2.94 0 0 0-1.103 2.356c0 1.463 1.039 2.577 3.142 3.344.765.277 1.313.577 1.643.901a1.63 1.63 0 0 1 .491 1.194c0 .53-.201.957-.604 1.273-.395.316-.959.474-1.675.474-.999 0-1.917-.245-2.755-.727l-.443 1.557c.773.482 1.796.727 3.077.727 1.386 0 2.465-.34 3.238-1.02zm-31.706.846h2.03L7.195 4.966H4.826L1 16.644h1.974l1.055-3.431h3.867l1.112 3.431zM6.558 8.729l1.007 3.044H4.367l.991-3.044.564-2.198h.04l.596 2.198zm13.122 6.997c.797-.83 1.192-1.961 1.192-3.392 0-1.289-.338-2.316-1.031-3.107-.677-.783-1.514-1.178-2.529-1.178-1.289 0-2.255.506-2.892 1.51h-.032l-.105-1.336h-1.675l.072 2.767v9.068h1.909v-4.42c.499.798 1.313 1.194 2.449 1.194 1.047 0 1.933-.364 2.642-1.107zm-1.313-5.353c.379.53.564 1.202.564 2.024 0 .893-.201 1.605-.604 2.15-.403.538-.959.814-1.675.814-.612 0-1.112-.213-1.49-.633s-.572-.941-.572-1.55v-1.407c0-.15.032-.34.089-.569a2.11 2.11 0 0 1 .749-1.202c.387-.3.814-.459 1.281-.459a1.96 1.96 0 0 1 1.659.83zm12.366 1.961c0 1.431-.395 2.562-1.192 3.392-.709.743-1.595 1.107-2.642 1.107-1.136 0-1.949-.395-2.449-1.194v4.42H22.54v-9.068l-.072-2.767h1.675l.105 1.336h.032c.636-1.004 1.603-1.51 2.892-1.51 1.015 0 1.853.395 2.529 1.178.693.791 1.031 1.818 1.031 3.107zm-1.941.063c0-.822-.185-1.494-.564-2.024a1.96 1.96 0 0 0-1.659-.83c-.467 0-.894.158-1.281.459-.379.308-.628.704-.749 1.202-.056.229-.089.419-.089.569v1.407c0 .609.193 1.131.572 1.55s.878.633 1.49.633c.717 0 1.281-.277 1.676-.814.411-.546.604-1.257.604-2.15zM48.083 9.63h-2.102v4.087c0 1.036.37 1.557 1.112 1.557.338 0 .62-.032.846-.087l.056 1.423c-.379.134-.87.206-1.482.206-.757 0-1.337-.229-1.764-.68s-.636-1.21-.636-2.269V9.623h-1.248V8.223h1.249V6.681l1.869-.553v2.095h2.102V9.63zm8.329 5.922c.749-.83 1.128-1.89 1.128-3.186 0-1.257-.362-2.285-1.096-3.075-.765-.822-1.78-1.233-3.037-1.233-1.305 0-2.344.419-3.117 1.249-.765.83-1.152 1.897-1.152 3.202 0 1.249.37 2.285 1.12 3.099s1.756 1.225 3.013 1.225c1.305 0 2.352-.427 3.142-1.281zm-1.353-5.131c.338.553.508 1.21.508 1.984s-.177 1.439-.524 2.008c-.419.68-.991 1.02-1.716 1.02-.741 0-1.321-.332-1.732-1.004-.338-.546-.508-1.21-.508-1.984 0-.799.161-1.471.508-2.024.395-.672.983-1.004 1.748-1.004.741 0 1.313.332 1.716 1.004zm8.683-.553c-.185-.032-.387-.047-.604-.047-.669 0-1.192.245-1.555.743-.314.435-.475.996-.475 1.66v4.419h-1.909v-5.771l-.056-2.649h1.659l.072 1.613h.056c.201-.553.516-1.004.951-1.336.427-.3.886-.451 1.377-.451a4.09 4.09 0 0 1 .475.032l.008 1.787zm8.451 3.012c.048-.229.072-.514.072-.846 0-1.051-.258-1.929-.765-2.656-.628-.901-1.571-1.352-2.803-1.352-1.257 0-2.255.451-2.997 1.352-.709.846-1.063 1.905-1.063 3.17 0 1.289.379 2.324 1.136 3.091s1.804 1.154 3.133 1.154c1.104 0 2.062-.174 2.876-.522l-.298-1.297c-.693.261-1.466.395-2.312.395-.765 0-1.386-.198-1.869-.585-.532-.435-.806-1.075-.83-1.905h5.719zm-2.119-2.767c.258.403.387.886.371 1.439l-3.963-.008c.056-.561.25-1.051.564-1.455a1.82 1.82 0 0 1 1.514-.759c.677 0 1.184.261 1.514.783z" />
+                  </svg>
+                </a>
+                <a class="btn btn-market btn-lg" href="#!" aria-label="Download on Google Play">
+                  <svg class="flex-shrink-0 ms-n1 me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M19.665 10.561l-3.251-1.878-3.329 3.329 3.328 3.329 3.263-1.884c.509-.309.812-.849.812-1.444s-.304-1.135-.823-1.451z"
+                      fill="#ffce00" />
+                    <path
+                      d="M13.085 12.011L4.018 2.879a1.71 1.71 0 0 0-.507 1.216v15.804a1.71 1.71 0 0 0 .507 1.217l9.067-9.105z"
+                      fill="#01daff" />
+                    <path
+                      d="M13.086 12.011l3.329-3.329.005-.005-4.46-2.568L6.08 2.654c-.529-.327-1.171-.338-1.712-.034a2.54 2.54 0 0 0-.349.259l9.067 9.132z"
+                      fill="#00f076" />
+                    <path
+                      d="M4.019 21.116c.113.101.225.18.349.259.27.146.552.225.834.225.304 0 .597-.09.867-.248l5.891-3.439 4.46-2.568-.005-.005-3.329-3.329-9.067 9.104z"
+                      fill="#f63448" />
+                  </svg>
+                  <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="77" height="24"
+                    viewBox="0 0 77 24" fill="currentColor">
+                    <path
+                      d="M24.575 9.45c-2.184 0-3.914 1.704-3.914 4.071 0 2.272 1.729 4.071 3.914 4.071s3.914-1.704 3.914-4.071c0-2.461-1.729-4.071-3.914-4.071zm0 6.438c-1.183 0-2.184-1.041-2.184-2.462s1.001-2.462 2.184-2.462 2.184.947 2.184 2.462c0 1.42-1.001 2.462-2.184 2.462zM16.11 9.45c-2.184 0-3.914 1.704-3.914 4.071 0 2.272 1.729 4.071 3.914 4.071s3.914-1.704 3.914-4.071c0-2.461-1.729-4.071-3.914-4.071zm0 6.438c-1.183 0-2.184-1.041-2.184-2.462s1.001-2.462 2.184-2.462 2.184.947 2.184 2.462c0 1.42-1.001 2.462-2.184 2.462zM6.007 10.681v1.704h3.914c-.091.947-.455 1.704-.91 2.177-.546.568-1.456 1.231-3.004 1.231-2.457 0-4.278-1.988-4.278-4.544s1.911-4.544 4.278-4.544c1.274 0 2.275.568 3.004 1.231l1.183-1.231C9.193 5.757 7.918 5 6.098 5 2.822 5 0 7.84 0 11.249s2.822 6.249 6.098 6.249c1.82 0 3.095-.568 4.187-1.799 1.092-1.136 1.456-2.745 1.456-3.976 0-.379 0-.757-.091-1.041H6.007zm41.322 1.325c-.364-.947-1.274-2.556-3.277-2.556s-3.641 1.61-3.641 4.071c0 2.272 1.638 4.071 3.823 4.071 1.729 0 2.822-1.136 3.186-1.799l-1.274-.947c-.455.663-1.001 1.136-1.911 1.136s-1.456-.379-1.911-1.231l5.188-2.272-.182-.473zm-5.279 1.326c0-1.515 1.183-2.367 2.002-2.367.637 0 1.274.379 1.456.852l-3.459 1.515zm-4.278 3.882h1.729V5.379h-1.729v11.834zm-2.73-6.911c-.455-.473-1.183-.947-2.093-.947-1.911 0-3.732 1.799-3.732 4.071s1.729 3.976 3.732 3.976c.91 0 1.638-.473 2.002-.947h.091v.568c0 1.515-.819 2.367-2.093 2.367-1.001 0-1.729-.757-1.911-1.42l-1.456.663C30.036 19.675 31.128 21 33.039 21c2.002 0 3.641-1.231 3.641-4.166V9.639h-1.638v.663zm-2.002 5.586c-1.183 0-2.184-1.041-2.184-2.462s1.001-2.462 2.184-2.462 2.093 1.041 2.093 2.462-.91 2.462-2.093 2.462zM55.247 5.379h-4.096v11.834h1.729v-4.45h2.367c1.911 0 3.732-1.42 3.732-3.692s-1.82-3.692-3.732-3.692zm.091 5.681h-2.457V6.988h2.457c1.274 0 2.002 1.136 2.002 1.988-.091 1.041-.819 2.083-2.002 2.083zm10.467-1.704c-1.274 0-2.549.568-3.004 1.799l1.547.663c.364-.663.91-.852 1.547-.852.91 0 1.729.568 1.82 1.515v.095c-.273-.189-1.001-.473-1.729-.473-1.638 0-3.277.947-3.277 2.651 0 1.609 1.365 2.651 2.821 2.651 1.183 0 1.729-.568 2.184-1.136h.091v.947h1.638v-4.544c-.182-2.083-1.729-3.314-3.641-3.314zm-.182 6.533c-.546 0-1.365-.284-1.365-1.041 0-.947 1.001-1.231 1.82-1.231.728 0 1.092.189 1.547.379-.182 1.136-1.092 1.894-2.002 1.894zm9.557-6.249l-1.911 5.112h-.091l-2.002-5.112h-1.82l3.004 7.195-1.729 3.976h1.729L77 9.639h-1.82zm-15.291 7.574h1.729V5.379h-1.729v11.834z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9 col-md-7">
+            <div class="ratio" style="max-width: 749px; --fn-aspect-ratio: calc(310 / 714 * 100%)">
+              <img src="assets/img/home/contractors/app-cta.png" alt="App screens">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Common pricing references -->
+    <section class="container py-2 py-sm-3 py-md-4 py-lg-5 my-xxl-3">
+      <div class="d-flex align-items-start justify-content-between gap-4 pb-3 mb-2 mb-sm-3 mb-lg-4">
+        <h2 class="mb-0">Common pricing references</h2>
+        <div class="nav">
+          <a class="nav-link position-relative fs-base text-nowrap py-1 px-0" href="#!">
+            <span class="hover-effect-underline stretched-link me-1">View all</span>
+            <i class="fi-chevron-right fs-lg"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4 pb-5">
+
+        <!-- Project -->
+        <div class="col">
+          <article class="card hover-effect-scale bg-transparent overflow-hidden">
+            <div class="row h-100 g-0">
+              <div class="col-sm-4 position-relative bg-body-tertiary overflow-hidden" style="min-height: 178px">
+                <img src="assets/img/home/contractors/projects/04.jpg"
+                  class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+              </div>
+              <div class="col-sm-8 card-body d-flex flex-column align-items-start p-3 p-sm-4">
+                <h3 class="h6 mt-1 mt-sm-0 mb-2">
+                  <a class="stretched-link hover-effect-underline" href="listings-contractors.php">Cleaning up after
+                    repairs</a>
+                </h3>
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="d-flex align-items-center gap-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.5</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(63)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $150</div>
+                </div>
+                <button type="button" class="btn btn-outline-dark position-relative z-2 mt-auto">Book now</button>
+              </div>
             </div>
           </article>
         </div>
 
-        <!-- Pagination (Bullets) -->
-        <div class="swiper-pagination position-static mt-3 mt-sm-4"></div>
+        <!-- Project -->
+        <div class="col">
+          <article class="card hover-effect-scale bg-transparent overflow-hidden">
+            <div class="row h-100 g-0">
+              <div class="col-sm-4 position-relative bg-body-tertiary overflow-hidden" style="min-height: 178px">
+                <img src="assets/img/home/contractors/projects/05.jpg"
+                  class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+              </div>
+              <div class="col-sm-8 card-body d-flex flex-column align-items-start p-3 p-sm-4">
+                <h3 class="h6 mt-1 mt-sm-0 mb-2">
+                  <a class="stretched-link hover-effect-underline" href="listings-contractors.php">Installation of flat
+                    roofs</a>
+                </h3>
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="d-flex align-items-center gap-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.3</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(18)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $1,870</div>
+                </div>
+                <button type="button" class="btn btn-outline-dark position-relative z-2 mt-auto">Book now</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project -->
+        <div class="col">
+          <article class="card hover-effect-scale bg-transparent overflow-hidden">
+            <div class="row h-100 g-0">
+              <div class="col-sm-4 position-relative bg-body-tertiary overflow-hidden" style="min-height: 178px">
+                <img src="assets/img/home/contractors/projects/06.jpg"
+                  class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+              </div>
+              <div class="col-sm-8 card-body d-flex flex-column align-items-start p-3 p-sm-4">
+                <h3 class="h6 mt-1 mt-sm-0 mb-2">
+                  <a class="stretched-link hover-effect-underline" href="listings-contractors.php">Handyperson for
+                    small projects</a>
+                </h3>
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="d-flex align-items-center gap-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.7</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(35)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $230</div>
+                </div>
+                <button type="button" class="btn btn-outline-dark position-relative z-2 mt-auto">Book now</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project -->
+        <div class="col">
+          <article class="card hover-effect-scale bg-transparent overflow-hidden">
+            <div class="row h-100 g-0">
+              <div class="col-sm-4 position-relative bg-body-tertiary overflow-hidden" style="min-height: 178px">
+                <img src="assets/img/home/contractors/projects/07.jpg"
+                  class="hover-effect-target position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+              </div>
+              <div class="col-sm-8 card-body d-flex flex-column align-items-start p-3 p-sm-4">
+                <h3 class="h6 mt-1 mt-sm-0 mb-2">
+                  <a class="stretched-link hover-effect-underline" href="listings-contractors.php">One-time cleaning
+                    service</a>
+                </h3>
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="d-flex align-items-center gap-1">
+                    <i class="fi-star-filled text-warning"></i>
+                    <span class="fs-sm text-secondary-emphasis">4.9</span>
+                    <span class="fs-xs text-body-secondary align-self-end">(127)</span>
+                  </div>
+                  <div class="fs-sm text-dark-emphasis">From $120</div>
+                </div>
+                <button type="button" class="btn btn-outline-dark position-relative z-2 mt-auto">Book now</button>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>

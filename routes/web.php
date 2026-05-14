@@ -6,6 +6,9 @@ use App\Http\Controllers\AccountPaymentsController;
 use App\Http\Controllers\AccountProfileController;
 use App\Http\Controllers\AccountReviewsController;
 use App\Http\Controllers\AccountSettingsController;
+use App\Http\Controllers\AddContractorController;
+use App\Http\Controllers\ContractorController;
+use App\Http\Controllers\TermsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HelpController;
 use App\Http\Controllers\HomeController;
@@ -20,6 +23,15 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/about', [AboutController::class, 'index'])->name('about.index');
 Route::get('/faq', [FaqController::class, 'index'])->name('faq.index');
+Route::get('/contractors', [ContractorController::class, 'index'])->name('contractors.index');
+Route::get('/contractors/{id}', [ContractorController::class, 'show'])->name('contractors.show');
+Route::get('/add-contractor/location', [AddContractorController::class, 'location'])->name('contractor.add.location');
+Route::get('/add-contractor/services', [AddContractorController::class, 'services'])->name('contractor.add.services');
+Route::get('/add-contractor/profile', [AddContractorController::class, 'profile'])->name('contractor.add.profile');
+Route::get('/add-contractor/price', [AddContractorController::class, 'price'])->name('contractor.add.price');
+Route::get('/add-contractor/project', [AddContractorController::class, 'project'])->name('contractor.add.project');
+Route::get('/terms', [TermsController::class, 'index'])->name('terms.index');
+Route::get('/help/{slug}', [HelpController::class, 'article'])->name('help.article');
 
 Route::middleware(['auth'])->group(function () {
 
